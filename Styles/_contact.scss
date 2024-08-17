@@ -1,0 +1,161 @@
+@import "./variables";
+@import "./mixins";
+@include colorWaveAnimation;
+// Contact scss
+/* Settings and design for all contact options */
+.contact-options-divs {
+  @include displaySet(
+    $dspl: flex,
+    $jusCont: center,
+    $alItms: flex-start,
+    $gap: 3rem
+  );
+  padding: 1rem;
+  border-radius: 3rem;
+  .contact-form,
+  .contact-directly,
+  .my-files {
+    @include displaySet($dspl: inline-block, $position: static, $zIndx: 900);
+    @include sizesNgaps(
+      $padding: 1.5rem,
+      $margin: 0 1rem,
+      $max-width: 40rem,
+      $min-height: 20rem
+    );
+    @include fontNtext(
+      $font-size: x-large,
+      $bgColor: #d4a3ecde,
+      $lnHeight: 3rem,
+      $border: 0.1rem solid rgba(177, 177, 177, 0.548),
+      $borderRds: 3rem,
+      $boxShdw: $mainShadow
+    );
+    a {
+      color: #000000;
+    }
+    a:hover {
+      @include fontNtext(
+        $font-weight: bolder,
+        $txtShdw: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223)
+      );
+    }
+    i {
+      @include fontNtext($font-size: x-large, $color: $primaryColor);
+    }
+    i:hover {
+      transform: scale(1.5);
+    }
+    &:hover {
+      @include fontNtext(
+        $txtShdw: 0.1rem 0.2rem 0.4rem rgb(249, 249, 253),
+        $boxShdw: $boxShadow
+      );
+    }
+  }
+  .contact-options-list,
+  .files-list {
+    text-align: left;
+  }
+  /* Settings and design of the contact form */
+  .form {
+    margin: 1rem 0 0 0;
+    font-size: x-large;
+    @include displaySet(
+      $dspl: flex,
+      $jusCont: center,
+      $alItms: center,
+      $flxDrc: column
+    );
+    label,
+    input,
+    textarea {
+      @include displaySet($dspl: flex, $width: 100%);
+      margin: -2rem 0;
+    }
+    input {
+      @include sizesNgaps($padding: 0.5rem, $margin: 0, $height: 3rem);
+      @include fontNtext(
+        $borderRds: 1rem,
+        $font-size: 1.2rem,
+        $boxShdw: $mainShadow
+      );
+    }
+    textarea {
+      @include sizesNgaps(
+        $padding: 0.5rem,
+        $margin: 0,
+        $width: 32rem,
+        $height: 10rem
+      );
+      border-radius: 1rem;
+      resize: none;
+      font-size: 1.2rem;
+      box-shadow: $mainShadow;
+    }
+    input:hover,
+    textarea:hover {
+      border-width: 0.5rem;
+      animation: colorWaveAnimation 6s infinite;
+      box-shadow: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223);
+    }
+  }
+  /* Media query for tablets and smaller desktops */
+  @media screen and (max-width: 1450px) {
+    @include displaySet(
+      $jusCont: center,
+      $alItms: center,
+      $flxDrc: column,
+      $gap: 2rem
+    );
+    .contact-form,
+    .contact-directly,
+    .my-files {
+      @include sizesNgaps($max-width: 30rem, $min-height: 15rem);
+      @include fontNtext($font-size: x-large);
+    }
+    .form {
+      input,
+      textarea {
+        @include sizesNgaps($width: 25rem);
+      }
+    }
+  }
+  /* Media query for tablets and larger smartphones */
+  @media screen and (max-width: 768px) {
+    @include displaySet($flxDrc: column, $gap: 1rem);
+    .contact-form,
+    .contact-directly,
+    .my-files {
+      @include sizesNgaps(
+        $padding: 1rem,
+        $margin: 1.5rem 0.5rem,
+        $width: 26rem
+      );
+    }
+    .form {
+      input,
+      textarea {
+        @include sizesNgaps($width: 22rem);
+      }
+    }
+  }
+  /* Media query for mobile phones */
+  @media screen and (max-width: 480px) {
+    @include displaySet($flxDrc: column, $gap: 1rem);
+    .contact-form,
+    .contact-directly,
+    .my-files {
+      @include sizesNgaps(
+        $padding: 0.5rem,
+        $margin: 1.5rem 0.5rem,
+        $max-width: 25rem
+      );
+    }
+    .form {
+      input,
+      textarea {
+        @include sizesNgaps($width: 20rem);
+      }
+    }
+  }
+}

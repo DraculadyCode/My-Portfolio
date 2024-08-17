@@ -1,0 +1,86 @@
+$primaryColor: #a009f7;
+$h1Shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+  1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+  1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
+  1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+  1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+  1px 30px 60px rgba(16, 16, 16, 0.4);
+$bodyBg: linear-gradient(
+  -45deg,
+  rgb(241, 50, 216),
+  rgb(208, 98, 230),
+  rgb(124, 197, 245),
+  rgb(158, 158, 235)
+);
+$sectionBg: linear-gradient(
+  -45deg,
+  rgb(124, 195, 243),
+  rgba(225, 245, 116, 0.918),
+  rgb(253, 54, 253)
+);
+$hHover: 0 0 2rem #fff, 0 0 3rem #ffffff, 0 0 4rem #ffffff, 0 0 5rem #ff4da6,
+  0 0 6rem #ff4da6, 0 0 7rem #ff4da6, 0 0 8rem #ff4da6;
+$h2Hover: 1px 1px 1px #c00eec, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff,
+  -1px 3px 2px #ffffff, -1px -1px 1px #e79aee, 2px -1px 2px #a5cef0,
+  1px 7px 4px rgba(175, 43, 228, 0.4), 1px 9px 10px rgba(194, 103, 236, 0.2),
+  1px 9px 35px rgba(212, 0, 255, 0.2), 1px 9px 60px rgba(243, 20, 243, 0.4);
+$mainShadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+$elementsTbHover: 0 0 2rem #fff, 0 0 3rem #3fdee4, 0 0 4rem #a00de4,
+  0 0 5rem #4d9aff, 0 0 6rem #11cef0, 0 0 7rem #75e3f7, 0 0 8rem #a87fdd;
+$floatBtnBg: linear-gradient(
+  135deg,
+  rgba(255, 192, 203, 0.644),
+  rgba(228, 207, 168, 0.644),
+  rgba(204, 236, 168, 0.596)
+);
+$floatBtnBgHover: linear-gradient(
+  135deg,
+  rgb(236, 199, 236),
+  rgb(198, 198, 228),
+  rgb(193, 224, 193)
+);
+$navShadow: 1px 1px 1px #5ff6ff, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff,
+  -1px 3px 2px #ffffff, -1px -1px 1px #ffffff, 2px -1px 2px #a5cef0,
+  1px 7px 4px rgba(0, 9, 35, 0.4), 1px 9px 10px rgba(0, 64, 255, 0.2),
+  1px 9px 35px rgba(0, 64, 255, 0.2), 1px 9px 60px rgba(0, 64, 255, 0.4);
+$imgShadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+  rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+$mainTextColor: #fff;
+$boxShadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+$portfolioBg: radial-gradient(
+  rgba(0, 153, 255, 0.5),
+  rgba(123, 255, 0, 0.5),
+  rgba(255, 0, 255, 0.5),
+  rgba(255, 251, 4, 0.5)
+);
+$portfolioBg2: radial-gradient(
+  rgba(101, 250, 146, 0.5),
+  rgba(62, 211, 248, 0.5),
+  rgba(236, 28, 236, 0.5),
+  rgba(238, 121, 121, 0.5)
+);
+$sliderShadow: 0px 1px 2px 0px rgba(137, 45, 223, 0.7),
+  1px 2px 4px 0px rgba(81, 224, 15, 0.7),
+  2px 4px 8px 0px rgba(119, 15, 238, 0.7),
+  2px 4px 16px 0px rgba(233, 6, 157, 0.7);
+$skillsToolsBg: linear-gradient(
+  -45deg,
+  rgb(241, 50, 216),
+  rgb(198, 8, 236),
+  rgb(12, 149, 240),
+  rgb(122, 122, 231)
+);
+$hoverTitle: #530680;
+$icon-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+$icon-bg: #9d62eb;
+$icon-glowing-shadow: inset 0 0 50px #fff,
+  /* inner white */ inset 20px 0 80px #f0f,
+  /* inner left magenta short */ inset -20px 0 80px #0ff,
+  /* inner right cyan short */ inset 20px 0 300px #f0f,
+  /* inner left magenta broad */ inset -20px 0 300px #0ff,
+  /* inner right cyan broad */ 0 0 50px #fff,
+  /* outer white */ -10px 0 80px #f0f, /* outer left magenta */ 10px 0 80px #0ff; /* outer right cyan */

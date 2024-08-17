@@ -1,0 +1,62 @@
+body {
+  background-image: url(../img/bg\ .webp);
+}
+main {
+  background: rgba(255, 255, 255, 0.233);
+  border-radius: 5%;
+  padding: 100px;
+  margin-right: 100px;
+  margin-left: 100px;
+  letter-spacing: 0.5px;
+}
+.wrapper {
+  border-left: 0.1em solid black;
+  padding-left: 20px;
+}
+.wrapper p:first-of-type {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+}
+h1 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+h3 {
+  color: brown;
+  font-style: italic;
+  text-decoration: none;
+  font-weight: lighter;
+  font-family: "Times New Roman", Times, serif;
+}
+p {
+  line-height: 25px;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 160px;
+  color: brown;
+}
+footer {
+  text-align: center;
+  font-size: larger;
+  text-decoration: underline;
+}
+a {
+  color: brown;
+  text-decoration: none;
+}
+a:visited {
+  color: purple;
+}
+a:active {
+  color: #ff0000;
+}
+a:hover {
+  color: #db0edf;
+}

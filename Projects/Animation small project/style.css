@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.big-box {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  transition: transform 0.5s ease;
+}
+.box1 {
+  background-color: steelblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.box2 {
+  background-color: dimgray;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.box3 {
+  background-color: rosybrown;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.box4 {
+  background-color: yellow;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.big-box:hover .box1,
+.big-box:hover .box4 {
+  transform: translateX(-100%) rotate(90deg);
+}
+
+.big-box:hover .box2,
+.big-box:hover .box3 {
+  transform: translateX(100%) rotate(90deg);
+}

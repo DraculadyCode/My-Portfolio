@@ -1,0 +1,92 @@
+@import "./variables";
+@import "./mixins";
+@include tableAnimation;
+/* Settings and design of the skills table - portfolio page */
+.skills-table {
+  table {
+    @include displaySet($dspl: flex, $jusCont: center, $alItms: center);
+    border-collapse: collapse;
+    width: 100%;
+    font-size: large;
+    td {
+      @include sizesNgaps($padding: 1rem, $width: 7rem);
+      @include fontNtext($border: 0.1rem solid #ffffff00, $borderRds: 50%);
+      text-align: center;
+      &:hover {
+        @include fontNtext(
+          $boxShdw: $mainShadow,
+          $txtShdw: 50%,
+          $font-weight: bold
+        );
+        transition: 1s;
+      }
+    }
+    i {
+      @include sizesNgaps($padding: 1rem, $width: 6rem);
+      @include fontNtext(
+        $font-size: 3rem,
+        $color: $primaryColor,
+        $bgColor: rgba(#f05ce9, 0.54),
+        // Using rgba for transparency
+        $borderRds: 50%
+      );
+      &:hover {
+        animation: tableAnimation 4s infinite;
+      }
+    }
+  }
+}
+/* Settings and design for elements table */
+.elements-table {
+  table {
+    @include displaySet(
+      $dspl: flex,
+      $jusCont: center,
+      $alItms: center,
+      $txtAln: center
+    );
+    border-collapse: collapse;
+    width: 100%;
+    font-size: small;
+    td {
+      @include sizesNgaps(
+        $padding: 0.5rem 3.5rem,
+        $max-width: 5rem,
+        $height: auto
+      );
+      @include fontNtext(
+        $bgColor: rgba(#feffff, 0),
+        $border: 0.1rem solid rgba(#ffffff, 0),
+        $borderRds: 50%
+      );
+      text-align: center;
+      &:hover {
+        @include fontNtext(
+          $font-size: large,
+          $font-weight: bold,
+          $txtShdw: $elementsTbHover
+        );
+        transition: 1s;
+      }
+    }
+    i {
+      @include displaySet($dspl: flex, $jusCont: center, $txtAln: center);
+      @include sizesNgaps($padding: 1rem, $margin: 0 0 0 0.3rem, $width: 1rem);
+      @include fontNtext($font-size: 1.5rem, $color: $primaryColor);
+      border-radius: 50%;
+      &:hover {
+        @include fontNtext($font-size: 2rem, $color: $hoverTitle);
+        transition: 1s;
+      }
+    }
+  }
+}
+// Responsivness
+
+@media screen and (max-width: 1400px) {
+  .elements-table-div,
+  .elements-table,
+  .toolbox {
+    display: none;
+  }
+}

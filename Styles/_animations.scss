@@ -1,0 +1,176 @@
+@import "./variables";
+//animations mixins scss
+@mixin gradient {
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+@mixin revealLetters {
+  @keyframes revealLetters {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+@mixin tableAnimation {
+  @keyframes tableAnimation {
+    0% {
+      color: $primaryColor;
+    }
+    50% {
+      color: #00ff00;
+    }
+    100% {
+      color: $primaryColor;
+    }
+  }
+}
+@mixin rotate {
+  @keyframes rotate {
+    0% {
+      transform: perspective(100rem) rotateY(0deg);
+    }
+    100% {
+      transform: perspective(100rem) rotateY(360deg);
+    }
+  }
+}
+@mixin pulsate {
+  @keyframes pulsate {
+    0% {
+      border-color: #d4a3e769;
+      box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(255, 255, 255);
+    }
+    50% {
+      border-color: #a009f779;
+      box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(145, 141, 141);
+    }
+    100% {
+      border-color: #ff00ff65;
+      box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
+    }
+  }
+}
+@mixin BlackWhiteAnimation {
+  @keyframes BlackWhiteAnimation {
+    0% {
+      border-color: rgb(255, 253, 253);
+    }
+    25% {
+      border-color: rgb(190, 188, 188);
+    }
+    50% {
+      border-color: rgb(117, 116, 116);
+    }
+    75% {
+      border-color: rgb(190, 188, 188);
+    }
+    100% {
+      border-color: rgb(255, 253, 253);
+    }
+  }
+}
+@mixin colorListAnimation {
+  @keyframes colorListAnimation {
+    0% {
+      background-color: #e2b5b5;
+    }
+    25% {
+      background-color: gold;
+    }
+    50% {
+      background-color: #00ff00;
+    }
+    75% {
+      background-color: rgb(241, 186, 147);
+    }
+    100% {
+      background-color: #b4a0ec;
+    }
+  }
+}
+@mixin textColorChanging {
+  @keyframes textColorChanging {
+    0% {
+      color: rgb(238, 96, 219);
+    }
+    16.67% {
+      color: rgb(238, 96, 96);
+    }
+    33.33% {
+      color: rgb(235, 193, 9);
+    }
+    50% {
+      color: rgb(63, 60, 60);
+    }
+    66.67% {
+      color: rgb(51, 51, 235);
+    }
+    83.33% {
+      color: rgb(96, 233, 238);
+    }
+    100% {
+      color: rgb(68, 240, 105);
+    }
+  }
+}
+@mixin colorWaveAnimation {
+  @keyframes colorWaveAnimation {
+    0% {
+      border-color: rgb(238, 96, 219);
+    }
+    16.67% {
+      border-color: rgb(238, 96, 96);
+    }
+    33.33% {
+      border-color: rgb(138, 41, 230);
+    }
+    50% {
+      border-color: rgb(96, 174, 238);
+    }
+    66.67% {
+      border-color: rgb(51, 51, 235);
+    }
+    83.33% {
+      border-color: rgb(96, 233, 238);
+    }
+    100% {
+      border-color: rgb(68, 240, 105);
+    }
+  }
+}
+@mixin lightingAnimation {
+  @keyframes lightingAnimation {
+    0% {
+      color: $mainTextColor;
+    }
+    50% {
+      color: rgb(133, 127, 127);
+    }
+    100% {
+      color: $mainTextColor;
+      // text-shadow: 2rem 2rem 2rem $mainTextColor;
+    }
+  }
+}
+@keyframes dropdown {
+  0% {
+    max-height: 0;
+    opacity: 0;
+  }
+  100% {
+    max-height: 20rem;
+    opacity: 1;
+  }
+}

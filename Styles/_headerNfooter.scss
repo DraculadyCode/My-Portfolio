@@ -1,0 +1,257 @@
+@import "./variables";
+@import "./mixins";
+@import "./animations";
+// @include colorWaveAnimation;
+@include lightingAnimation;
+@include textColorChanging;
+
+// Header part
+
+/* header designs and settings */
+header {
+  @include displaySet(
+    $dspl: flex,
+    $jusCont: space-between,
+    $alItms: center,
+    $zIndx: 999
+  );
+  @include fontNtext($color: $mainTextColor, $bgColor: $primaryColor);
+  @include borderBottomRds($bbLeftRds: 1rem, $bbRightRds: 1rem);
+  padding: 1.25rem 0;
+  border-bottom: 0.5rem solid transparent;
+  background-size: 600% auto;
+  animation: colorWaveAnimation 6s infinite;
+  &:hover {
+    animation: lightingAnimation 3s linear infinite;
+    box-shadow: $mainShadow;
+    border-bottom: 0rem;
+  }
+  .icon-top-draculady {
+    @include displaySet(
+      $dspl: none,
+      $padding: 0,
+      $width: 35%,
+      $margin: 2% 35%,
+      $position: relative,
+      $zIndx: 500
+    );
+    @include fontNtext(
+      $borderRds: 50%,
+      $bgColor: $icon-bg,
+      $boxShdw: $icon-shadow
+    );
+    img {
+      width: 100%;
+    }
+    &:hover {
+      transition: 2s;
+      transform: scale(1.05);
+      box-shadow: $icon-glowing-shadow;
+    }
+  }
+  .icon-draculady {
+    @include displaySet(
+      $dspl: block,
+      $padding: 0,
+      $width: 35%,
+      $margin: 2% 32%,
+      $position: relative,
+      $zIndx: 100
+    );
+    @include fontNtext(
+      $borderRds: 50%,
+      $bgColor: $icon-bg,
+      $boxShdw: $icon-shadow
+    );
+    img {
+      width: 100%;
+    }
+    &:hover {
+      box-shadow: $icon-glowing-shadow;
+      transition: 2s;
+      transform: scale(1.05);
+    }
+  }
+  h1 {
+    @include fontNtext(
+      $font-size: 6rem,
+      $ltrSpc: 0.3rem,
+      $txtShdw: $h1Shadow,
+      $fontFmly: "poetsen One"
+    );
+    margin: 3% 0;
+    z-index: 999;
+    position: relative;
+    &::before,
+    &::after {
+      content: "\e682";
+      @include displaySet($position: relative, $zIndx: 999);
+      font-family: "FontAwesome";
+      padding: 0 10rem;
+    }
+  }
+}
+nav ul {
+  @include displaySet(
+    $dspl: flex,
+    $flxDrc: row,
+    $jusCont: center,
+    $alItms: center,
+    $position: relative,
+    $zIndx: 500
+  );
+  font-size: xx-large;
+  margin-top: 1rem;
+  li {
+    @include displaySet($dspl: inline, $position: relative, $zIndx: 500);
+    margin: 0 3rem;
+    text-shadow: $navShadow;
+    letter-spacing: 0.2rem;
+    a {
+      color: $mainTextColor;
+      text-decoration: none;
+      border-radius: 2rem;
+      padding: 0.5rem;
+      position: relative;
+      z-index: 500;
+      &:hover {
+        @include fontNtext($font-size: 2.15rem, $font-weight: bolder);
+        animation: textColorChanging 6s infinite;
+      }
+    }
+  }
+}
+.dropdown-portfolio {
+  @include displaySet(
+    $dspl: none,
+    $position: absolute,
+    $zIndx: 1000 !important
+  );
+  @include sizesNgaps($top: 75%, $left: 50%, $min-width: 25rem);
+  background-color: #b48ee5b7;
+  backdrop-filter: blur(5px);
+  border-radius: 2rem;
+  transform: translateX(-50%);
+  li {
+    display: block;
+    position: relative;
+    z-index: 1000;
+    padding: 0.6rem 0.4rem;
+    a {
+      color: $mainTextColor;
+      padding: 0 0.5rem;
+      position: relative;
+      z-index: 1000;
+    }
+    &:hover {
+      position: relative;
+      z-index: 1000;
+    }
+  }
+}
+.dropdown:hover .dropdown-portfolio {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  animation: dropdown 1s ease-out forwards;
+  position: absolute;
+  z-index: 1000;
+}
+//Footer part
+/* Settings for the Footer of the pages */
+footer {
+  @include sizesNgaps(
+    $padding: 1.5rem 0,
+    $margin: 2rem 0 0 0,
+    $width: 100%,
+    $bottom: 0
+  );
+  @include fontNtext(
+    $font-size: larger,
+    $color: $mainTextColor,
+    $bgColor: $primaryColor,
+    $ltrSpc: 0.18rem
+  );
+  text-align: center;
+  border-top: 0.5rem solid transparent;
+  animation: colorWaveAnimation 6s infinite;
+  &:hover {
+    animation: lightingAnimation 3s linear infinite;
+    box-shadow: $mainShadow;
+    border-top: 0.3rem outset rgb(70, 0, 102);
+    .logo {
+      display: block;
+      box-shadow: $icon-glowing-shadow;
+    }
+  }
+  p {
+    &::before,
+    &::after {
+      content: "\f004";
+      font-family: "FontAwesome";
+      position: relative;
+      padding: 0 15rem;
+    }
+  }
+  .logo {
+    @include displaySet(
+      $dspl: none,
+      $margin: 1.5% 30%,
+      $padding: 0.5rem,
+      $width: 40%
+    );
+    @include fontNtext(
+      $boxShdw: $mainShadow,
+      $borderRds: 10%,
+      $bgColor: $icon-bg
+    );
+    img {
+      width: 100%;
+    }
+    &:hover {
+      transition: 2s;
+      transform: scale(1.05);
+    }
+  }
+}
+// Responsivness
+@media screen and (max-width: 1800px) {
+  h1::before,
+  h1::after,
+  footer p::before,
+  footer p::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .icon-draculady {
+    display: none !important;
+  }
+  .icon-top-draculady {
+    display: block !important;
+  }
+  nav ul {
+    @include displaySet(
+      $dspl: flex,
+      $flxDrc: column,
+      $jusCont: center,
+      $alItms: center,
+      $txtAln: center
+    );
+    padding-left: 0;
+    li {
+      display: block;
+      margin: 1rem 0;
+    }
+  }
+  .dropdown:hover .dropdown-portfolio {
+    position: relative;
+    z-index: 1000;
+  }
+}
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  header,
+  footer {
+    width: 150%;
+  }
+}

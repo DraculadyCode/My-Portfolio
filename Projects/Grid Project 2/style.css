@@ -1,0 +1,13 @@
+img {
+  width: 100%;
+}
+.container {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: minmax(100px, 350px) 1fr minmax(100px, 350px);
+}
+/* .grid-container {
+  display: grid;
+  grid-template-columns: minmax(100px, 350px) 1fr minmax(100px, 350px);
+  gap: 1em;
+} */

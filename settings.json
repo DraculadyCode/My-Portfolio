@@ -1,0 +1,8 @@
+{
+  "cSpell.language": "en,!de",
+  "cSpell.ignorePaths": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/path/to/your/german/files/**"
+  ]
+}
