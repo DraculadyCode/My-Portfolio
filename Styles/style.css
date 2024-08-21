@@ -719,6 +719,170 @@ html[data-page=index-german] .h4-title {
 }
 /* outer right cyan */
 /* outer right cyan */
+/* outer right cyan */
+@keyframes dropdown {
+  0% {
+    max-height: 0;
+    opacity: 0;
+  }
+  100% {
+    max-height: 20rem;
+    opacity: 1;
+  }
+}
+/* Base styles for the floating carousel */
+.floating-carousel {
+  position: relative;
+  max-width: 100%;
+  margin: 2rem auto;
+  background-color: #a009f7;
+  border-radius: 4rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px); /* Adds a blurred effect to the background */
+}
+
+.carousel-title {
+  margin: 1rem 0;
+}
+
+/* Carousel inner for sliding items */
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Individual carousel items */
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border: #a009f7 0.25rem outset;
+  border-radius: 4rem;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 110%;
+  display: block;
+  border-radius: 4rem;
+}
+
+.carousel-item-info {
+  padding: 0.8rem 0;
+  background-color: #a009f7;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 0 0 3rem 3rem;
+}
+.carousel-item-info h4 {
+  font-size: 3rem;
+  padding: 0;
+  border-radius: 1rem;
+}
+.carousel-item-info p {
+  font-size: 2rem;
+  padding: 0;
+  border-radius: 1rem;
+}
+.carousel-item-info a {
+  color: white;
+}
+
+/* Controls for previous and next buttons */
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.carousel-control.prev {
+  left: 1rem;
+}
+
+.carousel-control.next {
+  right: 1rem;
+}
+
+/* Responsive adjustments */
+@media screen and (min-width: 1016px) and (max-width: 1440px) {
+  .carousel-item-info {
+    height: 7rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
+  .carousel-item-info h4 {
+    font-size: 1.8rem;
+  }
+  .carousel-item-info p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 952px) and (max-width: 1015px) {
+  .carousel-item-info {
+    height: 7rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
+  .carousel-item-info h4 {
+    font-size: 1.8rem;
+  }
+  .carousel-item-info p {
+    display: none;
+  }
+}
+@media screen and (max-width: 951px) {
+  .floating-carousel {
+    border-radius: 2rem;
+  }
+  .carousel-item {
+    border-radius: 2rem;
+  }
+  .carousel-item-info {
+    height: 7rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
+  .carousel-item-info h4 {
+    font-size: 1.8rem;
+  }
+  .carousel-item-info p {
+    display: none;
+  }
+  .carousel-control {
+    padding: 0.6rem;
+  }
+}
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  .floating-carousel {
+    border-radius: 1.5rem;
+  }
+  .carousel-item {
+    border-radius: 1.5rem;
+  }
+  .carousel-item-info {
+    height: 4rem;
+    border-radius: 0 0 1rem 1rem;
+  }
+  .carousel-item-info h4 {
+    font-size: 1rem;
+  }
+  .carousel-item-info p {
+    display: none;
+  }
+  .carousel-control {
+    padding: 0.4rem;
+  }
+}
+/* outer right cyan */
+/* outer right cyan */
 @keyframes tableAnimation {
   0% {
     color: #a009f7;

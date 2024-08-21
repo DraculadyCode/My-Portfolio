@@ -1,0 +1,121 @@
+.carousel-container {
+  position: relative;
+  width: 90%; /* Width relative to the parent container */
+  max-width: 100rem; /* Maximum width in rems for large screens */
+  margin: 3rem auto;
+  perspective: 1000px; /* Perspective for 3D effect */
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  position: relative;
+  height: 60vw; /* Height relative to the viewport width */
+  max-height: 40rem; /* Maximum height in rems */
+}
+
+.carousel-item {
+  position: absolute;
+  width: 60vw; /* Width relative to the viewport width */
+  max-width: 30rem; /* Maximum width in rems */
+  opacity: 0.5;
+  transform: scale(0.8);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem; /* Border radius in rems */
+}
+
+.carousel-item-info {
+  text-align: center;
+  margin-top: 1rem; /* Margin in rems */
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 1rem; /* Padding in rems */
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.carousel-control.prev {
+  left: 1rem; /* Adjust for positioning */
+}
+
+.carousel-control.next {
+  right: 1rem; /* Adjust for positioning */
+}
+
+.carousel-control:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-item.active {
+  transform: scale(1) translateZ(0);
+  opacity: 1;
+  z-index: 5;
+}
+
+.carousel-item.left,
+.carousel-item.right {
+  transform: scale(0.8) translateZ(-5rem); /* Depth adjustment in rems */
+  opacity: 0.7;
+}
+
+.carousel-item.left {
+  transform: translateX(-60%) scale(0.8); /* Adjust positioning */
+}
+
+.carousel-item.right {
+  transform: translateX(60%) scale(0.8); /* Adjust positioning */
+}
+
+/* Responsive Design */
+@media (max-width: 60rem) {
+  /* Tablet size */
+  .carousel-item {
+    width: 70vw; /* Adjust width for tablets */
+  }
+
+  .carousel-item.left {
+    transform: translateX(-70%) scale(0.7); /* Adjust positioning */
+  }
+
+  .carousel-item.right {
+    transform: translateX(70%) scale(0.7); /* Adjust positioning */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Mobile size */
+  .carousel-container {
+    width: 100%;
+  }
+
+  .carousel-item {
+    width: 70vw; /* Adjust width for mobile */
+  }
+
+  .carousel-item.left {
+    transform: translateX(-80%) scale(0.6); /* Adjust positioning */
+  }
+
+  .carousel-item.right {
+    transform: translateX(80%) scale(0.6); /* Adjust positioning */
+  }
+
+  .carousel-control {
+    padding: 0.8rem; /* Reduce padding on mobile */
+  }
+}

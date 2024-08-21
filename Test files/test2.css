@@ -1,0 +1,65 @@
+/* Base styles for the floating carousel */
+.floating-carousel {
+  position: relative;
+  max-width: 80%;
+  margin: 2rem auto;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  backdrop-filter: blur(10px); /* Adds a blurred effect to the background */
+}
+
+/* Carousel inner for sliding items */
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Individual carousel items */
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carousel-item-info {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Controls for previous and next buttons */
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.carousel-control.prev {
+  left: 1rem;
+}
+
+.carousel-control.next {
+  right: 1rem;
+}
+
+.carousel-control:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}

@@ -304,7 +304,107 @@
             </div>
           </div>
           <div class="h3-title">
-            <h3>Neueste Projekte</h3>
+            <h3 class="carousel-title">Lieblingsprojekte</h3>
+          </div>
+          <div class="slider-box carousel-box">
+            <div class="floating-carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item">
+                  <img
+                    src="./Projects screenshots/Crazy-Cow-Project.webp"
+                    alt="Projekt 1 Crazy Cow Project"
+                  />
+                  <div class="carousel-item-info">
+                    <a
+                      href="./Projects/Crazy-Cow/index.html"
+                      aria-label="Crazy Cow JavaScript Projektlink"
+                      target="_blank"
+                    >
+                      <h4>Crazy Cow</h4>
+                      <p>
+                        Dies ist die erste Seite, die ich selbst erstellt habe,
+                        indem ich HTML, CSS und JavaScript kombiniert habe.
+                        Klicken Sie auf die Bilder, schalten Sie die
+                        Lautsprecher ein und genießen Sie!
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Projects screenshots/Animal-World-Project.webp"
+                    alt="Projekt 2 Animal World Tamaguchi JavaScript"
+                  />
+                  <div class="carousel-item-info">
+                    <a
+                      href="https://github.com/DraculadyCode/Animal-World"
+                      aria-label="Animal-World Projekt pure JavaScript Link"
+                      target="_blank"
+                    >
+                      <h4>Animal World - reines JS Tamagotchi-Spiel</h4>
+                      <p>
+                        Ein Tamagotchi-Spiel, das ich als Abschlussprojekt für
+                        das Thema JavaScript erstellt habe. Alle Erklärungen
+                        finden Sie in der Readme-Datei.
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Projects screenshots/Uriya-Private-Teacher-Project.webp"
+                    alt="Projekt 3 Private Teacher Freiberufliche Webseite Uriya Peled"
+                  />
+                  <div class="carousel-item-info">
+                    <a
+                      href="./Projects/Uriya-Peled-Pivate-Teacher/index.html"
+                      aria-label="Private Teacher Freiberufliche Webseite Uriya Peled Link"
+                      target="_blank"
+                    >
+                      <h4>
+                        Uriya Peled - Private Teacher Freiberufliche Webseite
+                      </h4>
+                      <p>
+                        Eine Webseite, die ich speziell für meinen Bruder
+                        erstellt habe, um ihm zu helfen, eine neue Karriere als
+                        freiberuflicher Privatlehrer zu starten. Das Projekt
+                        befindet sich noch in Arbeit.
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Projects screenshots/Pokemon-Project.webp"
+                    alt="Projekt 4 Pokemon Suche Informationen mit API"
+                  />
+                  <div class="carousel-item-info">
+                    <a
+                      href="./Projects/Pokemon Project/index.html"
+                      aria-label="Pokémon Information Suchseite Projektlink"
+                      target="_blank"
+                    >
+                      <h4>Poke-pedia - Umfassende Pokémon-Informationen</h4>
+                      <p>
+                        Dieses Einzelseitenprojekt integriert JavaScript mit
+                        einer externen Datenbank. Suchen Sie nach einem Pokémon,
+                        um detaillierte Informationen zu erhalten.
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <!-- Weitere Karussell-Elemente nach Bedarf hinzufügen -->
+              </div>
+              <button class="carousel-control prev" onclick="moveSlide(-1)">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="carousel-control next" onclick="moveSlide(1)">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="h3-title">
+            <h3>Beispielprojekte</h3>
           </div>
           <div class="slider-box">
             <div class="slider">
@@ -704,6 +804,7 @@
       </div>
     </footer>
     <script src="script.js"></script>
+    <script src="./Scripts/carousel.js"></script>
 
     <!-- Async or defer for external scripts -->
     <script

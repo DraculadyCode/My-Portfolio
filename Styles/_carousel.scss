@@ -1,0 +1,148 @@
+@import "./variables";
+@import "./mixins";
+@import "./animations";
+/* Base styles for the floating carousel */
+.floating-carousel {
+  position: relative;
+  max-width: 100%;
+  margin: 2rem auto;
+  background-color: $primaryColor;
+  border-radius: 4rem;
+  box-shadow: $mainShadow;
+  overflow: hidden;
+  backdrop-filter: blur(10px); /* Adds a blurred effect to the background */
+}
+.carousel-title {
+  margin: 1rem 0;
+}
+/* Carousel inner for sliding items */
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Individual carousel items */
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: $mainShadow;
+  border: $primaryColor 0.25rem outset;
+  border-radius: 4rem;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 110%;
+  display: block;
+  border-radius: 4rem;
+}
+
+.carousel-item-info {
+  padding: 0.8rem 0;
+  background-color: $primaryColor;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10rem;
+  box-shadow: $mainShadow;
+  border-radius: 0 0 3rem 3rem;
+  h4 {
+    font-size: 3rem;
+    padding: 0;
+    border-radius: 1rem;
+  }
+  p {
+    font-size: 2rem;
+    padding: 0;
+    border-radius: 1rem;
+  }
+  a {
+    color: white;
+  }
+}
+/* Controls for previous and next buttons */
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+.carousel-control.prev {
+  left: 1rem;
+}
+.carousel-control.next {
+  right: 1rem;
+}
+/* Responsive adjustments */
+@media screen and (min-width: 1016px) and (max-width: 1440px) {
+  .carousel-item-info {
+    height: 7rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+
+    h4 {
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+@media screen and (min-width: 952px) and (max-width: 1015px) {
+  .carousel-item-info {
+    height: 7rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+    h4 {
+      font-size: 1.8rem;
+    }
+    p {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 951px) {
+  .floating-carousel {
+    border-radius: 2rem;
+  }
+  .carousel-item {
+    border-radius: 2rem;
+  }
+  .carousel-item-info {
+    height: 7rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+    h4 {
+      font-size: 1.8rem;
+    }
+    p {
+      display: none;
+    }
+  }
+  .carousel-control {
+    padding: 0.6rem;
+  }
+}
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  .floating-carousel {
+    border-radius: 1.5rem;
+  }
+  .carousel-item {
+    border-radius: 1.5rem;
+  }
+  .carousel-item-info {
+    height: 4rem;
+    border-radius: 0 0 1rem 1rem;
+    h4 {
+      font-size: 1rem;
+    }
+    p {
+      display: none;
+    }
+  }
+  .carousel-control {
+    padding: 0.4rem;
+  }
+}
