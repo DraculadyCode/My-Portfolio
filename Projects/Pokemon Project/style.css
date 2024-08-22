@@ -23,7 +23,7 @@ body {
   align-items: center;
 }
 .main-container {
-  margin: 1rem 1rem;
+  margin: 1rem;
   border: 1rem rgb(187, 15, 255) outset;
   border-radius: 3rem;
   padding: 2rem;
@@ -165,4 +165,53 @@ ul li {
 }
 i {
   font-size: xx-large;
+}
+/* Media Queries for Tablets */
+@media (max-width: 768px) {
+  .main-container {
+    margin: 0.5rem 0.5rem;
+    padding: 1rem;
+    border-radius: 2rem;
+  }
+
+  .main-title h1 {
+    margin: 2rem 0.5rem 2rem 0.5rem;
+    font-size: 3rem;
+  }
+}
+
+/* Media Queries for Phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  .main-container {
+    margin: 0.25rem 0.25rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+
+  .main-title h1 {
+    margin: 1rem 0.25rem 1rem 0.25rem;
+    font-size: 2rem;
+  }
+
+  .searchbox {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .search-input,
+  .search-button {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    margin: 0.25rem 0;
+  }
+  .pokemon-card .title h2 {
+    font-size: 1.5rem;
+  }
+  .result-div {
+    width: 80%;
+    padding: 0.5rem;
+  }
 }
