@@ -111,8 +111,8 @@ h5 {
   @include sizesNgaps($padding: 0.5rem, $margin: 1rem 0);
   @include fontNtext(
     $color: #000000,
-    $bgColor: #d4a3ecbe,
-    $border: 0.2rem solid rgb(165, 166, 168),
+    $bgColor: #f2d7ffab,
+    $border: 0.2rem solid $primaryColor,
     $borderRds: 4rem,
     $boxShdw: $mainShadow,
     $fontFmly: "Kalam"
@@ -151,7 +151,7 @@ h5 {
   }
   &:hover {
     @include fontNtext(
-      $border: 0.4rem solid rgb(165, 166, 168),
+      $border: 0.4rem solid rgba(255, 0, 242, 0.658),
       $boxShdw: $boxShadow
     );
   }
