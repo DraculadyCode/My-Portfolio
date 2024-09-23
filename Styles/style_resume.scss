@@ -31,8 +31,16 @@
 }
 .cover.cover-left {
   z-index: -1;
-  
 }
 .cover.cover-right.turn {
   transform: rotateY(180deg);
+}
+
+.book {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.book .book-page {
 }
