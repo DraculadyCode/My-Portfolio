@@ -87,6 +87,7 @@
 .profile-page h3 {
   font-size: 1.5rem;
   color: #a009f7;
+  z-index: 0;
 }
 
 .profile-page .social-media {
@@ -115,6 +116,7 @@
 
 .profile-page p {
   text-align: justify;
+  font-size: 1.1rem;
 }
 
 .profile-page .btn-box {
@@ -134,11 +136,16 @@
   font-size: 1.2rem;
   font-weight: 500;
   margin: 0 1rem;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .btn:hover {
   background: transparent;
   color: #a009f7;
   border: inset #a009f7;
+}
+
+.book-page.page-right {
+  position: absolute;
+  right: 0;
 }/*# sourceMappingURL=style_resume.css.map */

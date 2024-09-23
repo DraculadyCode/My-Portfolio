@@ -76,6 +76,7 @@
 .profile-page h3 {
   font-size: 1.5rem;
   color: $primaryColor;
+  z-index: 0;
 }
 .profile-page .social-media {
   margin: 0.6rem 0 0.8rem;
@@ -100,6 +101,7 @@
 }
 .profile-page p {
   text-align: justify;
+  font-size: 1.1rem;
 }
 .profile-page .btn-box {
   margin-top: 1.2rem;
@@ -117,13 +119,19 @@
   font-size: 1.2rem;
   font-weight: 500;
   margin: 0 1rem;
-  transition: 1s;
+  transition: 0.5s;
 }
 .btn:hover {
   background: transparent;
   color: $primaryColor;
   border: inset $primaryColor;
 }
+.book-page.page-right {
+  position: absolute;
+  right: 0;
+}
+// .workeduc-box {
+// }
 // .btn-box .btn:nth-child(2) {
 //   background: transparent;
 //   color: $primaryColor;
