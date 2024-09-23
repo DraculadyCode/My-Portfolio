@@ -1,3 +1,4 @@
+/* outer right cyan */
 :root {
   --bg-color: #081b29;
   --main-color: #00abf0;
@@ -69,7 +70,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: seagreen;
 }
 
 .profile-page img {
@@ -77,4 +77,68 @@
   border-radius: 50%;
   border: 0.25rem solid var(--main-color);
   margin-bottom: 0.8rem;
+}
+
+.profile-page h1 {
+  font-size: 2.7rem;
+  line-height: 1;
+}
+
+.profile-page h3 {
+  font-size: 1.5rem;
+  color: #a009f7;
+}
+
+.profile-page .social-media {
+  margin: 0.6rem 0 0.8rem;
+}
+
+.profile-page .social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: transparent;
+  border: var(--border);
+  border-radius: 50%;
+  font-size: 1.3rem;
+  color: #a009f7;
+  margin: 0 0.2rem;
+  transition: 1s;
+}
+
+.profile-page .social-media a:hover {
+  background: var(--main-color);
+  color: var(--white-color);
+}
+
+.profile-page p {
+  text-align: justify;
+}
+
+.profile-page .btn-box {
+  margin-top: 1.2rem;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 9.5rem;
+  height: 3rem;
+  background: #a009f7;
+  color: var(--white-color);
+  border: 0.3rem outset var(--white-color);
+  border-radius: 0.7rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 1rem;
+  transition: 1s;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #a009f7;
+  border: inset #a009f7;
 }/*# sourceMappingURL=style_resume.css.map */

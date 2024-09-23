@@ -1,3 +1,4 @@
+@import "./variables";
 :root {
   --bg-color: #081b29;
   --main-color: #00abf0;
@@ -23,7 +24,6 @@
   margin: calc(50vh - 22.5rem) auto 0 auto;
   padding: 2rem;
 }
-
 .cover {
   position: absolute;
   top: 0;
@@ -42,7 +42,6 @@
 .cover.cover-right.turn {
   transform: rotateY(180deg);
 }
-
 .book {
   position: relative;
   width: 100%;
@@ -58,18 +57,78 @@
   display: flex;
   padding: 2rem;
 }
-
 .profile-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: seagreen;
 }
-
 .profile-page img {
   max-width: 12rem;
   border-radius: 50%;
   border: 0.25rem solid var(--main-color);
   margin-bottom: 0.8rem;
 }
+.profile-page h1 {
+  font-size: 2.7rem;
+  line-height: 1;
+}
+.profile-page h3 {
+  font-size: 1.5rem;
+  color: $primaryColor;
+}
+.profile-page .social-media {
+  margin: 0.6rem 0 0.8rem;
+}
+.profile-page .social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: transparent;
+  border: var(--border);
+  border-radius: 50%;
+  font-size: 1.3rem;
+  color: $primaryColor;
+  margin: 0 0.2rem;
+  transition: 1s;
+}
+.profile-page .social-media a:hover {
+  background: var(--main-color);
+  color: var(--white-color);
+}
+.profile-page p {
+  text-align: justify;
+}
+.profile-page .btn-box {
+  margin-top: 1.2rem;
+}
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 9.5rem;
+  height: 3rem;
+  background: $primaryColor;
+  color: var(--white-color);
+  border: 0.3rem outset var(--white-color);
+  border-radius: 0.7rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 1rem;
+  transition: 1s;
+}
+.btn:hover {
+  background: transparent;
+  color: $primaryColor;
+  border: inset $primaryColor;
+}
+// .btn-box .btn:nth-child(2) {
+//   background: transparent;
+//   color: $primaryColor;
+// }
+// .btn-box .btn:nth-child(2):hover {
+//   background: var(--main-color);
+//   color: var(--white-color);
+// }
