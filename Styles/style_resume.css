@@ -4,10 +4,18 @@
   --text-color: #333;
   --second-text-color: #555;
   --white-color: #fff;
-  --cover-color: linear-gradient(45deg, #00abf0, #006e9a);
+  --cover-color: linear-gradient(45deg, #00abf0, #936bf0);
   --pages-color: linear-gradient(90deg, #fff, #ddd);
   --border: 0.125rem solid #00abf0;
   --box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
+}
+
+.main-resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--text-color);
 }
 
 .wrapper {
@@ -15,10 +23,13 @@
   width: 66rem;
   height: 45rem;
   margin: calc(50vh - 22.5rem) auto 0 auto;
+  padding: 2rem;
 }
 
 .cover {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 50%;
   height: 100%;
   background: var(--cover-color);
@@ -34,4 +45,36 @@
 
 .cover.cover-right.turn {
   transform: rotateY(180deg);
+}
+
+.book {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.book .book-page {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: var(--pages-color);
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 2rem;
+}
+
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: seagreen;
+}
+
+.profile-page img {
+  max-width: 12rem;
+  border-radius: 50%;
+  border: 0.25rem solid var(--main-color);
+  margin-bottom: 0.8rem;
 }/*# sourceMappingURL=style_resume.css.map */
