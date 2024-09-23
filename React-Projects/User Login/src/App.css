@@ -1,5 +1,0 @@
-main {
-  width: clamp(300px, 60dvw, 800px);
-  border-radius: var(--radius);
-  text-align: center;
-}

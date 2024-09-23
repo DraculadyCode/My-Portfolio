@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td,
+th {
+  border: 1px #dddddd solid;
+  padding: 8px;
+}
+td:last-child {
+  text-align: right;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

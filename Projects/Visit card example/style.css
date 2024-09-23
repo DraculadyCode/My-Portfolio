@@ -1,0 +1,43 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(./assets/web-development-concept-technology-light-background-web-development-concept-technology-blurred-abstract-light-background-175204563.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(4, 226, 241, 0.37);
+  /* backdrop-filter: blur(4px);  */
+  border: 0.2em solid rgba(253, 8, 159, 0.18);
+  text-align: center;
+  position: absolute;
+  top: 5em;
+}
+
+.profilepic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  border: 5px solid rgba(243, 15, 213, 0.7);
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons i {
+  margin: 0 20px;
+  font-size: 40px;
+  color: rgba(11, 26, 240, 0.938);
+}

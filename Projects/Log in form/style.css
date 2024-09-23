@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(190, 186, 186, 0.041),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("./cold-blue-wasteland-landscape-moon-visible-from-cave-generative-ai_191095-801.avif");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+h1 {
+  color: #fff;
+  background-color: rgba(163, 235, 235, 0.137);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+form {
+  background-color: rgba(255, 255, 255, 0.418);
+
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 5px 20px rgba(19, 17, 17, 0.1);
+}
+
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #156fd6a1;
+  background: transparent;
+  font-size: 16px;
+}
+
+input[type="password"]::placeholder,
+input[type="email"]::placeholder {
+  font-weight: bold;
+}
+
+.fa {
+  margin-right: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff6e;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

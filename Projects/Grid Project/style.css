@@ -1,0 +1,52 @@
+/* Original styles - don't edit these! */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg1 {
+  background: url(bg1.webp);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg2 {
+  background: url(bg2.webp);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Add your styles below here*/
+
+/* tasks 1,2,3 */
+.container {
+  display: grid;
+  background-color: rgba(0, 0, 0, 0.418);
+
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5em;
+  grid-auto-rows: 250px;
+}
+/* tasks 4,5,6 */
+.container > div {
+  display: flex;
+  color: #eee;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* width: 28em;
+  height: 60em; */
+}
+/* task 8 */
+.container > div:hover {
+  cursor: pointer;
+  box-shadow: 0 0 15px hotpink;
+}
+
+.bg1 div,
+.bg2 div {
+  background-color: black;
+  padding-right: 0.5em;
+}

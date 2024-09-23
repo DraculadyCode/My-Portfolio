@@ -1,0 +1,56 @@
+@import "./variables";
+@import "./mixins";
+[data-page="index"] {
+  /* your styles here */
+  .container {
+    flex-direction: column;
+    box-shadow: $mainBoxShadow;
+    img {
+      width: 40%;
+      border-radius: 30%;
+      margin: 1.5rem;
+      background-color: $mainColor;
+      box-shadow: $mainBoxShadow;
+      border: $mainColor outset 1rem;
+    }
+    .paragraph {
+      padding: 2rem 2rem;
+    }
+  }
+  .logo-img {
+    img {
+      width: 80%;
+    }
+  }
+}
+// Responsivness
+[data-page="index"] {
+  @media (max-width: 768px) {
+    .container {
+      img {
+        width: 80%;
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .container {
+      img {
+        width: 80%;
+      }
+      .paragraph {
+        padding: 0 1rem;
+      }
+      .first-paragraph {
+        padding: 0 2rem;
+      }
+    }
+  }
+}
+@media (max-width: 380px) {
+  .first-paragraph {
+    margin: 2rem;
+  }
+  .third-paragraph {
+    margin: 1rem;
+  }
+}
