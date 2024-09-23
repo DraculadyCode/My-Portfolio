@@ -1,0 +1,89 @@
+#root {
+  max-width: 80rem; /* 1280px ≈ 80rem (assuming base font-size is 16px) */
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(
+    120deg,
+    #aa5df3 0%,
+    rgba(176, 176, 245, 0.726) 50%,
+    #f765e3 100%
+  );
+  backdrop-filter: blur(10px);
+}
+
+.game {
+  text-align: center;
+  h1 {
+    font-size: 6rem;
+    font-family: fantasy;
+    margin-bottom: 1rem;
+  }
+}
+
+.status {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-weight: bolder;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 10rem;
+  height: 10rem;
+  margin: 0.8rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  background-color: #0066ff;
+  border: none;
+  border-radius: 1rem;
+  border: rgb(245, 236, 206) outset 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.square:hover {
+  background-color: #6900f3;
+  border: rgb(245, 236, 206) inset 0.5rem;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.reset-button {
+  margin-top: 2rem;
+  padding: 0.625rem 1rem;
+  font-size: 1rem;
+  background-color: #00a2ff;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+  border: rgb(245, 236, 206) outset 0.3rem;
+  font-weight: bold;
+}
+
+.reset-button:hover {
+  background-color: #6700dd;
+  border: rgb(245, 236, 206) inset 0.3rem;
+  font-weight: bolder;
+}
+
+.reset-button:focus {
+  outline: none;
+}

@@ -1,0 +1,39 @@
+h1 {
+  font-size: 2rem;
+  font-family: cursive;
+  font-weight: bolder;
+  color: rgb(93, 0, 180);
+}
+input,
+textarea {
+  margin: 1rem 0;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: large;
+  box-sizing: border-box;
+  border: 0.2rem solid purple;
+  border-radius: 1rem;
+}
+label {
+  font-size: x-large;
+  font-family: cursive;
+  font-weight: bolder;
+  color: rgb(90, 89, 89);
+}
+textarea {
+  resize: vertical;
+  height: 15rem;
+}
+
+button {
+  width: 8rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  font-weight: bolder;
+  border-radius: 1rem;
+  background-color: skyblue;
+}
+p {
+  margin: 2rem 3.5rem;
+}

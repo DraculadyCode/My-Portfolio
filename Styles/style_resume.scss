@@ -1,0 +1,38 @@
+:root {
+  --bg-color: #081b29;
+  --main-color: #00abf0;
+  --text-color: #333;
+  --second-text-color: #555;
+  --white-color: #fff;
+  --cover-color: linear-gradient(45deg, #00abf0, #006e9a);
+  --pages-color: linear-gradient(90deg, #fff, #ddd);
+  --border: 0.125rem solid #00abf0;
+  --box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
+}
+
+.wrapper {
+  position: relative;
+  width: 66rem;
+  height: 45rem;
+  margin: calc(50vh - 22.5rem) auto 0 auto;
+}
+
+.cover {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: var(--cover-color);
+  box-shadow: var(--box-shadow);
+  border-top-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+  transform-origin: right;
+  // border-top-right-radius: 0.6rem;
+  // border-bottom-left-radius: 0.6rem;
+}
+.cover.cover-left {
+  z-index: -1;
+  
+}
+.cover.cover-right.turn {
+  transform: rotateY(180deg);
+}
