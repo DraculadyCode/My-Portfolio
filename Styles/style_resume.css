@@ -148,4 +148,155 @@
 .book-page.page-right {
   position: absolute;
   right: 0;
+  transform-style: preserve-3d;
+  transform-origin: left;
+}
+
+.book-page.page-right.turn {
+  transform: rotateY(-180deg);
+}
+
+.book-page .page-front,
+.book-page .page-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--pages-color);
+  padding: 1.5rem 2rem;
+}
+
+.workeduc-box h3 {
+  z-index: 0;
+}
+
+.book-page .page-front {
+  transform: rotateY(0deg) translateZ(1px);
+}
+
+.book-page .page-back {
+  transform: rotateY(180deg) translateZ(1px);
+}
+
+.workeduc-content,
+.services-content {
+  display: flex;
+  flex-direction: column !important;
+}
+
+.workeduc-content h3,
+.services-content h3,
+.skills-content h3 {
+  margin-left: -1rem;
+  color: #a009f7;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.workeduc-content .year {
+  color: var(--main-color);
+}
+
+.workeduc-content .year i {
+  margin-right: 0.4rem;
+}
+
+.workeduc-box {
+  border-left: var(--border);
+  padding-bottom: 1rem;
+}
+
+.workeduc-box .workeduc-content {
+  position: relative;
+  padding-left: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.workeduc-box .workeduc-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -0.65rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: var(--main-color);
+  border-radius: 50%;
+}
+
+.number-page {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nextprev-btn {
+  position: absolute;
+  bottom: 0.9rem;
+  right: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  font-size: 2rem;
+  color: var(--second-text-color);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.nextprev-btn:hover {
+  color: #a009f7;
+}
+
+.nextprev-btn.back {
+  left: 1.5rem;
+}
+
+.skills-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.skills-box .skills-content {
+  flex: 1 1 20rem !important;
+}
+
+.skills-content h3 {
+  font-size: 1.3rem;
+  line-height: 2;
+  margin-bottom: 0.6rem;
+}
+
+.skills-content .content {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.8rem;
+}
+
+.skills-content .content span {
+  display: inline-flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 5rem;
+  border: var(--border);
+  border-radius: 0.3rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+
+.skills-content .content span:hover {
+  box-shadow: var(--box-shadow);
+}
+
+.skills-content .content span i {
+  font-size: 3rem;
+  color: var(--main-color);
 }/*# sourceMappingURL=style_resume.css.map */
