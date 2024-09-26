@@ -393,4 +393,10 @@
   opacity: 1;
   transform: translateX(-50%) scale(1);
   top: -1.8rem;
+}
+
+@media (max-width: 1100px) {
+  .main-resume {
+    display: none;
+  }
 }/*# sourceMappingURL=style_resume.css.map */
