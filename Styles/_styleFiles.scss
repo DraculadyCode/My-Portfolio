@@ -1,0 +1,50 @@
+.download-files {
+  display: flex; // Enable flexbox
+  justify-content: center; // Center horizontally
+  align-items: center; // Center vertically
+}
+.my-files {
+  @include displaySet($dspl: inline-block, $position: static, $zIndx: 900);
+  @include sizesNgaps(
+    $padding: 1.5rem,
+    $margin: 0 1rem,
+    $max-width: 40rem,
+    $min-height: 20rem
+  );
+  @include fontNtext(
+    $font-size: x-large,
+    $bgColor: #d4a3ecde,
+    $lnHeight: 3rem,
+    $border: 0.1rem solid rgba(177, 177, 177, 0.548),
+    $borderRds: 3rem,
+    $boxShdw: $mainShadow
+  );
+  transition: 1s;
+
+  a {
+    color: #000000;
+    transition: 1s;
+  }
+  a:hover {
+    @include fontNtext(
+      $font-weight: bolder,
+      $txtShdw: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223)
+    );
+  }
+  i {
+    @include fontNtext($font-size: x-large, $color: $primaryColor);
+    transition: 1s;
+  }
+  i:hover {
+    transform: scale(1.5);
+  }
+  &:hover {
+    @include fontNtext(
+      $txtShdw: 0.1rem 0.2rem 0.4rem rgb(249, 249, 253),
+      $boxShdw: $boxShadow
+    );
+  }
+}
+.files-list {
+  text-align: center;
+}
