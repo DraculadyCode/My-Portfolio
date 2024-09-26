@@ -39,6 +39,10 @@
     transform: rotate(0deg);
   }
 }
+h3 {
+  text-shadow: none;
+}
+
 .cover {
   position: absolute;
   top: 0;
@@ -230,13 +234,13 @@
 
 .workeduc-box {
   border-left: var(--border);
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .workeduc-box .workeduc-content {
   position: relative;
   padding-left: 1.6rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
 .workeduc-box .workeduc-content::before {
