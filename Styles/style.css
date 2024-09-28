@@ -200,6 +200,16 @@ h5:hover {
 .paragraph-div .platforms-links b {
   font-size: x-large;
 }
+.paragraph-div a {
+  color: inherit;
+  text-decoration: inherit;
+}
+.paragraph-div a:visited {
+  color: inherit;
+}
+.paragraph-div a:hover {
+  text-decoration: inherit;
+}
 
 .intro-paragraph {
   flex-direction: row;
@@ -1705,7 +1715,7 @@ html[data-page=index-german] .h4-title {
   max-width: 40rem;
   min-height: 20rem;
   font-size: x-large;
-  background-color: rgba(212, 163, 236, 0.8705882353);
+  background-color: rgba(242, 215, 255, 0.6705882353);
   line-height: 3rem;
   border: 0.1rem solid rgba(177, 177, 177, 0.548);
   border-radius: 3rem;
@@ -1715,6 +1725,12 @@ html[data-page=index-german] .h4-title {
 .my-files a {
   color: #000000;
   transition: 1s;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  text-align: left;
 }
 .my-files a:hover {
   font-weight: bolder;
@@ -1733,6 +1749,27 @@ html[data-page=index-german] .h4-title {
   box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
 }
 
-.files-list {
-  text-align: center;
+.files {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.files .file-item {
+  display: flex;
+  border: #a009f7 0.3rem outset;
+  padding: 0.7rem;
+  width: 100%;
+  border-radius: 1rem;
+  margin: 1rem;
+  align-items: center;
+}
+.files .file-item:hover {
+  border: #a009f7 0.3rem inset;
+}
+.files .file-item .file-icon {
+  display: block;
+  margin-right: 0.5rem;
+  justify-content: flex-start;
+  padding: 0 1rem;
 }/*# sourceMappingURL=style.css.map */
