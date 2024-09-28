@@ -1347,10 +1347,14 @@ html[data-page=index-german] .h4-title {
 .contact-options-divs .contact-directly i {
   font-size: x-large;
   color: #a009f7;
+  border-radius: 50%;
+  padding: 1rem;
+  border: #a009f7 outset 0.4rem;
 }
 .contact-options-divs .contact-form i:hover,
 .contact-options-divs .contact-directly i:hover {
   transform: scale(1.2);
+  border: #a009f7 inset 0.4rem;
 }
 .contact-options-divs .contact-form:hover,
 .contact-options-divs .contact-directly:hover {
@@ -1410,13 +1414,9 @@ html[data-page=index-german] .h4-title {
 }
 .contact-options-divs .contact-directly li {
   width: 15%;
-  border: #a009f7 0.4rem outset;
   border-radius: 50%;
   margin: 0.5rem;
   padding: 0.5rem;
-}
-.contact-options-divs .contact-directly li:hover {
-  border: #a009f7 0.4rem inset;
 }
 .contact-options-divs .contact-directly li i {
   align-items: center;
@@ -1438,8 +1438,6 @@ html[data-page=index-german] .h4-title {
     align-items: center;
     gap: 2rem;
   }
-  .contact-options-divs .contact-form,
-  .contact-options-divs .contact-directly,
   .contact-options-divs .my-files {
     max-width: 30rem;
     min-height: 10rem;
@@ -1447,7 +1445,7 @@ html[data-page=index-german] .h4-title {
   }
   .contact-options-divs .form input,
   .contact-options-divs .form textarea {
-    width: 25rem;
+    width: 28rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1456,7 +1454,6 @@ html[data-page=index-german] .h4-title {
     gap: 1rem;
   }
   .contact-options-divs .contact-form,
-  .contact-options-divs .contact-directly,
   .contact-options-divs .my-files {
     padding: 1rem;
     margin: 1.5rem 0.5rem;
@@ -1473,11 +1470,33 @@ html[data-page=index-german] .h4-title {
     gap: 1rem;
   }
   .contact-options-divs .contact-form,
-  .contact-options-divs .contact-directly,
   .contact-options-divs .my-files {
     padding: 0.5rem;
     margin: 1.5rem 0.5rem;
     max-width: 25rem;
+  }
+  .contact-options-divs .contact-directly {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contact-options-divs .contact-directly .contact-options {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-options-divs .contact-directly i {
+    border: none;
+  }
+  .contact-options-divs .contact-directly a {
+    padding: 0 2rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
   }
   .contact-options-divs .form input,
   .contact-options-divs .form textarea {

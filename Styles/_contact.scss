@@ -41,9 +41,13 @@
     }
     i {
       @include fontNtext($font-size: x-large, $color: $primaryColor);
+      border-radius: 50%;
+      padding: 1rem;
+      border: $primaryColor outset 0.4rem;
     }
     i:hover {
       transform: scale(1.2);
+      border: $primaryColor inset 0.4rem;
     }
     &:hover {
       @include fontNtext(
@@ -110,14 +114,9 @@
     // flex-direction: row;
     li {
       width: 15%;
-      border: $primaryColor 0.4rem outset;
       border-radius: 50%;
       margin: 0.5rem;
       padding: 0.5rem;
-
-      &:hover {
-        border: $primaryColor 0.4rem inset;
-      }
       i {
         align-items: center;
         text-align: center;
@@ -141,8 +140,6 @@
       $flxDrc: column,
       $gap: 2rem
     );
-    .contact-form,
-    .contact-directly,
     .my-files {
       @include sizesNgaps($max-width: 30rem, $min-height: 10rem);
       @include fontNtext($font-size: x-large);
@@ -150,7 +147,7 @@
     .form {
       input,
       textarea {
-        @include sizesNgaps($width: 25rem);
+        @include sizesNgaps($width: 28rem);
       }
     }
   }
@@ -158,7 +155,6 @@
   @media screen and (max-width: 768px) {
     @include displaySet($flxDrc: column, $gap: 1rem);
     .contact-form,
-    .contact-directly,
     .my-files {
       @include sizesNgaps(
         $padding: 1rem,
@@ -177,13 +173,35 @@
   @media screen and (max-width: 480px) {
     @include displaySet($flxDrc: column, $gap: 1rem);
     .contact-form,
-    .contact-directly,
     .my-files {
       @include sizesNgaps(
         $padding: 0.5rem,
         $margin: 1.5rem 0.5rem,
         $max-width: 25rem
       );
+    }
+    .contact-directly {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      .contact-options {
+        display: flex;
+        flex-direction: column;
+      }
+      i {
+        border: none;
+      }
+      a {
+        padding: 0 2rem;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: none;
+      }
     }
     .form {
       input,
