@@ -21,7 +21,7 @@ h3 {
 }
 .book {
   position: relative;
-  width: 100%;
+  width: 60%;
   height: 100%;
   display: flex;
   perspective: 250rem;
@@ -66,14 +66,18 @@ h3 {
 .profile-page h1 {
   font-size: 2.7rem;
   line-height: 1;
+  text-align: center;
 }
 .profile-page h3 {
   font-size: 1.5rem;
   color: $primaryColor;
   z-index: 0;
+  text-align: center;
 }
 .profile-page .social-media {
   margin: 0.6rem 0 0.8rem;
+  align-items: center;
+  justify-content: center;
 }
 .profile-page .social-media a {
   display: inline-flex;
@@ -99,6 +103,9 @@ h3 {
 }
 .profile-page .btn-box {
   margin-top: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .btn {
   display: inline-flex;
@@ -242,4 +249,27 @@ h3 {
   cursor: pointer;
   margin-bottom: 1rem;
   width: 9rem;
+}
+
+// Responsivness
+@media (max-width: 630px) {
+  .profile-page .btn-box {
+    flex-direction: column !important;
+  }
+  .profile-page .social-media {
+    margin-left: 4%;
+  }
+}
+@media (max-width: 480px) {
+  .book {
+    width: 100%; // Adjust width for smaller screens
+  }
+  .book-page {
+    width: 100%; // Use full width on smaller screens
+    margin: 1rem;
+    margin-left: 25%;
+  }
+  .profile-page .social-media {
+    margin-left: 3%;
+  }
 }
