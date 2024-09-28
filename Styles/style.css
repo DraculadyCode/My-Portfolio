@@ -1307,8 +1307,9 @@ html[data-page=index-german] .h4-title {
 /* Settings and design for all contact options */
 .contact-options-divs {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 3rem;
   padding: 1rem;
   border-radius: 3rem;
@@ -1318,53 +1319,52 @@ html[data-page=index-german] .h4-title {
   /* Media query for mobile phones */
 }
 .contact-options-divs .contact-form,
-.contact-options-divs .contact-directly,
-.contact-options-divs .my-files {
+.contact-options-divs .contact-directly {
   z-index: 900;
   display: inline-block;
   position: static;
   padding: 1.5rem;
   margin: 0 1rem;
   max-width: 40rem;
-  min-height: 20rem;
+  min-height: 15rem;
   font-size: x-large;
-  background-color: rgba(212, 163, 236, 0.8705882353);
+  background-color: rgba(242, 215, 255, 0.6705882353);
   line-height: 3rem;
   border: 0.1rem solid rgba(177, 177, 177, 0.548);
   border-radius: 3rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .contact-options-divs .contact-form a,
-.contact-options-divs .contact-directly a,
-.contact-options-divs .my-files a {
+.contact-options-divs .contact-directly a {
   color: #000000;
 }
 .contact-options-divs .contact-form a:hover,
-.contact-options-divs .contact-directly a:hover,
-.contact-options-divs .my-files a:hover {
+.contact-options-divs .contact-directly a:hover {
   font-weight: bolder;
   text-shadow: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223);
 }
 .contact-options-divs .contact-form i,
-.contact-options-divs .contact-directly i,
-.contact-options-divs .my-files i {
+.contact-options-divs .contact-directly i {
   font-size: x-large;
   color: #a009f7;
 }
 .contact-options-divs .contact-form i:hover,
-.contact-options-divs .contact-directly i:hover,
-.contact-options-divs .my-files i:hover {
-  transform: scale(1.5);
+.contact-options-divs .contact-directly i:hover {
+  transform: scale(1.2);
 }
 .contact-options-divs .contact-form:hover,
-.contact-options-divs .contact-directly:hover,
-.contact-options-divs .my-files:hover {
+.contact-options-divs .contact-directly:hover {
   text-shadow: 0.1rem 0.2rem 0.4rem rgb(249, 249, 253);
   box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
 }
-.contact-options-divs .contact-options-list,
-.contact-options-divs .files-list {
+.contact-options-divs .contact-options-list {
   text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
 }
 .contact-options-divs .form {
   margin: 1rem 0 0 0;
@@ -1405,6 +1405,32 @@ html[data-page=index-german] .h4-title {
   animation: colorWaveAnimation 6s infinite;
   box-shadow: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223);
 }
+.contact-options-divs .contact-directly {
+  display: flex;
+}
+.contact-options-divs .contact-directly li {
+  width: 15%;
+  border: #a009f7 0.4rem outset;
+  border-radius: 50%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+.contact-options-divs .contact-directly li:hover {
+  border: #a009f7 0.4rem inset;
+}
+.contact-options-divs .contact-directly li i {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  padding: 0.5rem;
+}
+.contact-options-divs .contact-directly li a {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
 @media screen and (max-width: 1450px) {
   .contact-options-divs {
     flex-direction: column;
@@ -1416,7 +1442,7 @@ html[data-page=index-german] .h4-title {
   .contact-options-divs .contact-directly,
   .contact-options-divs .my-files {
     max-width: 30rem;
-    min-height: 15rem;
+    min-height: 10rem;
     font-size: x-large;
   }
   .contact-options-divs .form input,

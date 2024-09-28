@@ -7,24 +7,24 @@
   @include displaySet(
     $dspl: flex,
     $jusCont: center,
-    $alItms: flex-start,
-    $gap: 3rem
+    $alItms: center,
+    $gap: 3rem,
+    $flxDrc: column
   );
   padding: 1rem;
   border-radius: 3rem;
   .contact-form,
-  .contact-directly,
-  .my-files {
+  .contact-directly {
     @include displaySet($dspl: inline-block, $position: static, $zIndx: 900);
     @include sizesNgaps(
       $padding: 1.5rem,
       $margin: 0 1rem,
       $max-width: 40rem,
-      $min-height: 20rem
+      $min-height: 15rem
     );
     @include fontNtext(
       $font-size: x-large,
-      $bgColor: #d4a3ecde,
+      $bgColor: #f2d7ffab,
       $lnHeight: 3rem,
       $border: 0.1rem solid rgba(177, 177, 177, 0.548),
       $borderRds: 3rem,
@@ -43,7 +43,7 @@
       @include fontNtext($font-size: x-large, $color: $primaryColor);
     }
     i:hover {
-      transform: scale(1.5);
+      transform: scale(1.2);
     }
     &:hover {
       @include fontNtext(
@@ -52,9 +52,14 @@
       );
     }
   }
-  .contact-options-list,
-  .files-list {
+  .contact-options-list {
     text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
   }
   /* Settings and design of the contact form */
   .form {
@@ -99,6 +104,35 @@
       box-shadow: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223);
     }
   }
+  // Contact direct Social Media
+  .contact-directly {
+    display: flex;
+    // flex-direction: row;
+    li {
+      width: 15%;
+      border: $primaryColor 0.4rem outset;
+      border-radius: 50%;
+      margin: 0.5rem;
+      padding: 0.5rem;
+
+      &:hover {
+        border: $primaryColor 0.4rem inset;
+      }
+      i {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        padding: 0.5rem;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+      }
+    }
+  }
   /* Media query for tablets and smaller desktops */
   @media screen and (max-width: 1450px) {
     @include displaySet(
@@ -110,7 +144,7 @@
     .contact-form,
     .contact-directly,
     .my-files {
-      @include sizesNgaps($max-width: 30rem, $min-height: 15rem);
+      @include sizesNgaps($max-width: 30rem, $min-height: 10rem);
       @include fontNtext($font-size: x-large);
     }
     .form {
