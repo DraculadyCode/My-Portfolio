@@ -57,9 +57,9 @@ body {
 section {
   padding: 3.2rem 0;
   margin: 2rem;
-  background-image: linear-gradient(-45deg, rgb(75, 90, 100), rgba(225, 245, 116, 0.918), rgb(252, 151, 252), rgb(217, 140, 248));
+  background-image: linear-gradient(-45deg, rgba(225, 245, 116, 0.918), rgb(252, 151, 252), rgb(217, 140, 248));
   background-size: 400% 400%;
-  animation: gradient 30s ease infinite;
+  animation: gradient 60s ease infinite;
   border-radius: 3rem;
   box-shadow: 0.2rem 0rem 0.6rem rgb(255, 145, 0);
 }
@@ -1337,6 +1337,7 @@ html[data-page=index-german] .h4-title {
 .contact-options-divs .contact-form a,
 .contact-options-divs .contact-directly a {
   color: #000000;
+  border-radius: 50%;
 }
 .contact-options-divs .contact-form a:hover,
 .contact-options-divs .contact-directly a:hover {
@@ -1459,6 +1460,13 @@ html[data-page=index-german] .h4-title {
     margin: 1.5rem 0.5rem;
     width: 26rem;
   }
+  .contact-options-divs .contact-directly li {
+    margin: 0.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
   .contact-options-divs .form input,
   .contact-options-divs .form textarea {
     width: 22rem;
@@ -1477,17 +1485,19 @@ html[data-page=index-german] .h4-title {
   }
   .contact-options-divs .contact-directly {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
   .contact-options-divs .contact-directly .contact-options {
     display: flex;
-    flex-direction: column;
   }
-  .contact-options-divs .contact-directly i {
-    border: none;
+  .contact-options-divs .contact-directly li {
+    margin: 0.5rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .contact-options-divs .contact-directly a {
     padding: 0 2rem;
@@ -1496,7 +1506,6 @@ html[data-page=index-german] .h4-title {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: none;
   }
   .contact-options-divs .form input,
   .contact-options-divs .form textarea {
