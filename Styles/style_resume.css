@@ -30,6 +30,19 @@
   animation: show-animate 2s forwards;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
 @keyframes show-animate {
   0%, 30% {
     opacity: 0;
@@ -41,6 +54,9 @@
   }
 }
 h3 {
+  text-shadow: none;
+}
+h3:hover {
   text-shadow: none;
 }
 
@@ -157,7 +173,7 @@ h3 {
   width: 9.5rem;
   height: 3rem;
   background: #a009f7;
-  color: var(--white-color);
+  color: var(--white-color) !important;
   border: 0.3rem outset var(--white-color);
   border-radius: 0.7rem;
   font-size: 1.2rem;
@@ -168,7 +184,7 @@ h3 {
 
 .btn:hover {
   background: transparent;
-  color: #a009f7;
+  color: #a009f7 !important;
   border: inset #a009f7;
 }
 

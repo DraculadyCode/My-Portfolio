@@ -12,6 +12,21 @@
 }
 h3 {
   text-shadow: none;
+  &:hover {
+    text-shadow: none;
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+  &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 .main-resume {
   display: flex;
@@ -114,7 +129,7 @@ h3 {
   width: 9.5rem;
   height: 3rem;
   background: $primaryColor;
-  color: var(--white-color);
+  color: var(--white-color) !important;
   border: 0.3rem outset var(--white-color);
   border-radius: 0.7rem;
   font-size: 1.2rem;
@@ -124,7 +139,7 @@ h3 {
 }
 .btn:hover {
   background: transparent;
-  color: $primaryColor;
+  color: $primaryColor !important;
   border: inset $primaryColor;
 }
 
