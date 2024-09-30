@@ -163,7 +163,7 @@
         </div>
       </div>
     </header>
-    <main class="main-resume" role="main">
+    <main class="main-resume" role="main" aria-label="Main Resume Section">
       <div class="book">
         <!-- page 0 -->
         <div class="book-page">
@@ -173,8 +173,12 @@
               alt="Kathrin Peled's profile picture"
             />
             <h1>Kathrin Peled</h1>
-            <h3 id="profession-title">Web Entwicklerin</h3>
-            <div class="social-media">
+            <h2 id="profession-title">Web Entwicklerin</h2>
+            <div
+              class="social-media"
+              role="navigation"
+              aria-label="Social media links"
+            >
               <a
                 href="https://t.me/Draculady"
                 target="_blank"
@@ -319,6 +323,9 @@
                   <a
                     href="https://berlin-jobs-teleperformance.career.softgarden.de/"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit the Teleperformance job listing page for user-generated content moderation roles"
+                  >
                     >nutzergenerierte Inhalte</a
                   >
                   auf sozialen Medien in Hebräisch und Englisch, um die
@@ -342,6 +349,8 @@
                   <a
                     href="https://www.lseg.com/en/data-analytics"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit the London Stock Exchange Group Data Analytics page"
                     >Datenanalyst</a
                   >
                   für den israelischen Aktienmarkt verbesserte ich die
@@ -365,7 +374,9 @@
                 ><i class="bx bxs-calendar" aria-hidden="true"></i> 2016 -
                 2018</span
               >
-              <h3 id="work-title-4">Verkäuferin, Buchhalterin und R.M.A. Sachbearbeiterin</h3>
+              <h3 id="work-title-4">
+                Verkäuferin, Buchhalterin und R.M.A. Sachbearbeiterin
+              </h3>
               <p>
                 <span class="link-span"
                   >Während meiner Zeit bei
@@ -403,6 +414,8 @@
                   <a
                     href="https://www.gov.il/he/pages/most_lehava"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit the Lehava project page on the Government of Israel website"
                     >Lehava-Projekt</a
                   >
                   bildete ich diverse Schüler im Umgang mit Computern und
@@ -528,12 +541,15 @@
                   <a
                     href="../Files/MCDST_Datasheet.pdf"
                     download="MCDST_Datasheet"
+                    aria-label="Download Microsoft Certified Desktop Support Technician certification"
                     >Microsoft Certified Desktop Support Technician (MCDST)</a
                   >
                   an der
                   <a
                     href="https://college.org.il/extensions/%D7%97%D7%99%D7%A4%D7%94/"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit HaMichlala LeMinhal website"
                     >HaMichlala LeMinhal in Haifa.</a
                   ></span
                 >
@@ -553,7 +569,11 @@
                 <span class="link-span"
                   >Absolvierte einen professionellen Deutschkurs (B2-Zertifikat)
                   an der
-                  <a href="https://www.zebus-ev.de/" target="_blank"
+                  <a
+                    href="https://www.zebus-ev.de/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit the ZeBus School website"
                     >ZeBus Schule
                   </a>
                   in Berlin und bestand erfolgreich die telc-Prüfung, um die
@@ -576,6 +596,8 @@
                   <a
                     href="https://www.berlin.de/vhs/volkshochschulen/spandau/"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit the Volkshochschule Spandau website"
                     >Volkshochschule Spandau,</a
                   >
                   Deutschland, und erlangte das telc B1-Zertifikat, um die
@@ -665,13 +687,18 @@
         <div class="book-page">
           <h1 class="title">✉️ Kontaktiere mich</h1>
           <div class="contact-box" id="contact-box">
-            <form action="https://formspree.io/f/xyzgryqo" method="POST">
+            <form
+              action="https://formspree.io/f/xyzgryqo"
+              method="POST"
+              aria-labelledby="contact-form-title"
+            >
               <input
                 type="text"
                 class="field"
                 name="fullName"
                 placeholder="Vollname"
                 required
+                aria-label="Full Name"
               />
               <input
                 type="email"
@@ -679,6 +706,7 @@
                 name="email"
                 placeholder="E-Mail-Adresse"
                 required
+                aria-label="Email Address"
               />
               <textarea
                 name="message"
@@ -687,8 +715,9 @@
                 class="field"
                 placeholder="Ihre Nachricht"
                 required
+                aria-label="Your Message"
               ></textarea>
-              <input type="submit" class="btn" value="Senden" />
+              <input type="submit" class="btn" value="Senden" aria-label="Send your message" />
             </form>
           </div>
           <span class="number-page" aria-label="Page 6 of the resume">6</span>

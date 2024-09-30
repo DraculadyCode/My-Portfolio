@@ -53,10 +53,10 @@ a:visited {
     transform: rotate(0deg);
   }
 }
-h3 {
+h3, h2 {
   text-shadow: none;
 }
-h3:hover {
+h3:hover, h2:hover {
   text-shadow: none;
 }
 
@@ -127,8 +127,8 @@ h3:hover {
   line-height: 1;
 }
 
-.profile-page h3 {
-  font-size: 1.5rem;
+.profile-page h2 {
+  font-size: 1.8rem;
   color: #a009f7;
   z-index: 0;
 }

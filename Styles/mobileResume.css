@@ -11,10 +11,12 @@
   --box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
 }
 
-h3 {
+h3,
+h2 {
   text-shadow: none;
 }
-h3:hover {
+h3:hover,
+h2:hover {
   text-shadow: none;
 }
 
@@ -83,8 +85,8 @@ a:visited {
   text-align: center;
 }
 
-.profile-page h3 {
-  font-size: 1.5rem;
+.profile-page h2 {
+  font-size: 1.8rem;
   color: #a009f7;
   z-index: 0;
   text-align: center;
