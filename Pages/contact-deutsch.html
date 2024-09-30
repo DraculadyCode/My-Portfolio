@@ -180,17 +180,44 @@
                   <h3>Schick mir eine Nachricht</h3>
                 </div>
                 <div class="form">
-                  <form action="https://formspree.io/f/xyzgryqo" method="POST">
+                  <form
+                    action="https://formspree.io/f/xyzgryqo"
+                    method="POST"
+                    aria-label="Contact Form"
+                  >
                     <label for="name">Ihr Name:</label> <br />
-                    <input type="text" id="name" name="name" required />
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      autocomplete="name"
+                      aria-required="true"
+                      placeholder="Enter your name"
+                    />
                     <br />
                     <label for="email">Ihre E-Mail:</label> <br />
-                    <input type="email" id="email" name="_replyto" required />
+                    <input
+                      type="email"
+                      id="email"
+                      name="_replyto"
+                      required
+                      autocomplete="email"
+                      aria-required="true"
+                      placeholder="Enter your email"
+                    />
                     <br />
                     <label for="message">Ihre Nachricht:</label> <br />
-                    <textarea id="message" name="message" required></textarea>
+                    <textarea
+                      id="message"
+                      name="message"
+                      required
+                      autocomplete="message"
+                      aria-required="true"
+                      placeholder="Type your message here"
+                    ></textarea>
                     <br />
-                    <button type="submit">Senden</button>
+                    <button type="submit" aria-label="Send your message">Senden</button>
                   </form>
                 </div>
               </div>

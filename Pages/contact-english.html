@@ -174,7 +174,11 @@
                   <h3>Send me a message</h3>
                 </div>
                 <div class="form">
-                  <form action="https://formspree.io/f/xyzgryqo" method="POST">
+                  <form
+                    action="https://formspree.io/f/xyzgryqo"
+                    method="POST"
+                    aria-label="Contact Form"
+                  >
                     <label for="name">Your Name:</label> <br />
                     <input
                       type="text"
@@ -182,6 +186,8 @@
                       name="name"
                       required
                       autocomplete="name"
+                      aria-required="true"
+                      placeholder="Enter your name"
                     />
                     <br />
                     <label for="email">Your Email:</label> <br />
@@ -191,6 +197,8 @@
                       name="_replyto"
                       required
                       autocomplete="email"
+                      aria-required="true"
+                      placeholder="Enter your email"
                     />
                     <br />
                     <label for="message">Your Message:</label> <br />
@@ -199,9 +207,13 @@
                       name="message"
                       required
                       autocomplete="message"
+                      aria-required="true"
+                      placeholder="Type your message here"
                     ></textarea>
                     <br />
-                    <button type="submit">Send</button>
+                    <button type="submit" aria-label="Send your message">
+                      Send
+                    </button>
                   </form>
                 </div>
               </div>
