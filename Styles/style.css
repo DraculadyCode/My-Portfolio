@@ -384,6 +384,7 @@ nav ul li {
   margin: 0 3rem;
   text-shadow: 1px 1px 1px #5ff6ff, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff, -1px 3px 2px #ffffff, -1px -1px 1px #ffffff, 2px -1px 2px #a5cef0, 1px 7px 4px rgba(0, 9, 35, 0.4), 1px 9px 10px rgba(0, 64, 255, 0.2), 1px 9px 35px rgba(0, 64, 255, 0.2), 1px 9px 60px rgba(0, 64, 255, 0.4);
   letter-spacing: 0.2rem;
+  font-size: 2.5rem;
 }
 nav ul li a {
   color: #fff;
@@ -394,7 +395,6 @@ nav ul li a {
   z-index: 500;
 }
 nav ul li a:hover {
-  font-size: 2.15rem;
   font-weight: bolder;
   animation: textColorChanging 6s infinite;
 }
@@ -417,6 +417,7 @@ nav ul li a:hover {
   position: relative;
   z-index: 1000;
   padding: 0.6rem 0.4rem;
+  font-size: 2rem;
 }
 .dropdown-portfolio li a {
   color: #fff;

@@ -107,6 +107,7 @@ nav ul {
     margin: 0 3rem;
     text-shadow: $navShadow;
     letter-spacing: 0.2rem;
+    font-size: 2.5rem;
     a {
       color: $mainTextColor;
       text-decoration: none;
@@ -115,7 +116,7 @@ nav ul {
       position: relative;
       z-index: 500;
       &:hover {
-        @include fontNtext($font-size: 2.15rem, $font-weight: bolder);
+        @include fontNtext($font-weight: bolder);
         animation: textColorChanging 6s infinite;
       }
     }
@@ -137,6 +138,7 @@ nav ul {
     position: relative;
     z-index: 1000;
     padding: 0.6rem 0.4rem;
+    font-size: 2rem;
     a {
       color: $mainTextColor;
       padding: 0 0.5rem;
