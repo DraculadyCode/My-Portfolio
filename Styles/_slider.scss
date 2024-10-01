@@ -40,11 +40,14 @@
           $border: $primaryColor outset 0.3rem
         );
         position: absolute;
-        object-fit: cover;
+        object-fit: contain;
         transition: 3s;
       }
     }
   }
+}
+.carousel-item img {
+  object-fit: contain;
 }
 html[data-page="index-english"] #portfolio .container .h3-title,
 html[data-page="index-german"] #portfolio .container .h3-title {

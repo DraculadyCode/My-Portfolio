@@ -654,9 +654,14 @@ footer .logo:hover {
   border: #a009f7 outset 0.3rem;
   border-radius: 3rem;
   position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   transition: 3s;
+}
+
+.carousel-item img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 html[data-page=index-english] #portfolio .container .h3-title,
