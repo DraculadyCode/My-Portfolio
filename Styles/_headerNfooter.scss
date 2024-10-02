@@ -82,13 +82,13 @@ header {
     margin: 3% 0;
     z-index: 999;
     position: relative;
-    &::before,
-    &::after {
-      content: "\e682";
-      @include displaySet($position: relative, $zIndx: 999);
-      font-family: "FontAwesome";
-      padding: 0 10rem;
-    }
+    // &::before,
+    // &::after {
+    //   content: "\e682";
+    //   @include displaySet($position: relative, $zIndx: 999);
+    //   font-family: "FontAwesome";
+    //   padding: 0 10rem;
+    // }
   }
 }
 nav ul {

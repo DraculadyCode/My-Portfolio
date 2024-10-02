@@ -359,13 +359,6 @@ header h1 {
   z-index: 999;
   position: relative;
 }
-header h1::before, header h1::after {
-  content: "\e682";
-  z-index: 999;
-  position: relative;
-  font-family: "FontAwesome";
-  padding: 0 10rem;
-}
 
 nav ul {
   z-index: 500;
