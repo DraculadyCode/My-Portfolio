@@ -511,6 +511,9 @@ footer .logo:hover {
   }
 }
 @media screen and (max-width: 480px) and (orientation: portrait) {
+  h1 {
+    transform: scale(0.7);
+  }
   header,
   footer {
     width: 150%;
