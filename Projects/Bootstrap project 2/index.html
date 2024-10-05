@@ -12,6 +12,32 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!-- Style the Footer only -->
+    <style>
+      footer {
+        background-color: #a009f7;
+        color: white;
+        font-size: 1.5rem;
+        font-family: cursive;
+        text-align: center;
+        padding: 0.5rem;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        border-top: 0.5rem outset rgb(55, 173, 252);
+      }
+      footer p {
+        width: 100%;
+      }
+      footer a {
+        color: white;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
     <title>Bootstrap Project</title>
   </head>
   <body>
@@ -205,7 +231,7 @@
     </main>
 
     <!-- footer -->
-    <footer class="fixed-bottom p-4 bg-white">
+    <!-- <footer class="fixed-bottom p-4 bg-white">
       <div class="mt-0">
         <p class="mb-0 px-5">
           &copy; 2022-2023 Company, Inc <a href="#">Privacy Terms</a>
@@ -214,6 +240,19 @@
       <div>
         <p class="text-end mb-1 px-5"><a href="#">Back to top </a></p>
       </div>
+    </footer> -->
+    <footer>
+      <p>
+        Created by
+        <span
+          ><a
+            href="https://draculady.de/"
+            target="_blank"
+            title="Visit Draculady's website"
+            ><b>Kathrin Peled - Draculady</b></a
+          >©</span
+        >
+      </p>
     </footer>
 
     <script

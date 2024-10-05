@@ -11,6 +11,30 @@
         display: inline-block;
         position: relative;
       }
+      footer {
+        background-color: #a009f7;
+        /* Set background color */
+        color: white; /* Set text color */
+        font-size: 1.5rem; /* Set font size */
+        font-family: cursive;
+        text-align: center; /* Center align the text */
+        padding: 0.5rem; /* Add some padding */
+        width: 100%; /* Ensure the footer is 100% wide */
+        position: fixed; /* Fix the footer to the bottom */
+        bottom: 0; /* Position it at the bottom */
+        border-top: 0.5rem outset rgb(55, 173, 252);
+      }
+      footer p {
+        width: 100%;
+      }
+      footer a {
+        color: white; /* Set link color to white */
+        text-decoration: none; /* Remove underline from links */
+      }
+
+      footer a:hover {
+        text-decoration: underline; /* Optional: underline on hover */
+      }
     </style>
   </head>
   <body>
@@ -20,5 +44,18 @@
     <!-- * Task 1 -->
     <!-- & Create the file script.js and link it to the provided index.html file. -->
     <script src="script.js"></script>
+    <footer>
+      <p>
+        Created by
+        <span
+          ><a
+            href="https://draculady.de/"
+            target="_blank"
+            title="Visit Draculady's website"
+            ><b>Kathrin Peled - Draculady</b></a
+          >©</span
+        >
+      </p>
+    </footer>
   </body>
 </html>

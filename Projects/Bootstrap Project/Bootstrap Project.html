@@ -9,6 +9,32 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!-- Style the Footer only -->
+    <style>
+      footer {
+        background-color: #a009f7;
+        color: white;
+        font-size: 1.5rem;
+        font-family: cursive;
+        text-align: center;
+        padding: 0.5rem;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        border-top: 0.5rem outset rgb(55, 173, 252);
+      }
+      footer p {
+        width: 100%;
+      }
+      footer a {
+        color: white;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
     <title>Strapping</title>
   </head>
   <body>
@@ -68,9 +94,23 @@
         <h4>Fourth Card</h4>
       </div>
     </div>
-    <footer class="fixed-bottom bg-primary py-4 text-center">
+    <!-- <footer class="fixed-bottom bg-primary py-4 text-center">
       <h6>Footer</h6>
+    </footer> -->
+    <footer>
+      <p>
+        Created by
+        <span
+          ><a
+            href="https://draculady.de/"
+            target="_blank"
+            title="Visit Draculady's website"
+            ><b>Kathrin Peled - Draculady</b></a
+          >©</span
+        >
+      </p>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
