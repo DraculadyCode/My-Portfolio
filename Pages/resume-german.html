@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de" data-page="resume-mobile-german">
+<html lang="de" data-page="resume-german">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -141,8 +141,11 @@
         href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       />
     </noscript>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="preload" href="https://unpkg.com/boxicons.js" as="script">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js" async></script>
+    <link rel="preload" href="../Styles/style.css" as="style" />
     <link rel="stylesheet" href="../Styles/style.css" />
+    <link rel="preload" href="../Styles/style_resume.css" as="style" />
     <link rel="stylesheet" href="../Styles/style_resume.css" />
     <script
       async
