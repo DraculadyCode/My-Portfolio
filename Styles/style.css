@@ -1836,4 +1836,27 @@ html[data-page=index-german] .h4-title {
   margin-right: 0.5rem;
   justify-content: flex-start;
   padding: 0 1rem;
+}
+
+.custom-cursor {
+  position: absolute;
+  width: 4rem; /* Cursor width */
+  height: 4rem; /* Cursor height */
+  border-radius: 50%; /* Make it circular */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6); /* Glowing effect */
+  pointer-events: none; /* Ensure the cursor doesn't interfere with mouse events */
+  transform: translate(-50%, -50%); /* Center the cursor */
+  transition: transform 0.1s ease; /* Smooth movement */
+}
+
+/* Hide the custom cursor when hovering over <i> elements */
+i:hover ~ .custom-cursor {
+  display: none; /* Hide the cursor */
+}
+
+/* Ensure the cursor is shown again when leaving the icon */
+i {
+  position: relative;
+  z-index: 1; /* Keep icons above the custom cursor */
 }/*# sourceMappingURL=style.css.map */
