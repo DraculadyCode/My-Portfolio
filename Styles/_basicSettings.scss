@@ -175,8 +175,15 @@ h5 {
     }
     &:hover {
       text-decoration: inherit;
+      color: $primaryColor;
     }
   }
+}
+.title-span {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: $primaryColor;
+  text-shadow: $title-span-shadow;
 }
 .intro-paragraph {
   flex-direction: row;

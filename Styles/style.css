@@ -209,6 +209,14 @@ h5:hover {
 }
 .paragraph-div a:hover {
   text-decoration: inherit;
+  color: #a009f7;
+}
+
+.title-span {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #a009f7;
+  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px, 2px 2px 2px rgba(255, 255, 255, 0.04);
 }
 
 .intro-paragraph {
@@ -572,7 +580,7 @@ footer .logo:hover {
 .p_img_1 img {
   width: 20rem;
   height: 20rem;
-  border-color: rgb(219, 105, 230);
+  border-color: #a009f7;
   z-index: 3;
 }
 .p_img_1 img:hover {
@@ -582,7 +590,7 @@ footer .logo:hover {
 .p_img_2 img {
   width: 22rem;
   height: auto;
-  border-color: rgb(166, 105, 223);
+  border-color: #a009f7;
 }
 .p_img_2 img:hover {
   transform: scale(1.02);
