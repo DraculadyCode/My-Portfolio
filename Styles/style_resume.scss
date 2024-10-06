@@ -357,7 +357,20 @@ h3, h2 {
   transform: translateX(-50%) scale(1);
   top: -1.8rem;
 }
+.link-span {
+  a {
+    color: inherit;
+    text-decoration: inherit;
 
+    &:visited {
+      color: inherit;
+    }
+    &:hover {
+      text-decoration: inherit;
+      color: $primaryColor;
+    }
+  }
+}
 // Rsponsiveness
 @media (max-width: 1100px) {
   .main-resume {

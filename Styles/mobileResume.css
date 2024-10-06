@@ -320,4 +320,15 @@ a:visited {
   .profile-page .social-media {
     margin-left: 3%;
   }
+}
+.link-span a {
+  color: inherit;
+  text-decoration: inherit;
+}
+.link-span a:visited {
+  color: inherit;
+}
+.link-span a:hover {
+  text-decoration: inherit;
+  color: #a009f7;
 }/*# sourceMappingURL=mobileResume.css.map */

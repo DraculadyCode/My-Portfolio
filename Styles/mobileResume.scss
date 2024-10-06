@@ -289,3 +289,17 @@ a {
     margin-left: 3%;
   }
 }
+.link-span {
+  a {
+    color: inherit;
+    text-decoration: inherit;
+
+    &:visited {
+      color: inherit;
+    }
+    &:hover {
+      text-decoration: inherit;
+      color: $primaryColor;
+    }
+  }
+}
