@@ -24,8 +24,3 @@ a:hover ~ .custom-cursor {
   display: none; /* Hide the cursor */
 }
 
-/* Ensure the cursor is shown again when leaving the icon */
-a {
-  position: relative;
-  z-index: 1; /* Keep icons above the custom cursor */
-}

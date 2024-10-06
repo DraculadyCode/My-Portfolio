@@ -42,6 +42,7 @@
 .p_img_2 img {
   @include sizesNgaps($width: 22rem, $height: auto);
   border-color: $primaryColor;
+  bottom: -80rem;
   &:hover {
     transform: scale(1.02);
   }

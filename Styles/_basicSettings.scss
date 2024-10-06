@@ -198,6 +198,7 @@ button {
     $borderRds: 2rem,
     $boxShdw: $boxShadow
   );
+  z-index: 100;
   cursor: pointer;
   font-family: "Courgette";
   &:hover {

@@ -232,6 +232,7 @@ button {
   background-color: #a009f7;
   border-radius: 2rem;
   box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  z-index: 100;
   cursor: pointer;
   font-family: "Courgette";
 }
@@ -591,6 +592,7 @@ footer .logo:hover {
   width: 22rem;
   height: auto;
   border-color: #a009f7;
+  bottom: -80rem;
 }
 .p_img_2 img:hover {
   transform: scale(1.02);
@@ -1863,10 +1865,4 @@ i {
 
 a:hover ~ .custom-cursor {
   display: none; /* Hide the cursor */
-}
-
-/* Ensure the cursor is shown again when leaving the icon */
-a {
-  position: relative;
-  z-index: 1; /* Keep icons above the custom cursor */
 }/*# sourceMappingURL=style.css.map */
