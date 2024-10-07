@@ -50,7 +50,8 @@ a {
     transform: rotate(0deg);
   }
 }
-h3, h2 {
+h3,
+h2 {
   text-shadow: none;
   &:hover {
     text-shadow: none;
@@ -104,7 +105,7 @@ h3, h2 {
   align-items: center;
 }
 .profile-page img {
-  max-width: 12rem;
+  max-width: 40%;
   border-radius: 50%;
   border: 0.25rem solid var(--main-color);
   margin-bottom: 0.8rem;
@@ -200,12 +201,12 @@ h3, h2 {
   display: flex;
   flex-direction: column !important;
 }
-.workeduc-content h3,
-.services-content h3,
-.skills-content h3 {
+.workeduc-content h2,
+.services-content h2,
+.skills-content h2 {
   margin-left: -1rem;
-  // margin-top: -0.3rem;
   color: $primaryColor;
+  font-size: 1.2rem;
 }
 .title {
   text-align: center;
@@ -270,7 +271,7 @@ h3, h2 {
 .skills-box .skills-content {
   flex: 1 1 20rem !important;
 }
-.skills-content h3 {
+.skills-content h2 {
   font-size: 1.3rem;
   line-height: 2;
   margin-bottom: 0.6rem;
