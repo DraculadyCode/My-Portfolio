@@ -647,6 +647,7 @@ footer .logo:hover {
   transform: rotateY(calc(var(--i) * 45deg)) translateZ(35rem);
   transition: 1s;
   border-radius: 3rem;
+  background-color: rgba(242, 215, 255, 0.6705882353);
 }
 .slider-box .slider span:hover img {
   transform: translateY(-2rem) scale(1.2);
@@ -1842,8 +1843,8 @@ html[data-page=index-german] .h4-title {
 
 .custom-cursor {
   position: absolute;
-  width: 4rem; /* Cursor width */
-  height: 4rem; /* Cursor height */
+  width: 3rem; /* Cursor width */
+  height: 3rem; /* Cursor height */
   border-radius: 50%; /* Make it circular */
   background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6); /* Glowing effect */

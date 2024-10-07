@@ -29,6 +29,7 @@
       transform: rotateY(calc(var(--i) * 45deg)) translateZ(35rem);
       transition: 1s;
       border-radius: 3rem;
+      background-color: $form-BG;
       &:hover img {
         transform: translateY(-2rem) scale(1.2);
         border: $primaryColor outset 0.5rem;

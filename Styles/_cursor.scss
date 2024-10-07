@@ -1,7 +1,7 @@
 .custom-cursor {
   position: absolute;
-  width: 4rem; /* Cursor width */
-  height: 4rem; /* Cursor height */
+  width: 3rem; /* Cursor width */
+  height: 3rem; /* Cursor height */
   border-radius: 50%; /* Make it circular */
   background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
@@ -23,4 +23,3 @@ i {
 a:hover ~ .custom-cursor {
   display: none; /* Hide the cursor */
 }
-

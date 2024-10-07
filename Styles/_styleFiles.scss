@@ -13,7 +13,7 @@
   );
   @include fontNtext(
     $font-size: x-large,
-    $bgColor: #f2d7ffab,
+    $bgColor: $form-BG,
     $lnHeight: 3rem,
     $border: 0.1rem solid rgba(177, 177, 177, 0.548),
     $borderRds: 3rem,
