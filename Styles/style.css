@@ -635,6 +635,7 @@ footer .logo:hover {
   height: 15rem;
   transform-style: preserve-3d;
   animation: rotate 40s linear infinite;
+  background-color: rgba(242, 215, 255, 0.6705882353);
 }
 .slider-box .slider span {
   width: 100%;
@@ -647,7 +648,6 @@ footer .logo:hover {
   transform: rotateY(calc(var(--i) * 45deg)) translateZ(35rem);
   transition: 1s;
   border-radius: 3rem;
-  background-color: rgba(242, 215, 255, 0.6705882353);
 }
 .slider-box .slider span:hover img {
   transform: translateY(-2rem) scale(1.2);
@@ -664,6 +664,7 @@ footer .logo:hover {
   -o-object-fit: contain;
      object-fit: contain;
   transition: 3s;
+  background-color: rgba(242, 215, 255, 0.6705882353);
 }
 
 .carousel-item img {
