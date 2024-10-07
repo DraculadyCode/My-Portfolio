@@ -635,7 +635,6 @@ footer .logo:hover {
   height: 15rem;
   transform-style: preserve-3d;
   animation: rotate 40s linear infinite;
-  background-color: rgba(242, 215, 255, 0.6705882353);
 }
 .slider-box .slider span {
   width: 100%;

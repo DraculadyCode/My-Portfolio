@@ -21,8 +21,6 @@
     );
     transform-style: preserve-3d;
     animation: rotate 40s linear infinite;
-    background-color: $form-BG;
-
     span {
       @include sizesNgaps($width: 100%, $height: 100%, $top: 0, $left: 0);
       position: absolute;
