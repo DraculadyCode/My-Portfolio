@@ -10,6 +10,22 @@ const schemaData = {
     "@type": "Organization",
     name: "Freelance"
   },
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: "Technion – Israel Institute of Technology"
+  },
+  knowsLanguage: ["English", "German", "Hebrew"],
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Berlin",
+    addressCountry: "Germany"
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "Customer Support",
+    email: "draculadycode@gmail.com"
+  },
+
   sameAs: [
     "https://www.linkedin.com/in/kathrin-peled-draculady/",
     "https://x.com/DraculadyKath"
