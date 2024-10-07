@@ -157,7 +157,7 @@ a:visited {
   border: inset #a009f7;
 }
 
-.workeduc-box h3 {
+.workeduc-box h2 {
   z-index: 0;
 }
 
@@ -167,10 +167,11 @@ a:visited {
   flex-direction: column !important;
 }
 
-.workeduc-content h3,
-.services-content h3,
-.skills-content h3 {
+.workeduc-content h2,
+.services-content h2,
+.skills-content h2 {
   margin-left: -1rem;
+  font-size: 1.2rem;
   color: #a009f7;
 }
 
@@ -235,7 +236,7 @@ a:visited {
   justify-content: center;
 }
 
-.skills-content h3 {
+.skills-content h2 {
   font-size: 1.3rem;
   line-height: 2;
   margin-bottom: 0.6rem;
