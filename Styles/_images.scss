@@ -35,17 +35,11 @@
   @include sizesNgaps($width: 20rem, $height: 20rem);
   border-color: $primaryColor;
   z-index: 3;
-  &:hover {
-    height: 30rem;
-  }
 }
 .p_img_2 img {
   @include sizesNgaps($width: 22rem, $height: auto);
   border-color: $primaryColor;
   bottom: -80rem;
-  &:hover {
-    transform: scale(1.02);
-  }
 }
 // Responsivness
 @media screen and (max-width: 1800px) {

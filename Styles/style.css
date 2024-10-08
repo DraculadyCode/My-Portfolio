@@ -584,18 +584,12 @@ footer .logo:hover {
   border-color: #a009f7;
   z-index: 3;
 }
-.p_img_1 img:hover {
-  height: 30rem;
-}
 
 .p_img_2 img {
   width: 22rem;
   height: auto;
   border-color: #a009f7;
   bottom: -80rem;
-}
-.p_img_2 img:hover {
-  transform: scale(1.02);
 }
 
 @media screen and (max-width: 1800px) {

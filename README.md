@@ -1,42 +1,56 @@
-## cancel animations when using mobile:
+# Kathrin Peled's Portfolio Website 
 
-.element/elements {
-transition-property: none !important;
-transform: none !important;
-animation: none !important;
-}
--- header , footer, img, .smily (display:none), .paragraph-div (img - display:none)
+## About the Portfolio
 
-### for mobiles and tablets:
+This portfolio showcases my journey and growth as a web developer. It includes a diverse range of projects that demonstrate my skills in front-end development, web design, and JavaScript programming. From personal projects to freelance work, the portfolio reflects my passion for creating user-friendly and visually engaging websites.
 
-## create another skills table for responsive screens and change display properties
+## Key Sections
 
-## Create a drop down menue to portfolio with links according to different sections
+### 1. About Me
 
-### Consider adding icons to each project item for a quick scan according to the category of the project
+This section provides an overview of my background in software engineering and web development. It highlights:
 
-For example:
-Single page project: <i class="fa-regular fa-file" title="Single Page"></i>
-Multiple pages project: <i class="fa-regular fa-copy" title="Multiple pages"></i>
-Contains an image: <i class="fa-regular fa-image" title="An image"></i>
-Contains multiple images: <i class="fa-regular fa-images" title="Multiple images"></i>
-Responsive: <i class="fa-solid fa-mobile-screen-button" title="Responsive"></i>
-Contains bootstrap: <i class="fa-brands fa-bootstrap" title="Bootstrap"></i>
-Contain grid: <i class="fa-solid fa-table-cells" title="Grid"></i>
-Contains video: <i class="fa-regular fa-file-video" title="Video"></i>
-Animation: <i class="fa-solid fa-panorama" title="Animation"></i>
-JavaScript: <i class="fa-brands fa-js" title="Java Script"></i>
-Sass: <i class="fa-brands fa-sass" title="Sass"></i>
-React: <i class="fa-brands fa-react" title="React"></i>
-PHP: <i class="fa-brands fa-php" title="PHP"></i>
-Node JS: <i class="fa-brands fa-node-js" title="Node JS"></i>
-Table: <i class="fa-solid fa-table" title="Table"></i>
-Markdown: <i class="fa-brands fa-markdown" title="Markdown"></i>
+My education at the National School of Practical Engineers and the Technion in Haifa, where I received a diploma in Software Practical Engineering.
+My current status as a student of Web Development at the Digital Career Institute (DCI) in Berlin, with an expected graduation date in February 2025.
+A glimpse into my skills and passions, including my expertise in front-end development, responsive design, and UI/UX principles.
 
-# Add to the title "web developer / web designer"
+### 2. Portfolio
 
-##### Add more specific description to each project in "Portfolio" pages - Done 16.05.2024
+This section showcases my web development projects, including:
 
-box-shadow: 0 0 5px 10px rgba(45, 211, 223, 0.8),
-0 0 5px 10px rgba(4, 250, 238, 0.8), 0 0 5px 10px rgba(0, 198, 248, 0.8),
-0 0 5px 10px rgba(255, 252, 254, 0.8);
+### Favorite Projects like:
+
+Crazy Cow: My first independent project combining HTML, CSS, and JavaScript.
+Animal World: A pure JavaScript tamagotchi game, created as a final project.
+Uriya Peled - Private Teacher: A freelance website developed for my brother's teaching career.
+Poke-pedia: A JavaScript-powered Pokémon search page utilizing an external API.
+
+### Example Projects
+
+that explore different technologies and layouts, including tribute websites, form designs, and responsive pages built with Bootstrap and other frameworks.
+
+## Skills and Technologies
+
+### Web Technologies:
+
+HTML, CSS, JavaScript, React, Tailwind CSS, Bootstrap.
+
+### Design Tools:
+
+Canva, PicsArt.
+
+### Key Skills:
+
+Responsive web design, UI/UX principles, API integration, web performance optimization.
+
+## How to View the Portfolio
+
+You can view my complete portfolio and individual projects by visiting the Portfolio page.
+
+## Contact Me
+
+I am open to collaboration and professional opportunities. Feel free to explore my projects and reach out through the Contact page.
+
+## License
+
+This portfolio is open for public view, but all project code and designs are the intellectual property of Kathrin Peled. For any inquiries regarding reuse or collaboration, please contact me directly.
