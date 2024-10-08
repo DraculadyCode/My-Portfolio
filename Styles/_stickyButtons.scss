@@ -192,8 +192,13 @@
     }
   }
 }
-.sharethis-sticky-share-buttons {
-  border-radius: 3rem;
+/* Targeting the ShareThis button classes */
+.sticky-share-buttons .st-btn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.sticky-share-buttons .st-btn:hover {
+  background-color: $primaryColor;
+  color: white;
 }
 // Responsivness
 @media screen and (max-width: 1000px) {
@@ -219,5 +224,4 @@
     transform: translateY(-50%) scale(0.7);
     @include sizesNgaps($margin: 1rem, $top: 6rem, $right: 0.2rem);
   }
-
 }

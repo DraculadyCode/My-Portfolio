@@ -1723,8 +1723,14 @@ html[data-page=index-german] .h4-title {
   transform: scale(1.2);
 }
 
-.sharethis-sticky-share-buttons {
-  border-radius: 3rem;
+/* Targeting the ShareThis button classes */
+.sticky-share-buttons .st-btn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sticky-share-buttons .st-btn:hover {
+  background-color: #a009f7;
+  color: white;
 }
 
 @media screen and (max-width: 1000px) {
