@@ -192,8 +192,11 @@
     }
   }
 }
+.sharethis-sticky-share-buttons {
+  border-radius: 3rem;
+}
 // Responsivness
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .languages {
     p {
       display: none;
@@ -216,4 +219,5 @@
     transform: translateY(-50%) scale(0.7);
     @include sizesNgaps($margin: 1rem, $top: 6rem, $right: 0.2rem);
   }
+
 }

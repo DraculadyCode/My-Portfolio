@@ -1723,7 +1723,11 @@ html[data-page=index-german] .h4-title {
   transform: scale(1.2);
 }
 
-@media screen and (max-width: 768px) {
+.sharethis-sticky-share-buttons {
+  border-radius: 3rem;
+}
+
+@media screen and (max-width: 1000px) {
   .languages p {
     display: none;
   }
