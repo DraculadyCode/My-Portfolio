@@ -1870,4 +1870,30 @@ i {
 
 a:hover ~ .custom-cursor {
   display: none; /* Hide the cursor */
+}
+
+.bubble {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  background: linear-gradient(45deg, rgb(247, 0, 255), rgb(84, 18, 236), rgb(0, 255, 234));
+  transform: translate(-50%, -50%);
+  box-shadow: 0;
+  animation: animate 4s linear infinite;
+  z-index: 100;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+    filter: hue-rotate(720deg);
+  }
 }/*# sourceMappingURL=style.css.map */

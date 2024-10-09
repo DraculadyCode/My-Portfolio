@@ -10,8 +10,8 @@ document.addEventListener("mousemove", (e) => {
 // Increase cursor size on click
 document.addEventListener("click", () => {
   // Increase the cursor size
-  cursor.style.width = "6rem"; // Change size to 8rem
-  cursor.style.height = "6rem"; // Change height to 8rem
+  cursor.style.width = "5rem"; // Change size to 8rem
+  cursor.style.height = "5rem"; // Change height to 8rem
 
   // Reset size back to original after a short delay
   setTimeout(() => {
