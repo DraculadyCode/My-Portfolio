@@ -26,7 +26,6 @@
   border: 0.5rem outset;
   box-shadow: $imgShadow;
   &:hover {
-    width: 30rem;
     border-color: $primaryColor;
     transition: 2s;
   }
