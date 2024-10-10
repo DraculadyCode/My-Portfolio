@@ -25,7 +25,7 @@ body {
 }
 section {
   @include sizesNgaps($padding: 3.2rem 0, $margin: 2rem);
-  background-image: $sectionBg;
+  // background-image: $sectionBg;
   background-size: 400% 400%;
   animation: gradient 60s ease infinite;
   border-radius: 3rem;
