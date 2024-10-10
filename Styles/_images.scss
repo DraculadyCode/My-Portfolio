@@ -8,13 +8,8 @@
     @include sizesNgaps($margin: 4rem 1rem 1rem, $width: 30rem, $height: 30rem);
     @include displaySet($position: static, $zIndx: 900);
     border-radius: 50%;
-    border: 0.5rem solid $primaryColor;
-    animation: colorWaveAnimation 6s infinite;
+    border: 0.5rem outset $primaryColor;
     box-shadow: $imgShadow;
-  }
-  &:hover {
-    transform: scale(1.2);
-    transition: 2s;
   }
 }
 /* Settings and design of the images inside the about me paragraph */

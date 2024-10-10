@@ -1,6 +1,5 @@
 @import "./variables";
 @import "./mixins";
-@include colorWaveAnimation;
 // Contact scss
 /* Settings and design for all contact options */
 .contact-options-divs {
@@ -22,23 +21,20 @@
       $max-width: 40rem,
       $min-height: 15rem
     );
+
     @include fontNtext(
       $font-size: x-large,
       $bgColor: $form-BG,
       $lnHeight: 3rem,
-      $border: 0.1rem solid rgba(177, 177, 177, 0.548),
+      $border: 0.1rem solid transparent,
       $borderRds: 3rem,
       $boxShdw: $mainShadow
     );
     a {
-      color: #000000;
       border-radius: 50%;
     }
     a:hover {
-      @include fontNtext(
-        $font-weight: bolder,
-        $txtShdw: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223)
-      );
+      @include fontNtext($font-weight: bolder);
     }
     i {
       @include fontNtext($font-size: x-large, $color: $primaryColor);
@@ -54,7 +50,7 @@
     &:hover {
       @include fontNtext(
         $txtShdw: 0.1rem 0.2rem 0.4rem rgb(249, 249, 253),
-        $boxShdw: $boxShadow
+        $boxShdw: $mainShadow
       );
     }
   }
@@ -106,8 +102,7 @@
     input:hover,
     textarea:hover {
       border-width: 0.5rem;
-      animation: colorWaveAnimation 6s infinite;
-      box-shadow: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223);
+      box-shadow: $mainShadow;
     }
   }
   // Contact direct Social Media
