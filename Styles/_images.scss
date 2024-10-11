@@ -8,7 +8,7 @@
     @include sizesNgaps($margin: 4rem 1rem 1rem, $width: 30rem, $height: 30rem);
     @include displaySet($position: static, $zIndx: 900);
     border-radius: 50%;
-    border: 0.5rem outset $primaryColor;
+    border: 0.5rem solid $primaryColor;
     box-shadow: $imgShadow;
   }
 }

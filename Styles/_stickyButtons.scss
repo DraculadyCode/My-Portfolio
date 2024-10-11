@@ -132,10 +132,10 @@
   @include fontNtext(
     $font-size: large,
     $color: $primaryColor,
-    $border: $mainTextColor 0.3rem solid,
+    $bgImage: $floatBtnBg,
+    $border: $mainTextColor 0.5rem solid,
     $borderRds: 2rem
   );
-  background-color: $form-BG;
   animation: colorWaveAnimation 6s infinite;
   img {
     @include sizesNgaps($margin: 0 auto, $width: 2rem, $height: 2rem);
@@ -145,12 +145,12 @@
     @include fontNtext(
       $font-weight: bolder,
       $color: $hoverTitle,
+      $bgImage: $floatBtnBgHover,
+      $txtShdw: $boxShadow,
       $border: 1.5rem,
-      $boxShdw: $mainShadow
+      $boxShdw: $boxShadow
     );
-    padding: 0.8rem;
     z-index: 1000;
-    background-color: #f2d7ff;
   }
 }
 
@@ -167,21 +167,23 @@
     $zIndx: 0,
     $transform: translateY(-50%)
   );
-  @include fontNtext($font-size: larger, $color: $primaryColor);
-  background-color: $form-BG;
-  @include fontNtext($border: $mainTextColor 0.3rem solid, $borderRds: 2rem);
+  @include fontNtext(
+    $font-size: larger,
+    $color: $primaryColor,
+    $bgImage: $floatBtnBg
+  );
+  @include fontNtext($border: $mainTextColor 0.5rem solid, $borderRds: 2rem);
   animation: colorWaveAnimation 6s infinite;
   transition: background-image 0.5s ease-in-out;
   &:hover {
     @include fontNtext(
       $font-weight: bold,
       $color: $hoverTitle,
+      $bgImage: $floatBtnBgHover,
       $border: 1.5rem,
-      $boxShdw: $mainShadow
+      $boxShdw: $boxShadow
     );
     z-index: 1000;
-    background-color: #f2d7ff;
-    padding: 0.8rem;
   }
   i {
     color: $primaryColor;

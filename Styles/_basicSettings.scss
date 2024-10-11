@@ -25,7 +25,7 @@ body {
 }
 section {
   @include sizesNgaps($padding: 3.2rem 0, $margin: 2rem);
-  // background-image: $sectionBg;
+  background-image: $sectionBg;
   background-size: 400% 400%;
   animation: gradient 60s ease infinite;
   border-radius: 3rem;
@@ -39,9 +39,14 @@ h2,
 h3,
 h4 {
   @include displaySet($dspl: inline, $position: relative, $zIndx: 900);
-  @include fontNtext($color: $mainTextColor, $ltrSpc: 0.2rem, $borderRds: 2rem);
-  text-shadow: $titlesShadow;
+  @include fontNtext(
+    $color: $mainTextColor,
+    $ltrSpc: 0.2rem,
+    $txtShdw: $boxShadow,
+    $borderRds: 2rem
+  );
   padding: 0.5rem 1rem;
+  text-shadow: $titlesShadow;
 }
 .h2-title,
 .h3-title,
@@ -52,22 +57,20 @@ h4 {
 /*Settings and design for all the H2 titles */
 .h2-title {
   h2 {
-    font-size: 4rem;
-    color: $primaryColor;
-    text-shadow: $h2Hover;
+    font-size: 4.5rem;
   }
 }
 /*Settings and design for all the H3 titles */
 .h3-title {
   h3 {
-    font-size: 2.5rem;
+    font-size: 3.2rem;
   }
 }
 
 /*Settings and design for all the H4 titles */
 .h4-title {
   h4 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -179,16 +182,14 @@ button {
     $color: $mainTextColor,
     $bgColor: $primaryColor,
     $borderRds: 2rem,
-    $boxShdw: $mainShadow
+    $boxShdw: $boxShadow
   );
-  transition: 1s;
   z-index: 100;
   cursor: pointer;
   font-family: "Courgette";
   &:hover {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    font-weight: bolder;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgb(127, 169, 223);
+    transform: scale(1.1);
     transition: 1s;
   }
 }
@@ -206,4 +207,8 @@ button {
     width: 120%;
     margin-left: 15%;
   }
+  // .platforms-links {
+  //   justify-content: center;
+  //   flex-direction: column;
+  // }
 }

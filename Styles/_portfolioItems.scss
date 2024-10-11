@@ -1,5 +1,6 @@
 @import "./variables";
 @import "./mixins";
+@include BlackWhiteAnimation;
 // portfolio Items scss
 /* Settings and design for all portfolio items in the website */
 .portfolio-items {
@@ -24,9 +25,9 @@
     transition: transform 1s;
     &:hover {
       @include fontNtext(
-        $bgColor: #ffffff,
+        $bgColor: #a0eb8285,
         $bgImage: $portfolioBg,
-        $border: 1rem transparent,
+        $border: 1rem outset transparent,
         $boxShdw: $mainShadow
       );
       transform: scale(1.05);
@@ -53,13 +54,13 @@
         $bgColor: $primaryColor,
         $borderRds: 1.5rem
       );
-      box-shadow: $mainShadow;
       display: inline-block;
       padding: 1rem;
       &:hover {
-        @include fontNtext($font-size: x-large);
-        box-shadow: $boxShadow;
+        @include fontNtext($font-size: x-large, $bgColor: #2eade7);
+        box-shadow: $mainShadow;
         border: 0.5rem solid $mainTextColor;
+        animation: BlackWhiteAnimation 4s infinite;
         transition: 1s;
       }
     }

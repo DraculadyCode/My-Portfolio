@@ -26,13 +26,10 @@
       @include fontNtext(
         $font-size: 3rem,
         $color: $primaryColor,
-        $bgColor: rgba(#f05ce9, 0.54),
+        $bgColor: rgba(#ffffff, 0.54),
         // Using rgba for transparency
         $borderRds: 50%
       );
-      &:hover {
-        animation: tableAnimation 4s infinite;
-      }
     }
   }
 }
@@ -40,7 +37,7 @@
 .elements-table {
   table {
     @include displaySet(
-      $dspl: flex,
+      $dspl: none,
       $jusCont: center,
       $alItms: center,
       $txtAln: center
@@ -80,6 +77,9 @@
       }
     }
   }
+}
+.elements-table-div {
+  display: none;
 }
 // Responsivness
 

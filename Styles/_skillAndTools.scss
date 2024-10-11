@@ -28,7 +28,7 @@
     border-radius: 5rem;
     &:first-child {
       @include sizesNgaps($width: 5rem, $height: 4rem);
-      background-color: #fedbffcc;
+      background-color: #eb59f0cc;
       box-shadow: $mainShadow;
       background-image: $skillsToolsBg;
       background-size: 300% 300%;
@@ -36,13 +36,13 @@
       &:hover {
         @include displaySet($dspl: flex, $jusCont: center, $alItms: center);
         @include sizesNgaps($width: 6rem, $height: 6rem);
-        background-color: #f7e3f7f0;
+        background-color: #eb59f0cc;
         box-shadow: $mainShadow;
         transition: 1s;
       }
     }
     &:hover {
-      @include fontNtext($font-size: 3rem);
+      @include fontNtext($font-size: 3rem, $color: #ffd900);
       transition: 1s;
     }
   }

@@ -15,11 +15,11 @@
     $font-size: x-large,
     $bgColor: $form-BG,
     $lnHeight: 3rem,
-    $border: 0.1rem solid transparent,
+    $border: 0.1rem solid rgba(177, 177, 177, 0.548),
     $borderRds: 3rem,
     $boxShdw: $mainShadow
   );
-  transition: 0.5s;
+  transition: 1s;
 
   a {
     color: #000000;
@@ -32,8 +32,10 @@
     text-align: left;
   }
   a:hover {
-    @include fontNtext($font-weight: bolder, $txtShdw: $h2Hover);
-    color: $primaryColor;
+    @include fontNtext(
+      $font-weight: bolder,
+      $txtShdw: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223)
+    );
   }
   i {
     @include fontNtext($font-size: x-large, $color: $primaryColor);

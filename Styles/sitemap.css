@@ -47,7 +47,7 @@
 
 body {
   font-family: "Courgette", cursive;
-  background-image: linear-gradient(-45deg, rgb(250, 71, 250), rgb(124, 197, 245), rgb(158, 158, 235));
+  background-image: linear-gradient(-45deg, rgb(241, 50, 216), rgb(208, 98, 230), rgb(124, 197, 245), rgb(158, 158, 235), rgb(255, 0, 221));
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
@@ -55,6 +55,7 @@ body {
 section {
   padding: 3.2rem 0;
   margin: 2rem;
+  background-image: linear-gradient(-45deg, rgba(225, 245, 116, 0.918), rgb(252, 151, 252), rgb(217, 140, 248));
   background-size: 400% 400%;
   animation: gradient 60s ease infinite;
   border-radius: 3rem;
@@ -76,9 +77,10 @@ h4 {
   position: relative;
   color: #fff;
   letter-spacing: 0.2rem;
+  text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
   border-radius: 2rem;
-  text-shadow: 6px 0 6px #a408ff, 5px 5px 5px #d26df7, 0 6px 6px rgba(79, 164, 250, 0.7215686275);
   padding: 0.5rem 1rem;
+  text-shadow: 6px 0 6px #a408ff, 5px 5px 5px #d26df7, 0 6px 6px rgba(79, 164, 250, 0.7215686275);
 }
 
 .h2-title,
@@ -90,19 +92,17 @@ h4 {
 
 /*Settings and design for all the H2 titles */
 .h2-title h2 {
-  font-size: 4rem;
-  color: #a009f7;
-  text-shadow: 1px 1px 1px #c00eec, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff, -1px 3px 2px #ffffff, -1px -1px 1px #e79aee, 2px -1px 2px #a5cef0, 1px 7px 4px rgba(175, 43, 228, 0.4), 1px 9px 10px rgba(194, 103, 236, 0.2), 1px 9px 35px rgba(212, 0, 255, 0.2), 1px 9px 60px rgba(243, 20, 243, 0.4);
+  font-size: 4.5rem;
 }
 
 /*Settings and design for all the H3 titles */
 .h3-title h3 {
-  font-size: 2.5rem;
+  font-size: 3.2rem;
 }
 
 /*Settings and design for all the H4 titles */
 .h4-title h4 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 /* settings for all h5 (project titles) in the website */
@@ -212,15 +212,14 @@ button {
   color: #fff;
   background-color: #a009f7;
   border-radius: 2rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  transition: 1s;
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
   z-index: 100;
   cursor: pointer;
   font-family: "Courgette";
 }
 button:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-  font-weight: bolder;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgb(127, 169, 223);
+  transform: scale(1.1);
   transition: 1s;
 }
 
@@ -285,7 +284,7 @@ h1 {
 
 .sitemap-english,
 .sitemap-german {
-  background: linear-gradient(-45deg, rgb(255, 255, 255), rgb(254, 206, 254), rgb(231, 187, 248));
+  background: linear-gradient(-45deg, rgba(225, 245, 116, 0.918), rgb(252, 151, 252), rgb(217, 140, 248));
   border-radius: 3rem;
 }
 .sitemap-english h2,

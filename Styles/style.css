@@ -1,3 +1,8 @@
+/* outer right cyan */
+/* outer right cyan */
+/* outer right cyan */
+/* outer right cyan */
+/* outer right cyan */
 @keyframes dropdown {
   0% {
     max-height: 0;
@@ -44,14 +49,7 @@
 
 body {
   font-family: "Courgette", cursive;
-  background-image: linear-gradient(
-    -45deg,
-    rgb(241, 50, 216),
-    rgb(208, 98, 230),
-    rgb(124, 197, 245),
-    rgb(158, 158, 235),
-    rgb(255, 0, 221)
-  );
+  background-image: linear-gradient(-45deg, rgb(241, 50, 216), rgb(208, 98, 230), rgb(124, 197, 245), rgb(158, 158, 235), rgb(255, 0, 221));
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
@@ -59,12 +57,7 @@ body {
 section {
   padding: 3.2rem 0;
   margin: 2rem;
-  background-image: linear-gradient(
-    -45deg,
-    rgb(255, 255, 255),
-    rgb(229, 160, 254),
-    rgb(172, 200, 241)
-  );
+  background-image: linear-gradient(-45deg, rgba(225, 245, 116, 0.918), rgb(252, 151, 252), rgb(217, 140, 248));
   background-size: 400% 400%;
   animation: gradient 60s ease infinite;
   border-radius: 3rem;
@@ -86,10 +79,10 @@ h4 {
   position: relative;
   color: #fff;
   letter-spacing: 0.2rem;
+  text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
   border-radius: 2rem;
-  text-shadow: 6px 0 6px #a408ff, 5px 5px 5px #d26df7,
-    0 6px 6px rgba(79, 164, 250, 0.7215686275);
   padding: 0.5rem 1rem;
+  text-shadow: 6px 0 6px #a408ff, 5px 5px 5px #d26df7, 0 6px 6px rgba(79, 164, 250, 0.7215686275);
 }
 
 .h2-title,
@@ -101,22 +94,17 @@ h4 {
 
 /*Settings and design for all the H2 titles */
 .h2-title h2 {
-  font-size: 4rem;
-  color: #a009f7;
-  text-shadow: 1px 1px 1px #c00eec, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff,
-    -1px 3px 2px #ffffff, -1px -1px 1px #e79aee, 2px -1px 2px #a5cef0,
-    1px 7px 4px rgba(175, 43, 228, 0.4), 1px 9px 10px rgba(194, 103, 236, 0.2),
-    1px 9px 35px rgba(212, 0, 255, 0.2), 1px 9px 60px rgba(243, 20, 243, 0.4);
+  font-size: 4.5rem;
 }
 
 /*Settings and design for all the H3 titles */
 .h3-title h3 {
-  font-size: 2.5rem;
+  font-size: 3.2rem;
 }
 
 /*Settings and design for all the H4 titles */
 .h4-title h4 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 /* settings for all h5 (project titles) in the website */
@@ -144,9 +132,7 @@ h5:hover {
   font-family: "Kalam";
   border: 0.2rem solid #a009f7;
   border-radius: 4rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   flex-direction: column;
 }
 .paragraph-div i {
@@ -157,18 +143,14 @@ h5:hover {
 }
 .paragraph-div .bx:hover {
   color: rgb(89, 0, 255);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   transform: scale(1.1);
   transition: 1s;
   border: rgb(255, 0, 242) outset 0.2rem;
 }
 .paragraph-div .fa-square-github:hover {
   color: rgb(89, 0, 255);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   transform: scale(1.1);
   transition: 1s;
   border: rgb(255, 0, 242) outset 0.2rem;
@@ -217,8 +199,7 @@ h5:hover {
   font-size: 2rem;
   font-weight: bolder;
   color: #a009f7;
-  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
-    2px 2px 2px rgba(255, 255, 255, 0.04);
+  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px, 2px 2px 2px rgba(255, 255, 255, 0.04);
 }
 
 .intro-paragraph {
@@ -233,19 +214,15 @@ button {
   color: #fff;
   background-color: #a009f7;
   border-radius: 2rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
   z-index: 100;
   cursor: pointer;
   font-family: "Courgette";
-  transition: 1s;
 }
 button:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-  transition: 1s;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgb(127, 169, 223);
   transform: scale(1.1);
+  transition: 1s;
 }
 
 @media screen and (max-width: 480px) and (orientation: portrait) {
@@ -289,22 +266,22 @@ button:hover {
     color: rgb(238, 96, 219);
   }
   16.67% {
-    color: rgb(250, 99, 250);
+    color: rgb(238, 96, 96);
   }
   33.33% {
-    color: rgb(107, 9, 235);
+    color: rgb(235, 193, 9);
   }
   50% {
-    color: rgb(11, 3, 250);
+    color: rgb(63, 60, 60);
   }
   66.67% {
-    color: rgb(28, 110, 241);
+    color: rgb(51, 51, 235);
   }
   83.33% {
-    color: rgb(0, 132, 255);
+    color: rgb(96, 233, 238);
   }
   100% {
-    color: rgb(237, 10, 214);
+    color: rgb(68, 240, 105);
   }
 }
 /* header designs and settings */
@@ -318,10 +295,9 @@ header {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   padding: 1.25rem 0;
+  border-bottom: transparent;
   background-size: 600% auto;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 header .icon-top-draculady {
   padding: 0;
@@ -332,9 +308,7 @@ header .icon-top-draculady {
   position: relative;
   background-color: #9d62eb;
   border-radius: 50%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 header .icon-top-draculady img {
   width: 100%;
@@ -342,9 +316,7 @@ header .icon-top-draculady img {
 header .icon-top-draculady:hover {
   transition: 2s;
   transform: scale(1.05);
-  box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f,
-    inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff,
-    0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+  box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
 }
 header .icon-draculady {
   padding: 0;
@@ -355,17 +327,13 @@ header .icon-draculady {
   position: relative;
   background-color: #9d62eb;
   border-radius: 50%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 header .icon-draculady img {
   width: 100%;
 }
 header .icon-draculady:hover {
-  box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f,
-    inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff,
-    0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+  box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
   transition: 2s;
   transform: scale(1.05);
 }
@@ -373,12 +341,7 @@ header h1 {
   font-size: 6rem;
   letter-spacing: 0.3rem;
   font-family: "poetsen One";
-  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
-    1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
-    1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
-    1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
-    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
-    1px 30px 60px rgba(16, 16, 16, 0.4);
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
   margin: 3% 0;
   z-index: 999;
   position: relative;
@@ -399,10 +362,7 @@ nav ul li {
   display: inline;
   position: relative;
   margin: 0 3rem;
-  text-shadow: 1px 1px 1px #5ff6ff, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff,
-    -1px 3px 2px #ffffff, -1px -1px 1px #ffffff, 2px -1px 2px #a5cef0,
-    1px 7px 4px rgba(0, 9, 35, 0.4), 1px 9px 10px rgba(0, 64, 255, 0.2),
-    1px 9px 35px rgba(0, 64, 255, 0.2), 1px 9px 60px rgba(0, 64, 255, 0.4);
+  text-shadow: 1px 1px 1px #5ff6ff, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff, -1px 3px 2px #ffffff, -1px -1px 1px #ffffff, 2px -1px 2px #a5cef0, 1px 7px 4px rgba(0, 9, 35, 0.4), 1px 9px 10px rgba(0, 64, 255, 0.2), 1px 9px 35px rgba(0, 64, 255, 0.2), 1px 9px 60px rgba(0, 64, 255, 0.4);
   letter-spacing: 0.2rem;
   font-size: 2.5rem;
 }
@@ -428,7 +388,7 @@ nav ul li a:hover {
   min-width: 25rem;
   background-color: rgba(180, 142, 229, 0.7176470588);
   -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   border-radius: 2rem;
   transform: translateX(-50%);
 }
@@ -475,19 +435,14 @@ footer {
 }
 footer:hover {
   animation: lightingAnimation 3s linear infinite;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border-top: 0.3rem outset rgb(70, 0, 102);
 }
 footer:hover .logo {
   display: block;
-  box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f,
-    inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff,
-    0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+  box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
 }
-footer p::before,
-footer p::after {
+footer p::before, footer p::after {
   content: "\f004";
   font-family: "FontAwesome";
   position: relative;
@@ -500,9 +455,7 @@ footer .logo {
   display: none;
   background-color: #9d62eb;
   border-radius: 10%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 footer .logo img {
   width: 100%;
@@ -578,9 +531,8 @@ footer .logo:hover {
   z-index: 900;
   position: static;
   border-radius: 50%;
-  border: 0.5rem outset #a009f7;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border: 0.5rem solid #a009f7;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 /* Settings and design of the images inside the about me paragraph */
@@ -591,8 +543,7 @@ footer .logo:hover {
   border-radius: 4rem;
   margin: 2rem 1rem 0 2rem;
   border: 0.5rem outset;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .paragraph-div img:hover {
   border-color: #a009f7;
@@ -635,10 +586,7 @@ footer .logo:hover {
 /* settings and design for the carousel slider presentation */
 .slider-box {
   border-radius: 3rem;
-  box-shadow: 0px 1px 2px 0px rgba(137, 45, 223, 0.7),
-    1px 2px 4px 0px rgba(81, 224, 15, 0.7),
-    2px 4px 8px 0px rgba(119, 15, 238, 0.7),
-    2px 4px 16px 0px rgba(233, 6, 157, 0.7);
+  box-shadow: 0px 1px 2px 0px rgba(137, 45, 223, 0.7), 1px 2px 4px 0px rgba(81, 224, 15, 0.7), 2px 4px 8px 0px rgba(119, 15, 238, 0.7), 2px 4px 16px 0px rgba(233, 6, 157, 0.7);
   padding: 10rem;
 }
 .slider-box .slider {
@@ -679,23 +627,23 @@ footer .logo:hover {
   border-radius: 3rem;
   position: absolute;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
   transition: 3s;
   background-color: rgba(242, 215, 255, 0.6705882353);
 }
 
 .carousel-item img {
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
 }
 
-html[data-page="index-english"] #portfolio .container .h3-title,
-html[data-page="index-german"] #portfolio .container .h3-title {
+html[data-page=index-english] #portfolio .container .h3-title,
+html[data-page=index-german] #portfolio .container .h3-title {
   margin-bottom: 3rem;
 }
 
-html[data-page="index-english"] .h4-title,
-html[data-page="index-german"] .h4-title {
+html[data-page=index-english] .h4-title,
+html[data-page=index-german] .h4-title {
   margin-top: 3rem;
 }
 
@@ -779,12 +727,10 @@ html[data-page="index-german"] .h4-title {
   margin: 0rem auto;
   background-color: #a009f7;
   border-radius: 4rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   overflow: hidden;
   -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px); /* Adds a blurred effect to the background */
+          backdrop-filter: blur(10px); /* Adds a blurred effect to the background */
 }
 
 .carousel-title {
@@ -802,9 +748,7 @@ html[data-page="index-german"] .h4-title {
   min-width: 100%;
   box-sizing: border-box;
   text-align: center;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border: #a009f7 0.25rem outset;
   border-radius: 4rem;
 }
@@ -824,9 +768,7 @@ html[data-page="index-german"] .h4-title {
   bottom: 0;
   width: 100%;
   height: 10rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border-radius: 0 0 3rem 3rem;
 }
 .carousel-item-info h4 {
@@ -940,6 +882,19 @@ html[data-page="index-german"] .h4-title {
     padding: 0.4rem;
   }
 }
+/* outer right cyan */
+/* outer right cyan */
+@keyframes tableAnimation {
+  0% {
+    color: #a009f7;
+  }
+  50% {
+    color: #00ff00;
+  }
+  100% {
+    color: #a009f7;
+  }
+}
 /* Settings and design of the skills table - portfolio page */
 .skills-table table {
   display: flex;
@@ -959,9 +914,7 @@ html[data-page="index-german"] .h4-title {
 .skills-table table td:hover {
   font-weight: bold;
   text-shadow: 50%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   transition: 1s;
 }
 .skills-table table i {
@@ -969,16 +922,13 @@ html[data-page="index-german"] .h4-title {
   width: 6rem;
   font-size: 3rem;
   color: #a009f7;
-  background-color: rgba(240, 92, 233, 0.54);
+  background-color: rgba(255, 255, 255, 0.54);
   border-radius: 50%;
-}
-.skills-table table i:hover {
-  animation: tableAnimation 4s infinite;
 }
 
 /* Settings and design for elements table */
 .elements-table table {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -998,8 +948,7 @@ html[data-page="index-german"] .h4-title {
 .elements-table table td:hover {
   font-size: large;
   font-weight: bold;
-  text-shadow: 0 0 2rem #fff, 0 0 3rem #3fdee4, 0 0 4rem #a00de4,
-    0 0 5rem #4d9aff, 0 0 6rem #11cef0, 0 0 7rem #75e3f7, 0 0 8rem #a87fdd;
+  text-shadow: 0 0 2rem #fff, 0 0 3rem #3fdee4, 0 0 4rem #a00de4, 0 0 5rem #4d9aff, 0 0 6rem #11cef0, 0 0 7rem #75e3f7, 0 0 8rem #a87fdd;
   transition: 1s;
 }
 .elements-table table i {
@@ -1019,6 +968,10 @@ html[data-page="index-german"] .h4-title {
   transition: 1s;
 }
 
+.elements-table-div {
+  display: none;
+}
+
 @media screen and (max-width: 1400px) {
   .elements-table-div,
   .elements-table,
@@ -1028,6 +981,23 @@ html[data-page="index-german"] .h4-title {
 }
 /* outer right cyan */
 /* outer right cyan */
+@keyframes BlackWhiteAnimation {
+  0% {
+    border-color: rgb(255, 253, 253);
+  }
+  25% {
+    border-color: rgb(190, 188, 188);
+  }
+  50% {
+    border-color: rgb(117, 116, 116);
+  }
+  75% {
+    border-color: rgb(190, 188, 188);
+  }
+  100% {
+    border-color: rgb(255, 253, 253);
+  }
+}
 /* Settings and design for all portfolio items in the website */
 .portfolio-items {
   display: flex;
@@ -1046,25 +1016,16 @@ html[data-page="index-german"] .h4-title {
   background-color: #c6acf0;
   border: 0.8rem outset #a009f7;
   border-radius: 1.5rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   transition: transform 1s;
 }
 .portfolio-items .portfolio-item:hover {
-  background-color: #ffffff;
-  background-image: radial-gradient(
-    rgba(0, 153, 255, 0.5),
-    rgba(123, 255, 0, 0.5),
-    rgba(255, 0, 255, 0.5),
-    rgba(255, 251, 4, 0.5)
-  );
-  border: 1rem transparent;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color: rgba(160, 235, 130, 0.5215686275);
+  background-image: radial-gradient(rgba(0, 153, 255, 0.5), rgba(123, 255, 0, 0.5), rgba(255, 0, 255, 0.5), rgba(255, 251, 4, 0.5));
+  border: 1rem outset transparent;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   transform: scale(1.05);
   z-index: 1000;
 }
@@ -1085,16 +1046,15 @@ html[data-page="index-german"] .h4-title {
   color: #fff;
   background-color: #a009f7;
   border-radius: 1.5rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   display: inline-block;
   padding: 1rem;
 }
 .portfolio-items .portfolio-item a:hover {
   font-size: x-large;
-  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  background-color: #2eade7;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border: 0.5rem solid #fff;
+  animation: BlackWhiteAnimation 4s infinite;
   transition: 1s;
 }
 .portfolio-items .portfolio-item .portfolio-item-icons {
@@ -1127,12 +1087,7 @@ html[data-page="index-german"] .h4-title {
   transition: background-color 0.3s ease;
 }
 .items-2 .portfolio-item:hover {
-  background-image: radial-gradient(
-    rgba(101, 250, 146, 0.5),
-    rgba(62, 211, 248, 0.5),
-    rgba(236, 28, 236, 0.5),
-    rgba(238, 121, 121, 0.5)
-  ) !important;
+  background-image: radial-gradient(rgba(101, 250, 146, 0.5), rgba(62, 211, 248, 0.5), rgba(236, 28, 236, 0.5), rgba(238, 121, 121, 0.5)) !important;
   transition: 1s;
 }
 .items-2 .portfolio-item h5,
@@ -1241,17 +1196,9 @@ html[data-page="index-german"] .h4-title {
 .skill i:first-child {
   width: 5rem;
   height: 4rem;
-  background-color: rgba(254, 219, 255, 0.8);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  background-image: linear-gradient(
-    -45deg,
-    rgb(241, 50, 216),
-    rgb(198, 8, 236),
-    rgb(12, 149, 240),
-    rgb(122, 122, 231)
-  );
+  background-color: rgba(235, 89, 240, 0.8);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-image: linear-gradient(-45deg, rgb(241, 50, 216), rgb(198, 8, 236), rgb(12, 149, 240), rgb(122, 122, 231));
   background-size: 300% 300%;
   animation: gradient 15s ease infinite;
 }
@@ -1262,15 +1209,14 @@ html[data-page="index-german"] .h4-title {
   align-items: center;
   width: 6rem;
   height: 6rem;
-  background-color: rgba(247, 227, 247, 0.9411764706);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color: rgba(235, 89, 240, 0.8);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   transition: 1s;
 }
 .tool i:hover,
 .skill i:hover {
   font-size: 3rem;
+  color: #ffd900;
   transition: 1s;
 }
 .tool p,
@@ -1296,22 +1242,22 @@ html[data-page="index-german"] .h4-title {
     border-color: rgb(238, 96, 219);
   }
   16.67% {
-    border-color: rgb(191, 0, 255);
+    border-color: rgb(238, 96, 96);
   }
   33.33% {
-    border-color: rgb(126, 0, 245);
+    border-color: rgb(138, 41, 230);
   }
   50% {
     border-color: rgb(96, 174, 238);
   }
   66.67% {
-    border-color: rgb(154, 41, 240);
+    border-color: rgb(51, 51, 235);
   }
   83.33% {
-    border-color: rgb(63, 136, 253);
+    border-color: rgb(96, 233, 238);
   }
   100% {
-    border-color: rgb(212, 0, 255);
+    border-color: rgb(68, 240, 105);
   }
 }
 /* Settings and design for all contact options */
@@ -1342,9 +1288,7 @@ html[data-page="index-german"] .h4-title {
   line-height: 3rem;
   border: 0.1rem solid rgba(177, 177, 177, 0.548);
   border-radius: 3rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .contact-options-divs .contact-form a,
 .contact-options-divs .contact-directly a {
@@ -1354,6 +1298,7 @@ html[data-page="index-german"] .h4-title {
 .contact-options-divs .contact-form a:hover,
 .contact-options-divs .contact-directly a:hover {
   font-weight: bolder;
+  text-shadow: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223);
 }
 .contact-options-divs .contact-form i,
 .contact-options-divs .contact-directly i {
@@ -1404,9 +1349,7 @@ html[data-page="index-german"] .h4-title {
   height: 3rem;
   font-size: 1.2rem;
   border-radius: 1rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .contact-options-divs .form textarea {
   padding: 0.5rem;
@@ -1416,9 +1359,13 @@ html[data-page="index-german"] .h4-title {
   border-radius: 1rem;
   resize: none;
   font-size: 1.2rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.contact-options-divs .form input:hover,
+.contact-options-divs .form textarea:hover {
+  border-width: 0.5rem;
+  animation: colorWaveAnimation 6s infinite;
+  box-shadow: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223);
 }
 .contact-options-divs .contact-directly {
   display: flex;
@@ -1523,27 +1470,29 @@ html[data-page="index-german"] .h4-title {
   }
 }
 
+/* outer right cyan */
+/* outer right cyan */
 @keyframes colorWaveAnimation {
   0% {
     border-color: rgb(238, 96, 219);
   }
   16.67% {
-    border-color: rgb(191, 0, 255);
+    border-color: rgb(238, 96, 96);
   }
   33.33% {
-    border-color: rgb(126, 0, 245);
+    border-color: rgb(138, 41, 230);
   }
   50% {
     border-color: rgb(96, 174, 238);
   }
   66.67% {
-    border-color: rgb(154, 41, 240);
+    border-color: rgb(51, 51, 235);
   }
   83.33% {
-    border-color: rgb(63, 136, 253);
+    border-color: rgb(96, 233, 238);
   }
   100% {
-    border-color: rgb(212, 0, 255);
+    border-color: rgb(68, 240, 105);
   }
 }
 /* Settings fot the smiley and "hire me" boxes */
@@ -1587,9 +1536,7 @@ html[data-page="index-german"] .h4-title {
   color: #fff;
   background-color: #a009f7;
   border-radius: 2rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .hire-me .hire-me-textbox:hover {
   text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
@@ -1673,9 +1620,9 @@ html[data-page="index-german"] .h4-title {
   transform: translateY(-50%);
   font-size: large;
   color: #a009f7;
-  border: #fff 0.3rem solid;
+  background-image: linear-gradient(135deg, rgba(255, 192, 203, 0.644), rgba(228, 207, 168, 0.644), rgba(204, 236, 168, 0.596));
+  border: #fff 0.5rem solid;
   border-radius: 2rem;
-  background-color: rgba(242, 215, 255, 0.6705882353);
   animation: colorWaveAnimation 6s infinite;
 }
 .languages img {
@@ -1687,13 +1634,11 @@ html[data-page="index-german"] .h4-title {
 .languages:hover {
   font-weight: bolder;
   color: #530680;
+  background-image: linear-gradient(135deg, rgb(236, 199, 236), rgb(198, 198, 228), rgb(193, 224, 193));
+  text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
   border: 1.5rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  padding: 0.8rem;
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
   z-index: 1000;
-  background-color: #f2d7ff;
 }
 
 /* Settings and design for Back to top button */
@@ -1707,8 +1652,8 @@ html[data-page="index-german"] .h4-title {
   transform: translateY(-50%);
   font-size: larger;
   color: #a009f7;
-  background-color: rgba(242, 215, 255, 0.6705882353);
-  border: #fff 0.3rem solid;
+  background-image: linear-gradient(135deg, rgba(255, 192, 203, 0.644), rgba(228, 207, 168, 0.644), rgba(204, 236, 168, 0.596));
+  border: #fff 0.5rem solid;
   border-radius: 2rem;
   animation: colorWaveAnimation 6s infinite;
   transition: background-image 0.5s ease-in-out;
@@ -1716,13 +1661,10 @@ html[data-page="index-german"] .h4-title {
 .backtotop:hover {
   font-weight: bold;
   color: #530680;
+  background-image: linear-gradient(135deg, rgb(236, 199, 236), rgb(198, 198, 228), rgb(193, 224, 193));
   border: 1.5rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
   z-index: 1000;
-  background-color: #f2d7ff;
-  padding: 0.8rem;
 }
 .backtotop i {
   color: #a009f7;
@@ -1796,12 +1738,10 @@ html[data-page="index-german"] .h4-title {
   font-size: x-large;
   background-color: rgba(242, 215, 255, 0.6705882353);
   line-height: 3rem;
-  border: 0.1rem solid transparent;
+  border: 0.1rem solid rgba(177, 177, 177, 0.548);
   border-radius: 3rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  transition: 0.5s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: 1s;
 }
 .my-files a {
   color: #000000;
@@ -1815,11 +1755,7 @@ html[data-page="index-german"] .h4-title {
 }
 .my-files a:hover {
   font-weight: bolder;
-  text-shadow: 1px 1px 1px #c00eec, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff,
-    -1px 3px 2px #ffffff, -1px -1px 1px #e79aee, 2px -1px 2px #a5cef0,
-    1px 7px 4px rgba(175, 43, 228, 0.4), 1px 9px 10px rgba(194, 103, 236, 0.2),
-    1px 9px 35px rgba(212, 0, 255, 0.2), 1px 9px 60px rgba(243, 20, 243, 0.4);
-  color: #a009f7;
+  text-shadow: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223);
 }
 .my-files i {
   font-size: x-large;
@@ -1861,12 +1797,11 @@ html[data-page="index-german"] .h4-title {
 
 .custom-cursor {
   position: absolute;
-  width: 1.5rem; /* Cursor width */
-  height: 1.5rem; /* Cursor height */
+  width: 3rem; /* Cursor width */
+  height: 3rem; /* Cursor height */
   border-radius: 50%; /* Make it circular */
   background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
-    0 0 20px rgba(255, 255, 255, 0.6); /* Glowing effect */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6); /* Glowing effect */
   pointer-events: none; /* Ensure the cursor doesn't interfere with mouse events */
   transform: translate(-50%, -50%); /* Center the cursor */
   transition: transform 0.1s ease; /* Smooth movement */
@@ -1893,12 +1828,7 @@ a:hover ~ .custom-cursor {
   border-radius: 50%;
   position: absolute;
   pointer-events: none;
-  background: linear-gradient(
-    45deg,
-    rgb(247, 0, 255),
-    rgb(84, 18, 236),
-    rgb(0, 255, 234)
-  );
+  background: linear-gradient(45deg, rgb(247, 0, 255), rgb(84, 18, 236), rgb(0, 255, 234));
   transform: translate(-50%, -50%);
   box-shadow: 0;
   animation: animate 4s linear infinite;
@@ -1916,4 +1846,4 @@ a:hover ~ .custom-cursor {
     opacity: 0;
     filter: hue-rotate(720deg);
   }
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

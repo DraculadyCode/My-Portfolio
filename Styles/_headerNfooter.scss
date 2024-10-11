@@ -18,6 +18,7 @@ header {
   @include fontNtext($color: $mainTextColor, $bgColor: $primaryColor);
   @include borderBottomRds($bbLeftRds: 1rem, $bbRightRds: 1rem);
   padding: 1.25rem 0;
+  border-bottom: transparent;
   background-size: 600% auto;
   box-shadow: $mainShadow;
   .icon-top-draculady {
@@ -76,6 +77,13 @@ header {
     margin: 3% 0;
     z-index: 999;
     position: relative;
+    // &::before,
+    // &::after {
+    //   content: "\e682";
+    //   @include displaySet($position: relative, $zIndx: 999);
+    //   font-family: "FontAwesome";
+    //   padding: 0 10rem;
+    // }
   }
 }
 nav ul {
