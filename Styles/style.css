@@ -220,7 +220,6 @@ button {
   font-family: "Courgette";
 }
 button:hover {
-  box-shadow: 0.5rem 0.5rem 0.5rem rgb(127, 169, 223);
   transform: scale(1.1);
   transition: 1s;
 }
@@ -1295,7 +1294,7 @@ html[data-page=index-german] .h4-title {
 .contact-options-divs .contact-form a:hover,
 .contact-options-divs .contact-directly a:hover {
   font-weight: bolder;
-  text-shadow: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223);
+  text-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .contact-options-divs .contact-form i,
 .contact-options-divs .contact-directly i {
@@ -1463,7 +1462,8 @@ html[data-page=index-german] .h4-title {
   }
   .contact-options-divs .form input,
   .contact-options-divs .form textarea {
-    width: 20rem;
+    width: 18rem;
+    margin: 0 2rem;
   }
 }
 

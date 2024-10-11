@@ -188,7 +188,6 @@ button {
   cursor: pointer;
   font-family: "Courgette";
   &:hover {
-    box-shadow: 0.5rem 0.5rem 0.5rem rgb(127, 169, 223);
     transform: scale(1.1);
     transition: 1s;
   }

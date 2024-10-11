@@ -35,10 +35,7 @@
       border-radius: 50%;
     }
     a:hover {
-      @include fontNtext(
-        $font-weight: bolder,
-        $txtShdw: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223)
-      );
+      @include fontNtext($font-weight: bolder, $txtShdw: $mainShadow);
     }
     i {
       @include fontNtext($font-size: x-large, $color: $primaryColor);
@@ -218,7 +215,8 @@
     .form {
       input,
       textarea {
-        @include sizesNgaps($width: 20rem);
+        @include sizesNgaps($width: 18rem);
+        margin: 0 2rem;
       }
     }
   }
