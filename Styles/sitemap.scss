@@ -1,6 +1,10 @@
-@import "./basicSettings";
+// Other imports remain unchanged
 @import "./variables";
-@import "./mixins";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .container {
   max-width: 70rem;
@@ -11,10 +15,11 @@
 h1 {
   text-align: center;
   margin-bottom: 2rem;
-  font-size: 6rem;
+  font-size: 8rem;
   text-shadow: $sitemap-text-shadow;
   color: antiquewhite;
   letter-spacing: 0.5rem;
+  text-shadow: $titlesShadow;
 }
 
 .sitemap {
@@ -40,53 +45,82 @@ h1 {
   transform: translateY(-5px);
   cursor: pointer;
 }
+
 .sitemap-item {
   margin: 1rem;
   width: 100%;
   background-color: rgb(246, 246, 223);
 }
+
 .sitemap-english,
 .sitemap-german {
   background: $sectionBg;
   border-radius: 3rem;
+
   h2 {
     font-size: 3rem;
     text-shadow: $sitemap-h2-shadow;
   }
 }
+
 .title-sitemap {
   background-color: $primaryColor;
   box-shadow: $boxShadow !important;
   cursor: none !important;
   margin-bottom: 1rem;
 }
+
 .sitemap div a {
   color: #333;
   text-decoration: none;
   margin-top: 1rem;
   font-size: 2rem;
 }
+
 .sitemap div a:hover {
   color: $primaryColor;
   font-weight: bolder;
 }
+
 .sitemap i {
   font-size: 3rem;
   color: #007bff;
 }
+
 .sitemap i:hover {
   color: $primaryColor;
 }
 
-// Responsivness
+// Responsiveness
 @media (max-width: 768px) {
+  .sitemap {
+    justify-content: center; /* Center the two columns */
+  }
   .sitemap div {
-    flex: 1 1 calc(50% - 40px);
+    flex: 1 1 calc(50% - 4rem);
   }
 }
 
 @media (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size: 8rem;
+    }
+  }
+  .sitemap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem 0;
+  }
   .sitemap div {
     flex: 1 1 100%;
+    max-width: 100%;
   }
 }

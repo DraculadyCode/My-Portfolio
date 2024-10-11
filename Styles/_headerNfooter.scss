@@ -77,13 +77,6 @@ header {
     margin: 3% 0;
     z-index: 999;
     position: relative;
-    // &::before,
-    // &::after {
-    //   content: "\e682";
-    //   @include displaySet($position: relative, $zIndx: 999);
-    //   font-family: "FontAwesome";
-    //   padding: 0 10rem;
-    // }
   }
 }
 nav ul {
@@ -112,7 +105,6 @@ nav ul {
       z-index: 500;
       &:hover {
         @include fontNtext($font-weight: bolder);
-        animation: textColorChanging 6s infinite;
       }
     }
   }
@@ -170,10 +162,8 @@ footer {
     $ltrSpc: 0.18rem
   );
   text-align: center;
-  border-top: 0.5rem solid transparent;
-  animation: colorWaveAnimation 6s infinite;
+  border-top: 0.5rem solid rgb(236, 196, 247);
   &:hover {
-    animation: lightingAnimation 3s linear infinite;
     box-shadow: $mainShadow;
     border-top: 0.3rem outset rgb(70, 0, 102);
     .logo {

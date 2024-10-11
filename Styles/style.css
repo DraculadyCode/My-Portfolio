@@ -376,7 +376,6 @@ nav ul li a {
 }
 nav ul li a:hover {
   font-weight: bolder;
-  animation: textColorChanging 6s infinite;
 }
 
 .dropdown-portfolio {
@@ -430,11 +429,9 @@ footer {
   background-color: #a009f7;
   letter-spacing: 0.18rem;
   text-align: center;
-  border-top: 0.5rem solid transparent;
-  animation: colorWaveAnimation 6s infinite;
+  border-top: 0.5rem solid rgb(236, 196, 247);
 }
 footer:hover {
-  animation: lightingAnimation 3s linear infinite;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border-top: 0.3rem outset rgb(70, 0, 102);
 }
@@ -1797,8 +1794,8 @@ html[data-page=index-german] .h4-title {
 
 .custom-cursor {
   position: absolute;
-  width: 3rem; /* Cursor width */
-  height: 3rem; /* Cursor height */
+  width: 1.5rem; /* Cursor width */
+  height: 1.5rem; /* Cursor height */
   border-radius: 50%; /* Make it circular */
   background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6); /* Glowing effect */
