@@ -1,40 +1,31 @@
 @import "./variables";
-@import "./mixins";
-@import "./animations";
-// @include colorWaveAnimation;
-@include lightingAnimation;
-@include textColorChanging;
 
 // Header part
 
 /* header designs and settings */
 header {
-  @include displaySet(
-    $dspl: flex,
-    $jusCont: space-between,
-    $alItms: center,
-    $zIndx: 999
-  );
-  @include fontNtext($color: $mainTextColor, $bgColor: $primaryColor);
-  @include borderBottomRds($bbLeftRds: 1rem, $bbRightRds: 1rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  color: $mainTextColor;
+  background-color: $primaryColor;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   padding: 1.25rem 0;
   border-bottom: transparent;
   background-size: 600% auto;
   box-shadow: $mainShadow;
   .icon-top-draculady {
-    @include displaySet(
-      $dspl: none,
-      $padding: 0,
-      $width: 35%,
-      $margin: 2% 35%,
-      $position: relative,
-      $zIndx: 500
-    );
-    @include fontNtext(
-      $borderRds: 50%,
-      $bgColor: $icon-bg,
-      $boxShdw: $icon-shadow
-    );
+    display: none;
+    padding: 0;
+    width: 35%;
+    margin: 2% 35%;
+    position: relative;
+    z-index: 500;
+    border-radius: 50%;
+    background-color: $icon-bg;
+    box-shadow: $icon-shadow;
     img {
       width: 100%;
     }
@@ -45,19 +36,15 @@ header {
     }
   }
   .icon-draculady {
-    @include displaySet(
-      $dspl: block,
-      $padding: 0,
-      $width: 25%,
-      $margin: 2% 35%,
-      $position: relative,
-      $zIndx: 100
-    );
-    @include fontNtext(
-      $borderRds: 50%,
-      $bgColor: $icon-bg,
-      $boxShdw: $icon-shadow
-    );
+    display: block;
+    padding: 0;
+    width: 25%;
+    margin: 2% 35%;
+    position: relative;
+    z-index: 100;
+    border-radius: 50%;
+    background-color: $icon-bg;
+    box-shadow: $icon-shadow;
     img {
       width: 100%;
     }
@@ -68,30 +55,28 @@ header {
     }
   }
   h1 {
-    @include fontNtext(
-      $font-size: 6rem,
-      $ltrSpc: 0.3rem,
-      $txtShdw: $h1Shadow,
-      $fontFmly: "poetsen One"
-    );
+    text-shadow: $h1Shadow;
+    font-family: "poetsen One";
+    font-size: 6rem;
+    letter-spacing: 0.3rem;
     margin: 3% 0;
     z-index: 999;
     position: relative;
   }
 }
 nav ul {
-  @include displaySet(
-    $dspl: flex,
-    $flxDrc: row,
-    $jusCont: center,
-    $alItms: center,
-    $position: relative,
-    $zIndx: 500
-  );
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 500;
   font-size: xx-large;
   margin-top: 1rem;
   li {
-    @include displaySet($dspl: inline, $position: relative, $zIndx: 500);
+    display: inline;
+    position: relative;
+    z-index: 500;
     margin: 0 3rem;
     text-shadow: $navShadow;
     letter-spacing: 0.2rem;
@@ -104,18 +89,18 @@ nav ul {
       position: relative;
       z-index: 500;
       &:hover {
-        @include fontNtext($font-weight: bolder);
+        font-weight: bolder;
       }
     }
   }
 }
 .dropdown-portfolio {
-  @include displaySet(
-    $dspl: none,
-    $position: absolute,
-    $zIndx: 1000 !important
-  );
-  @include sizesNgaps($top: 75%, $left: 50%, $min-width: 25rem);
+  display: none;
+  position: absolute;
+  z-index: 1000 !important;
+  top: 75%;
+  left: 50%;
+  min-width: 25rem;
   background-color: #b48ee5b7;
   backdrop-filter: blur(5px);
   border-radius: 2rem;
@@ -149,18 +134,14 @@ nav ul {
 //Footer part
 /* Settings for the Footer of the pages */
 footer {
-  @include sizesNgaps(
-    $padding: 1.5rem 0,
-    $margin: 2rem 0 0 0,
-    $width: 100%,
-    $bottom: 0
-  );
-  @include fontNtext(
-    $font-size: x-large,
-    $color: $mainTextColor,
-    $bgColor: $primaryColor,
-    $ltrSpc: 0.18rem
-  );
+  padding: 1.5rem 0;
+  margin: 2rem 0 0 0;
+  width: 100%;
+  bottom: 0;
+  font-size: x-large;
+  color: $mainTextColor;
+  background-color: $primaryColor;
+  letter-spacing: 0.18rem;
   box-shadow: $mainShadow;
   text-align: center;
   border-top: 0.3rem solid rgb(236, 196, 247);
@@ -181,17 +162,13 @@ footer {
     }
   }
   .logo {
-    @include displaySet(
-      $dspl: none,
-      $margin: 1.5% 30%,
-      $padding: 0.5rem,
-      $width: 40%
-    );
-    @include fontNtext(
-      $boxShdw: $mainShadow,
-      $borderRds: 10%,
-      $bgColor: $icon-bg
-    );
+    display: none;
+    margin: 1.5% 30%;
+    padding: 0.5rem;
+    width: 40%;
+    box-shadow: $mainShadow;
+    border-radius: 10%;
+    background-color: $icon-bg;
     img {
       width: 100%;
     }
@@ -218,13 +195,11 @@ footer {
     display: block !important;
   }
   nav ul {
-    @include displaySet(
-      $dspl: flex,
-      $flxDrc: column,
-      $jusCont: center,
-      $alItms: center,
-      $txtAln: center
-    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding-left: 0;
     li {
       display: block;

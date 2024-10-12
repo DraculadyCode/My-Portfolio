@@ -254,58 +254,12 @@ button:hover {
   }
 }
 /* outer right cyan */
-/* outer right cyan */
-/* outer right cyan */
-@keyframes dropdown {
-  0% {
-    max-height: 0;
-    opacity: 0;
-  }
-  100% {
-    max-height: 20rem;
-    opacity: 1;
-  }
-}
-@keyframes lightingAnimation {
-  0% {
-    color: #fff;
-  }
-  50% {
-    color: rgb(133, 127, 127);
-  }
-  100% {
-    color: #fff;
-  }
-}
-@keyframes textColorChanging {
-  0% {
-    color: rgb(238, 96, 219);
-  }
-  16.67% {
-    color: rgb(238, 96, 96);
-  }
-  33.33% {
-    color: rgb(235, 193, 9);
-  }
-  50% {
-    color: rgb(63, 60, 60);
-  }
-  66.67% {
-    color: rgb(51, 51, 235);
-  }
-  83.33% {
-    color: rgb(96, 233, 238);
-  }
-  100% {
-    color: rgb(68, 240, 105);
-  }
-}
 /* header designs and settings */
 header {
-  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 999;
   color: #fff;
   background-color: #a009f7;
   border-bottom-left-radius: 1rem;
@@ -316,14 +270,14 @@ header {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 header .icon-top-draculady {
-  padding: 0;
-  margin: 2% 35%;
-  width: 35%;
-  z-index: 500;
   display: none;
+  padding: 0;
+  width: 35%;
+  margin: 2% 35%;
   position: relative;
-  background-color: #9d62eb;
+  z-index: 500;
   border-radius: 50%;
+  background-color: #9d62eb;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 header .icon-top-draculady img {
@@ -335,14 +289,14 @@ header .icon-top-draculady:hover {
   box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
 }
 header .icon-draculady {
-  padding: 0;
-  margin: 2% 35%;
-  width: 25%;
-  z-index: 100;
   display: block;
+  padding: 0;
+  width: 25%;
+  margin: 2% 35%;
   position: relative;
-  background-color: #9d62eb;
+  z-index: 100;
   border-radius: 50%;
+  background-color: #9d62eb;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 header .icon-draculady img {
@@ -354,29 +308,29 @@ header .icon-draculady:hover {
   transform: scale(1.05);
 }
 header h1 {
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
+  font-family: "poetsen One";
   font-size: 6rem;
   letter-spacing: 0.3rem;
-  font-family: "poetsen One";
-  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
   margin: 3% 0;
   z-index: 999;
   position: relative;
 }
 
 nav ul {
-  z-index: 500;
   display: flex;
-  position: relative;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 500;
   font-size: xx-large;
   margin-top: 1rem;
 }
 nav ul li {
-  z-index: 500;
   display: inline;
   position: relative;
+  z-index: 500;
   margin: 0 3rem;
   text-shadow: 1px 1px 1px #5ff6ff, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff, -1px 3px 2px #ffffff, -1px -1px 1px #ffffff, 2px -1px 2px #a5cef0, 1px 7px 4px rgba(0, 9, 35, 0.4), 1px 9px 10px rgba(0, 64, 255, 0.2), 1px 9px 35px rgba(0, 64, 255, 0.2), 1px 9px 60px rgba(0, 64, 255, 0.4);
   letter-spacing: 0.2rem;
@@ -395,9 +349,9 @@ nav ul li a:hover {
 }
 
 .dropdown-portfolio {
-  z-index: 1000 !important;
   display: none;
   position: absolute;
+  z-index: 1000 !important;
   top: 75%;
   left: 50%;
   min-width: 25rem;
@@ -462,13 +416,13 @@ footer p::before, footer p::after {
   padding: 0 15rem;
 }
 footer .logo {
-  padding: 0.5rem;
-  margin: 1.5% 30%;
-  width: 40%;
   display: none;
-  background-color: #9d62eb;
-  border-radius: 10%;
+  margin: 1.5% 30%;
+  padding: 0.5rem;
+  width: 40%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 10%;
+  background-color: #9d62eb;
 }
 footer .logo img {
   width: 100%;
@@ -520,18 +474,6 @@ footer .logo:hover {
   }
 }
 /* outer right cyan */
-/* outer right cyan */
-/* outer right cyan */
-@keyframes dropdown {
-  0% {
-    max-height: 0;
-    opacity: 0;
-  }
-  100% {
-    max-height: 20rem;
-    opacity: 1;
-  }
-}
 /* Settings and design of the main picture */
 .profile-picture {
   display: flex;
@@ -541,8 +483,8 @@ footer .logo:hover {
   margin: 4rem 1rem 1rem;
   width: 30rem;
   height: 30rem;
-  z-index: 900;
   position: static;
+  z-index: 900;
   border-radius: 50%;
   border: 0.5rem solid #a009f7;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -551,8 +493,8 @@ footer .logo:hover {
 /* Settings and design of the images inside the about me paragraph */
 .paragraph-div img {
   /* Settings of images inside the div paragraph, p_img_1 and p_img_2 */
-  z-index: 900;
   position: relative;
+  z-index: 900;
   border-radius: 4rem;
   margin: 2rem 1rem 0 2rem;
   border: 0.5rem outset;

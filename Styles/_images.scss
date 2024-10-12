@@ -1,12 +1,14 @@
 @import "./variables";
-@import "./mixins";
-@import "./animations";
 /* Settings and design of the main picture */
 .profile-picture {
-  @include displaySet($dspl: flex, $jusCont: center);
+  display: flex;
+  justify-content: center;
   img {
-    @include sizesNgaps($margin: 4rem 1rem 1rem, $width: 30rem, $height: 30rem);
-    @include displaySet($position: static, $zIndx: 900);
+    margin: 4rem 1rem 1rem;
+    width: 30rem;
+    height: 30rem;
+    position: static;
+    z-index: 900;
     border-radius: 50%;
     border: 0.5rem solid $primaryColor;
     box-shadow: $imgShadow;
@@ -15,7 +17,8 @@
 /* Settings and design of the images inside the about me paragraph */
 .paragraph-div img {
   /* Settings of images inside the div paragraph, p_img_1 and p_img_2 */
-  @include displaySet($position: relative, $zIndx: 900);
+  position: relative;
+  z-index: 900;
   border-radius: 4rem;
   margin: 2rem 1rem 0 2rem;
   border: 0.5rem outset;
@@ -26,12 +29,14 @@
   }
 }
 .p_img_1 img {
-  @include sizesNgaps($width: 20rem, $height: 20rem);
+  width: 20rem;
+  height: 20rem;
   border-color: $primaryColor;
   z-index: 3;
 }
 .p_img_2 img {
-  @include sizesNgaps($width: 22rem, $height: auto);
+  width: 22rem;
+  height: auto;
   border-color: $primaryColor;
   bottom: -80rem;
 }
@@ -41,6 +46,7 @@
     display: none;
   }
   .profile-picture img {
-    @include sizesNgaps($max-width: 20rem, $max-height: 20rem);
+    max-width: 20rem;
+    max-height: 20rem;
   }
 }
