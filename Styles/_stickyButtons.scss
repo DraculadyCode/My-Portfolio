@@ -1,30 +1,27 @@
 @import "./variables";
-@import "./mixins";
 @include colorWaveAnimation;
 /* Settings fot the smiley and "hire me" boxes */
 .hire-me {
-  @include sizesNgaps($margin: 1.5rem, $top: 8rem, $right: 1rem);
-  @include displaySet(
-    $position: fixed,
-    $zIndx: 0,
-    $transform: translateY(-50%)
-  );
+  margin: 1.5rem;
+  top: 8rem;
+  right: 1rem;
+  position: fixed;
+  z-index: 0;
+  transform: translateY(-50%);
   &:hover {
     z-index: 1000;
     .face {
-      @include fontNtext($boxShdw: $boxShadow, $border: 1rem);
+      box-shadow: $mainShadow;
+      border: 1rem;
       &::before {
-        @include sizesNgaps(
-          $width: 3.5rem,
-          $height: 2rem,
-          $top: 6rem,
-          $left: 3rem
-        );
-        @include fontNtext(
-          $bgColor: rgb(236, 140, 177),
-          $border: 0.5rem solid rgb(236, 140, 177)
-        );
-        @include borderBottomRds($bbLeftRds: 3rem, $bbRightRds: 3rem);
+        width: 3.5rem;
+        height: 2rem;
+        top: 6rem;
+        left: 3rem;
+        background-color: $smilyLips;
+        border: $smilyLips 0.5rem solid;
+        border-bottom-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
       }
       .eye {
         box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem $mainTextColor;
@@ -32,84 +29,82 @@
     }
   }
   .hire-me-textbox {
-    @include displaySet($dspl: inherit, $position: absolute);
-    @include sizesNgaps(
-      $padding: 1rem,
-      $max-width: 8rem,
-      $top: -3rem,
-      $right: 10rem,
-      $zIndx: 0
-    );
-    @include fontNtext(
-      $font-size: larger,
-      $font-weight: bold,
-      $color: $mainTextColor,
-      $bgColor: $primaryColor,
-      $borderRds: 2rem,
-      $boxShdw: $mainShadow
-    );
+    display: inherit;
+    position: absolute;
+    padding: 1rem;
+    max-width: 8rem;
+    right: 10rem;
+    top: -3rem;
+    z-index: 0;
+    font-size: larger;
+    font-weight: bold;
+    color: $mainTextColor;
+    background-color: $primaryColor;
+    border-radius: 2rem;
+    box-shadow: $mainShadow;
+
     &:hover {
-      @include fontNtext(
-        $txtShdw: $boxShadow,
-        $border: 0.1rem solid gray,
-        $boxShdw: 0rem 0rem 1rem 1rem #a4e9f5
-      );
+      border: 0.1rem solid gray;
+      box-shadow: 0rem 0rem 1rem 1rem #a4e9f5;
     }
   }
   .face {
-    @include displaySet($dspl: flex, $position: relative);
-    @include sizesNgaps($margin: 0 0 0 5rem, $width: 10rem, $height: 10rem);
+    display: flex;
+    position: relative;
+    margin: 0 0 0 5rem;
+    width: 10rem;
+    height: 10rem;
     border: 0.8rem solid $form-BG;
     border-radius: 50%;
     background-color: #ffd105d7;
     box-shadow: $mainShadow;
     &:hover {
-      @include fontNtext($boxShdw: $mainShadow, $border: 1rem);
+      box-shadow: $mainShadow;
+      border: 1rem;
     }
     &::before {
       content: "";
-      @include sizesNgaps(
-        $width: 3rem,
-        $height: 0.6rem,
-        $top: 5.5rem,
-        $left: 2.5rem
-      );
-      @include fontNtext(
-        $bgColor: rgba(226, 125, 164, 0.692),
-        $border: 0.4rem solid rgba(223, 126, 163, 0.692)
-      );
-      @include borderBottomRds($bbLeftRds: 0rem, $bbRightRds: 0rem);
+      width: 3rem;
+      height: 0.6rem;
+      top: 5.5rem;
+      left: 2.5rem;
+      background-color: $smilyLips;
+      border: 0.4rem solid $smilyLips;
+      border-bottom-left-radius: 0rem;
+      border-bottom-right-radius: 0rem;
       position: absolute;
       transition: 0.5s;
     }
     &:hover::before {
-      @include sizesNgaps(
-        $width: 4rem,
-        $height: 2rem,
-        $top: 6.5rem,
-        $left: 2.5rem
-      );
+      width: 4rem;
+      height: 2rem;
+      top: 6.5rem;
+      left: 2.5rem;
     }
     &:hover .eye {
       box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem $mainTextColor;
     }
     .eyes {
-      @include displaySet($dspl: flex, $position: relative);
-      @include sizesNgaps($top: 1.5rem, $left: 2rem);
+      display: flex;
+      position: relative;
+      top: 1.5rem;
+      left: 2rem;
       .eye {
-        @include displaySet($dspl: block, $position: relative);
-        @include sizesNgaps($margin: 0 0.25rem, $width: 2rem, $height: 2rem);
-        @include fontNtext($bgColor: $mainTextColor, $borderRds: 50%);
-
+        display: block;
+        position: relative;
+        background-color: $mainTextColor;
+        margin: 0 0.25rem;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
         &::before {
           content: "";
-          @include sizesNgaps(
-            $width: 0.75rem,
-            $height: 0.75rem,
-            $top: 50%,
-            $left: 1rem
-          );
-          @include fontNtext($bgColor: #000000, $borderRds: 50%);
+          width: 0.75rem;
+          height: 0.75rem;
+          top: 50%;
+          left: 1rem;
+          background-color: #000000;
+          border-radius: 50%;
           position: absolute;
           transform: translate(-50%, -50%);
         }
@@ -119,25 +114,25 @@
 }
 /* Adjust the location and activity of the button "change language" */
 .languages {
-  @include sizesNgaps($padding: 0.8rem, $top: 70%, $right: 1.5rem);
-  @include displaySet(
-    $position: fixed,
-    $zIndx: 0,
-    $transform: translateY(-50%)
-  );
-  @include fontNtext(
-    $font-size: 6rem,
-    $border: $primaryColor 0.3rem solid,
-    $borderRds: 50%
-  );
+  padding: 0.8rem;
+  top: 70%;
+  right: 1.5rem;
+  position: fixed;
+  z-index: 0;
+  transform: translateY(-50%);
+  font-size: 6rem;
+  border: $primaryColor 0.3rem solid;
+  border-radius: 50%;
   animation: colorWaveAnimation 6s infinite;
   img {
-    @include sizesNgaps($margin: 0 auto, $width: 3rem, $height: 3rem);
+    margin: 0 auto;
+    width: 3rem;
+    height: 3rem;
     display: block;
     box-sizing: $mainShadow;
   }
   &:hover {
-    @include fontNtext($border: 1.5rem, $boxShdw: $mainShadow);
+    box-shadow: $mainShadow;
     z-index: 1000;
     border: 0.3rem $primaryColor inset;
     animation: none;
@@ -147,23 +142,21 @@
 
 /* Settings and design for Back to top button */
 .backtotop {
-  @include sizesNgaps(
-    $padding: 0.5rem,
-    $max-width: 10rem,
-    $top: 90%,
-    $right: 1.5rem
-  );
-  @include displaySet(
-    $position: fixed,
-    $zIndx: 0,
-    $transform: translateY(-50%)
-  );
-  @include fontNtext($font-size: 2.5rem, $color: $primaryColor);
-  @include fontNtext($border: $primaryColor 0.3rem solid, $borderRds: 50%);
+  padding: 0.5rem;
+  max-width: 10rem;
+  top: 90%;
+  right: 1.5rem;
+  position: fixed;
+  z-index: 0;
+  transform: translateY(-50%);
+  border: $primaryColor 0.3rem solid;
+  border-radius: 50%;
+  color: $primaryColor;
+  font-size: 2.5rem;
   animation: colorWaveAnimation 6s infinite;
-  transition: background-image 0.5s ease-in-out;
+  text-shadow: $title-span-shadow;
   &:hover {
-    @include fontNtext($border: 1.5rem, $boxShdw: $mainShadow);
+    box-shadow: $mainShadow;
     border: 0.3rem $primaryColor outset;
     z-index: 1000;
     animation: none;
@@ -188,10 +181,13 @@
       display: none;
     }
     img {
-      @include sizesNgaps($margin: 0 auto, $width: 2rem, $height: 2rem);
+      margin: 0 auto;
+      width: 2rem;
+      height: 2rem;
       display: block;
       &:hover {
-        @include sizesNgaps($width: 3rem, $height: 3rem);
+        width: 3rem;
+        height: 3rem;
       }
     }
   }
@@ -203,6 +199,8 @@
   }
   .hire-me {
     transform: translateY(-50%) scale(0.7);
-    @include sizesNgaps($margin: 1rem, $top: 6rem, $right: 0.2rem);
+    margin: 1rem;
+    top: 6rem;
+    right: 0.2rem;
   }
 }

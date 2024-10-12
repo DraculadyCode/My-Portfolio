@@ -1487,7 +1487,6 @@ html[data-page=index-german] .h4-title {
 }
 
 /* outer right cyan */
-/* outer right cyan */
 @keyframes colorWaveAnimation {
   0% {
     border-color: rgb(238, 96, 219);
@@ -1516,24 +1515,24 @@ html[data-page=index-german] .h4-title {
   margin: 1.5rem;
   top: 8rem;
   right: 1rem;
-  z-index: 0;
   position: fixed;
+  z-index: 0;
   transform: translateY(-50%);
 }
 .hire-me:hover {
   z-index: 1000;
 }
 .hire-me:hover .face {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border: 1rem;
-  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
 }
 .hire-me:hover .face::before {
   width: 3.5rem;
   height: 2rem;
   top: 6rem;
   left: 3rem;
-  background-color: rgb(236, 140, 177);
-  border: 0.5rem solid rgb(236, 140, 177);
+  background-color: rgb(246, 70, 205);
+  border: rgb(246, 70, 205) 0.5rem solid;
   border-bottom-left-radius: 3rem;
   border-bottom-right-radius: 3rem;
 }
@@ -1545,8 +1544,9 @@ html[data-page=index-german] .h4-title {
   position: absolute;
   padding: 1rem;
   max-width: 8rem;
-  top: -3rem;
   right: 10rem;
+  top: -3rem;
+  z-index: 0;
   font-size: larger;
   font-weight: bold;
   color: #fff;
@@ -1555,7 +1555,6 @@ html[data-page=index-german] .h4-title {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .hire-me .hire-me-textbox:hover {
-  text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
   border: 0.1rem solid gray;
   box-shadow: 0rem 0rem 1rem 1rem #a4e9f5;
 }
@@ -1571,8 +1570,8 @@ html[data-page=index-german] .h4-title {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .hire-me .face:hover {
-  border: 1rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border: 1rem;
 }
 .hire-me .face::before {
   content: "";
@@ -1580,8 +1579,8 @@ html[data-page=index-german] .h4-title {
   height: 0.6rem;
   top: 5.5rem;
   left: 2.5rem;
-  background-color: rgba(226, 125, 164, 0.692);
-  border: 0.4rem solid rgba(223, 126, 163, 0.692);
+  background-color: rgb(246, 70, 205);
+  border: 0.4rem solid rgb(246, 70, 205);
   border-bottom-left-radius: 0rem;
   border-bottom-right-radius: 0rem;
   position: absolute;
@@ -1605,10 +1604,10 @@ html[data-page=index-german] .h4-title {
 .hire-me .face .eyes .eye {
   display: block;
   position: relative;
+  background-color: #fff;
   margin: 0 0.25rem;
   width: 2rem;
   height: 2rem;
-  background-color: #fff;
   border-radius: 50%;
 }
 .hire-me .face .eyes .eye::before {
@@ -1628,8 +1627,8 @@ html[data-page=index-german] .h4-title {
   padding: 0.8rem;
   top: 70%;
   right: 1.5rem;
-  z-index: 0;
   position: fixed;
+  z-index: 0;
   transform: translateY(-50%);
   font-size: 6rem;
   border: #a009f7 0.3rem solid;
@@ -1644,7 +1643,6 @@ html[data-page=index-german] .h4-title {
   box-sizing: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .languages:hover {
-  border: 1.5rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   z-index: 1000;
   border: 0.3rem #a009f7 inset;
@@ -1658,18 +1656,17 @@ html[data-page=index-german] .h4-title {
   max-width: 10rem;
   top: 90%;
   right: 1.5rem;
-  z-index: 0;
   position: fixed;
+  z-index: 0;
   transform: translateY(-50%);
-  font-size: 2.5rem;
-  color: #a009f7;
   border: #a009f7 0.3rem solid;
   border-radius: 50%;
+  color: #a009f7;
+  font-size: 2.5rem;
   animation: colorWaveAnimation 6s infinite;
-  transition: background-image 0.5s ease-in-out;
+  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px, 2px 2px 2px rgba(255, 255, 255, 0.04);
 }
 .backtotop:hover {
-  border: 1.5rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border: 0.3rem #a009f7 outset;
   z-index: 1000;
