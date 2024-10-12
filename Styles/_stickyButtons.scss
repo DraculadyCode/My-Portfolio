@@ -59,11 +59,12 @@
   .face {
     @include displaySet($dspl: flex, $position: relative);
     @include sizesNgaps($margin: 0 0 0 5rem, $width: 10rem, $height: 10rem);
-    border: 0.8rem solid rgba(255, 197, 5, 0.747);
+    border: 0.8rem solid $form-BG;
     border-radius: 50%;
-    background-color: rgba(255, 209, 5, 0.842);
+    background-color: #ffd105d7;
+    box-shadow: $mainShadow;
     &:hover {
-      @include fontNtext($boxShdw: $boxShadow, $border: 1rem);
+      @include fontNtext($boxShdw: $mainShadow, $border: 1rem);
     }
     &::before {
       content: "";
@@ -88,11 +89,6 @@
         $top: 6.5rem,
         $left: 2.5rem
       );
-      @include fontNtext(
-        $bgColor: rgb(235, 99, 151),
-        $border: 0.4rem solid rgb(226, 89, 142)
-      );
-      @include borderBottomRds($bbLeftRds: 1.5rem, $bbRightRds: 1.5rem);
     }
     &:hover .eye {
       box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem $mainTextColor;
@@ -130,27 +126,22 @@
     $transform: translateY(-50%)
   );
   @include fontNtext(
-    $font-size: large,
-    $color: $primaryColor,
-    $bgImage: $floatBtnBg,
-    $border: $mainTextColor 0.5rem solid,
-    $borderRds: 2rem
+    $font-size: 6rem,
+    $border: $primaryColor 0.3rem solid,
+    $borderRds: 50%
   );
   animation: colorWaveAnimation 6s infinite;
   img {
-    @include sizesNgaps($margin: 0 auto, $width: 2rem, $height: 2rem);
+    @include sizesNgaps($margin: 0 auto, $width: 3rem, $height: 3rem);
     display: block;
+    box-sizing: $mainShadow;
   }
   &:hover {
-    @include fontNtext(
-      $font-weight: bolder,
-      $color: $hoverTitle,
-      $bgImage: $floatBtnBgHover,
-      $txtShdw: $boxShadow,
-      $border: 1.5rem,
-      $boxShdw: $boxShadow
-    );
+    @include fontNtext($border: 1.5rem, $boxShdw: $mainShadow);
     z-index: 1000;
+    border: 0.3rem $primaryColor inset;
+    animation: none;
+    background-color: $form-BG;
   }
 }
 
@@ -167,29 +158,19 @@
     $zIndx: 0,
     $transform: translateY(-50%)
   );
-  @include fontNtext(
-    $font-size: larger,
-    $color: $primaryColor,
-    $bgImage: $floatBtnBg
-  );
-  @include fontNtext($border: $mainTextColor 0.5rem solid, $borderRds: 2rem);
+  @include fontNtext($font-size: 2.5rem, $color: $primaryColor);
+  @include fontNtext($border: $primaryColor 0.3rem solid, $borderRds: 50%);
   animation: colorWaveAnimation 6s infinite;
   transition: background-image 0.5s ease-in-out;
   &:hover {
-    @include fontNtext(
-      $font-weight: bold,
-      $color: $hoverTitle,
-      $bgImage: $floatBtnBgHover,
-      $border: 1.5rem,
-      $boxShdw: $boxShadow
-    );
+    @include fontNtext($border: 1.5rem, $boxShdw: $mainShadow);
+    border: 0.3rem $primaryColor outset;
     z-index: 1000;
+    animation: none;
+    background-color: $form-BG;
   }
   i {
     color: $primaryColor;
-    &:hover {
-      transform: scale(1.2);
-    }
   }
 }
 /* Targeting the ShareThis button classes */

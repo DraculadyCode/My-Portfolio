@@ -107,6 +107,25 @@ h4 {
   font-size: 2.5rem;
 }
 
+html[lang=de][data-page=index-german] h2,
+html[lang=de][data-page=portfolio-german] h2,
+html[lang=de][data-page=files-german] h2,
+html[lang=de][data-page=contact-german] h2 {
+  font-size: 3.5rem;
+}
+html[lang=de][data-page=index-german] h3,
+html[lang=de][data-page=portfolio-german] h3,
+html[lang=de][data-page=files-german] h3,
+html[lang=de][data-page=contact-german] h3 {
+  font-size: 2.3rem;
+}
+html[lang=de][data-page=index-german] h4,
+html[lang=de][data-page=portfolio-german] h4,
+html[lang=de][data-page=files-german] h4,
+html[lang=de][data-page=contact-german] h4 {
+  font-size: 2rem;
+}
+
 /* settings for all h5 (project titles) in the website */
 h5 {
   font-size: xx-large;
@@ -1546,13 +1565,14 @@ html[data-page=index-german] .h4-title {
   margin: 0 0 0 5rem;
   width: 10rem;
   height: 10rem;
-  border: 0.8rem solid rgba(255, 197, 5, 0.747);
+  border: 0.8rem solid rgba(242, 215, 255, 0.6705882353);
   border-radius: 50%;
-  background-color: rgba(255, 209, 5, 0.842);
+  background-color: rgba(255, 209, 5, 0.8431372549);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .hire-me .face:hover {
   border: 1rem;
-  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .hire-me .face::before {
   content: "";
@@ -1572,10 +1592,6 @@ html[data-page=index-german] .h4-title {
   height: 2rem;
   top: 6.5rem;
   left: 2.5rem;
-  background-color: rgb(235, 99, 151);
-  border: 0.4rem solid rgb(226, 89, 142);
-  border-bottom-left-radius: 1.5rem;
-  border-bottom-right-radius: 1.5rem;
 }
 .hire-me .face:hover .eye {
   box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem #fff;
@@ -1615,27 +1631,25 @@ html[data-page=index-german] .h4-title {
   z-index: 0;
   position: fixed;
   transform: translateY(-50%);
-  font-size: large;
-  color: #a009f7;
-  background-image: linear-gradient(135deg, rgba(255, 192, 203, 0.644), rgba(228, 207, 168, 0.644), rgba(204, 236, 168, 0.596));
-  border: #fff 0.5rem solid;
-  border-radius: 2rem;
+  font-size: 6rem;
+  border: #a009f7 0.3rem solid;
+  border-radius: 50%;
   animation: colorWaveAnimation 6s infinite;
 }
 .languages img {
   margin: 0 auto;
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   display: block;
+  box-sizing: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .languages:hover {
-  font-weight: bolder;
-  color: #530680;
-  background-image: linear-gradient(135deg, rgb(236, 199, 236), rgb(198, 198, 228), rgb(193, 224, 193));
-  text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
   border: 1.5rem;
-  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   z-index: 1000;
+  border: 0.3rem #a009f7 inset;
+  animation: none;
+  background-color: rgba(242, 215, 255, 0.6705882353);
 }
 
 /* Settings and design for Back to top button */
@@ -1647,27 +1661,23 @@ html[data-page=index-german] .h4-title {
   z-index: 0;
   position: fixed;
   transform: translateY(-50%);
-  font-size: larger;
+  font-size: 2.5rem;
   color: #a009f7;
-  background-image: linear-gradient(135deg, rgba(255, 192, 203, 0.644), rgba(228, 207, 168, 0.644), rgba(204, 236, 168, 0.596));
-  border: #fff 0.5rem solid;
-  border-radius: 2rem;
+  border: #a009f7 0.3rem solid;
+  border-radius: 50%;
   animation: colorWaveAnimation 6s infinite;
   transition: background-image 0.5s ease-in-out;
 }
 .backtotop:hover {
-  font-weight: bold;
-  color: #530680;
-  background-image: linear-gradient(135deg, rgb(236, 199, 236), rgb(198, 198, 228), rgb(193, 224, 193));
   border: 1.5rem;
-  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border: 0.3rem #a009f7 outset;
   z-index: 1000;
+  animation: none;
+  background-color: rgba(242, 215, 255, 0.6705882353);
 }
 .backtotop i {
   color: #a009f7;
-}
-.backtotop i:hover {
-  transform: scale(1.2);
 }
 
 /* Targeting the ShareThis button classes */
