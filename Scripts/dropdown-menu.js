@@ -4,7 +4,7 @@ document.querySelectorAll(".dropdown > a").forEach(function (link) {
   // Handle hover for non-touch devices
   link.addEventListener("mouseover", function (e) {
     e.preventDefault();
-    const dropdown = link.nextElementSibling;
+    const dropdown = link.nextElementSibling; // Get the corresponding dropdown
     if (dropdown) {
       dropdown.classList.add("show"); // Add class to show dropdown
       clearTimeout(timeout); // Clear any existing timeout
@@ -15,8 +15,8 @@ document.querySelectorAll(".dropdown > a").forEach(function (link) {
     const dropdown = link.nextElementSibling;
     if (dropdown) {
       timeout = setTimeout(function () {
-        dropdown.classList.remove("show"); // Remove class to hide dropdown
-      }, 3000); // Dropdown will disappear after 3 seconds
+        dropdown.classList.remove("show"); // Remove class to hide dropdown after 3 seconds
+      }, 3000);
     }
   });
 
@@ -32,14 +32,14 @@ document.querySelectorAll(".dropdown > a").forEach(function (link) {
 
     if (dropdown) {
       e.preventDefault(); // Prevent following the link on first tap
-      dropdown.classList.add("show"); // Add class to show dropdown
+      dropdown.classList.add("show"); // Show dropdown
       tappedOnce = true;
 
       // Hide dropdown after 3 seconds
       timeout = setTimeout(function () {
-        dropdown.classList.remove("show"); // Remove class to hide dropdown
-        tappedOnce = false; // Allow tapping again
-      }, 3000); // Allow tapping again after 3 seconds
+        dropdown.classList.remove("show"); // Hide dropdown
+        tappedOnce = false; // Allow tapping again after 3 seconds
+      }, 3000);
     }
   });
 
