@@ -9,6 +9,7 @@ document.querySelectorAll(".dropdown > a").forEach(function (link) {
       dropdown.style.display = "block"; // Set to block to push items down
       dropdown.style.opacity = "1"; // Set opacity to show dropdown
       dropdown.style.visibility = "visible"; // Ensure dropdown is visible
+      dropdown.style.position = "relative";
     }
     clearTimeout(timeout);
   });
@@ -20,6 +21,7 @@ document.querySelectorAll(".dropdown > a").forEach(function (link) {
         dropdown.style.display = "none"; // Hide dropdown after 3 seconds
         dropdown.style.opacity = "0"; // Set opacity to hide dropdown
         dropdown.style.visibility = "hidden"; // Hide dropdown
+        dropdown.style.position = "relative";
       }, 3000); // Dropdown will disappear after 3 seconds
     }
   });
@@ -39,6 +41,7 @@ document.querySelectorAll(".dropdown > a").forEach(function (link) {
       dropdown.style.display = "block"; // Set to block to push items down
       dropdown.style.opacity = "1"; // Set opacity to show dropdown
       dropdown.style.visibility = "visible"; // Ensure dropdown is visible
+      dropdown.style.position = "relative";
       tappedOnce = true;
 
       setTimeout(function () {
