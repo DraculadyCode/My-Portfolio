@@ -1,61 +1,65 @@
 @import "./variables";
-@import "./mixins";
 @include gradient;
 /* Settings and design of "skills and tools" section */
 .tools-set,
 .skills-set {
-  @include displaySet(
-    $dspl: flex,
-    $flxDrc: row,
-    $jusCont: center,
-    $flxWrp: wrap
-  );
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .tool,
 .skill {
-  @include displaySet(
-    $dspl: flex,
-    $flxDrc: column,
-    $jusCont: center,
-    $alItms: center
-  );
-  @include sizesNgaps($margin: 0 1rem, $width: 8rem, $height: 10rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  width: 8rem;
+  height: 10rem;
   border-radius: 5rem;
   box-sizing: border-box;
   i {
-    @include fontNtext($font-size: 2rem, $color: $mainTextColor);
+    font-size: 2rem;
+    color: $mainTextColor;
     padding: 1rem;
     border-radius: 5rem;
     &:first-child {
-      @include sizesNgaps($width: 5rem, $height: 4rem);
+      width: 5rem;
+      height: 4rem;
       background-color: #eb59f0cc;
       box-shadow: $mainShadow;
       background-image: $skillsToolsBg;
       background-size: 300% 300%;
       animation: gradient 15s ease infinite;
       &:hover {
-        @include displaySet($dspl: flex, $jusCont: center, $alItms: center);
-        @include sizesNgaps($width: 6rem, $height: 6rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 6rem;
+        height: 6rem;
         background-color: #eb59f0cc;
         box-shadow: $mainShadow;
         transition: 1s;
       }
     }
     &:hover {
-      @include fontNtext($font-size: 3rem, $color: #ffd900);
+      font-size: 3rem;
+      color: #ffd900;
       transition: 1s;
     }
   }
   p {
-    @include displaySet(
-      $dspl: flex,
-      $jusCont: center,
-      $alItms: center,
-      $txtAln: center
-    );
-    @include sizesNgaps($padding: 0 1rem, $margin: 1rem 0 0 0, $height: 3rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+    margin: 1rem 0 0 0;
+    height: 3rem;
     &:hover {
-      @include fontNtext($font-size: larger, $font-weight: 900);
+      font-size: larger;
+      font-weight: 900;
     }
   }
 }

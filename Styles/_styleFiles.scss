@@ -4,51 +4,46 @@
   align-items: center;
 }
 .my-files {
-  @include displaySet($dspl: inline-block, $position: static, $zIndx: 900);
-  @include sizesNgaps(
-    $padding: 1.5rem,
-    $margin: 0 1rem,
-    $max-width: 40rem,
-    $min-height: 20rem
-  );
-  @include fontNtext(
-    $font-size: x-large,
-    $bgColor: $form-BG,
-    $lnHeight: 3rem,
-    $border: 0.1rem solid rgba(177, 177, 177, 0.548),
-    $borderRds: 3rem,
-    $boxShdw: $mainShadow
-  );
+  display: inline-block;
+  position: static;
+  z-index: 900;
+  padding: 1.5rem;
+  margin: 0 1rem;
+  max-width: 40rem;
+  min-height: 20rem;
+  font-size: x-large;
+  background-color: $form-BG;
+  line-height: 3rem;
+  border: 0.1rem solid rgba(177, 177, 177, 0.548);
+  border-radius: 3rem;
+  box-shadow: $mainShadow;
   transition: 1s;
 
   a {
     color: #000000;
     transition: 1s;
-    display: flex; // Enable flexbox for the link
-    align-items: center; // Center the content vertically
-    width: 100%; // Take full width of the parent
-    text-decoration: none; // Remove default underline
-    padding: 0.5rem 0; // Add padding for better spacing
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    padding: 0.5rem 0;
     text-align: left;
   }
   a:hover {
-    @include fontNtext(
-      $font-weight: bolder,
-      $txtShdw: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223)
-    );
+    font-weight: bolder;
+    text-shadow: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223);
   }
   i {
-    @include fontNtext($font-size: x-large, $color: $primaryColor);
+    font-size: x-large;
+    color: $primaryColor;
     transition: 1s;
   }
   i:hover {
     transform: scale(1.5);
   }
   &:hover {
-    @include fontNtext(
-      $txtShdw: 0.1rem 0.2rem 0.4rem rgb(249, 249, 253),
-      $boxShdw: $boxShadow
-    );
+    text-shadow: 0.1rem 0.2rem 0.4rem rgb(249, 249, 253);
+    box-shadow: $boxShadow;
   }
 }
 .files {

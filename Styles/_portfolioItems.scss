@@ -1,43 +1,37 @@
 @import "./variables";
-@import "./mixins";
 // portfolio Items scss
 /* Settings and design for all portfolio items in the website */
 .portfolio-items {
-  @include displaySet($dspl: flex, $jusCont: space-between, $flxWrp: wrap);
-  @include sizesNgaps($padding: 0 1rem, $margin: 1.5rem 0 0 0);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  margin: 1.5rem 0 0 0;
   .portfolio-item {
-    @include sizesNgaps(
-      $padding: 1rem,
-      $margin: 0 0 2rem 0,
-      $width: calc(33.33% - 1.25rem),
-      $max-width: 35rem,
-      $min-width: 20rem,
-      $min-height: 19rem
-    );
-    @include fontNtext(
-      $bgColor: #c6acf0,
-      $border: 0.8rem outset $primaryColor,
-      $borderRds: 1.5rem,
-      $boxShdw: $mainShadow
-    );
+    padding: 1rem;
+    margin: 0 0 2rem 0;
+    width: calc(33.33% - 1.25rem);
+    max-width: 35rem;
+    min-width: 20rem;
+    min-height: 19rem;
+    background-color: #c6acf0;
+    border: 0.8rem outset $primaryColor;
+    border-radius: 1.5rem;
+    box-shadow: $mainShadow;
     backdrop-filter: blur(5px);
     transition: transform 1s;
     &:hover {
-      @include fontNtext(
-        $bgColor: #a0eb8285,
-        $bgImage: $portfolioBg,
-        $border: 1rem outset transparent,
-        $boxShdw: $mainShadow
-      );
+      background-color: #a0eb8285;
+      background-image: $portfolioBg;
+      border: 1rem outset transparent;
+      box-shadow: $mainShadow;
       transform: scale(1.05);
       z-index: 1000;
       .portfolio-item-image {
-        @include displaySet(
-          $dspl: flex,
-          $flxDrc: column,
-          $jusCont: center,
-          $alItms: center
-        );
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         transition: 1s;
       }
     }
@@ -46,17 +40,16 @@
       font-size: x-large;
     }
     a {
-      @include fontNtext(
-        $font-size: larger,
-        $font-weight: bold,
-        $color: $mainTextColor,
-        $bgColor: $primaryColor,
-        $borderRds: 1.5rem
-      );
+      font-size: larger;
+      font-weight: bold;
+      color: $mainTextColor;
+      background-color: $primaryColor;
+      border-radius: 1.5rem;
       display: inline-block;
       padding: 1rem;
       &:hover {
-        @include fontNtext($font-size: x-large, $bgColor: #2eade7);
+        font-size: x-large;
+        background-color: #2eade7;
         box-shadow: $mainShadow;
         border: 0.5rem solid $mainTextColor;
         transition: 1s;
@@ -64,24 +57,26 @@
     }
 
     .portfolio-item-icons {
-      @include displaySet($dspl: flex, $jusCont: center);
+      display: flex;
+      justify-content: center;
       margin-top: auto;
       i {
-        @include fontNtext($font-size: 1.5rem, $color: $hoverTitle);
+        font-size: 1.5rem;
+        color: $hoverTitle;
         margin: 0.7rem 0.5rem 0 0.5rem;
       }
     }
     .portfolio-item-image {
-      @include sizesNgaps(
-        $padding: 0,
-        $margin: 0 0 1rem 0,
-        $width: 100%,
-        $max-width: 100%,
-        $height: auto
-      );
+      padding: 0;
+      margin: 0 0 1rem 0;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
       display: none;
       img {
-        @include sizesNgaps($padding: 0, $max-width: 100%, $height: auto);
+        padding: 0;
+        max-width: 100%;
+        height: auto;
         border-radius: 1rem;
       }
     }
@@ -122,37 +117,37 @@
 // Responsiveness
 @media (max-width: 1026px) {
   .portfolio-items {
-    @include displaySet(
-      $dspl: flex,
-      $flxDrc: column,
-      $jusCont: center,
-      $alItms: center
-    );
-    @include sizesNgaps($padding: 0, $margin: 1rem 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 1rem 0;
     .portfolio-item {
-      @include sizesNgaps($width: 80%, $margin: 1rem 0);
+      width: 80%;
+      margin: 1rem 0;
     }
   }
 }
 @media (min-width: 650px) and (max-width: 1025px) {
   .portfolio-items {
-    @include displaySet(
-      $dspl: flex,
-      $flxDrc: column,
-      $jusCont: center,
-      $alItms: center,
-      $gap: 1rem
-    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     margin-left: 15%;
     margin-right: 15%;
     .portfolio-item {
-      @include sizesNgaps($width: 100%);
+      width: 100%;
     }
   }
 }
 @media (max-width: 480px) and (orientation: portrait) {
   .portfolio-item {
-    @include sizesNgaps($padding: 0.5rem, $margin: 1rem, $max-width: 80%);
+    padding: 0.5rem;
+    margin: 1rem;
+    max-width: 80%;
     a {
       padding: 0.5rem;
     }

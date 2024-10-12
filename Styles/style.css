@@ -529,7 +529,6 @@ footer .logo:hover {
   }
 }
 /* outer right cyan */
-/* outer right cyan */
 @keyframes rotate {
   0% {
     transform: perspective(100rem) rotateY(0deg);
@@ -545,11 +544,11 @@ footer .logo:hover {
   padding: 10rem;
 }
 .slider-box .slider {
-  z-index: 900;
   display: flex;
-  position: relative;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 900;
   padding: 0rem;
   margin: auto;
   width: 20rem;
@@ -578,8 +577,8 @@ footer .logo:hover {
   height: 100%;
   top: 0;
   left: 0;
-  border: #a009f7 outset 0.3rem;
   border-radius: 3rem;
+  border: #a009f7 outset 0.3rem;
   position: absolute;
   -o-object-fit: contain;
      object-fit: contain;
@@ -856,9 +855,9 @@ html[data-page=index-german] .h4-title {
   text-align: center;
 }
 .skills-table table td:hover {
-  font-weight: bold;
-  text-shadow: 50%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  text-shadow: 50%;
+  font-weight: bold;
   transition: 1s;
 }
 .skills-table table i {
@@ -923,7 +922,6 @@ html[data-page=index-german] .h4-title {
     display: none;
   }
 }
-/* outer right cyan */
 /* outer right cyan */
 /* Settings and design for all portfolio items in the website */
 .portfolio-items {
@@ -1049,8 +1047,8 @@ html[data-page=index-german] .h4-title {
     margin: 1rem 0;
   }
   .portfolio-items .portfolio-item {
-    margin: 1rem 0;
     width: 80%;
+    margin: 1rem 0;
   }
 }
 @media (min-width: 650px) and (max-width: 1025px) {
@@ -1077,7 +1075,6 @@ html[data-page=index-german] .h4-title {
     padding: 0.5rem;
   }
 }
-/* outer right cyan */
 /* outer right cyan */
 @keyframes gradient {
   0% {
@@ -1642,9 +1639,9 @@ html[data-page=index-german] .h4-title {
 }
 
 .my-files {
-  z-index: 900;
   display: inline-block;
   position: static;
+  z-index: 900;
   padding: 1.5rem;
   margin: 0 1rem;
   max-width: 40rem;

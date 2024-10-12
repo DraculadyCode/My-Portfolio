@@ -3,75 +3,73 @@
 /* Settings and design of the skills table - portfolio page */
 .skills-table {
   table {
-    @include displaySet($dspl: flex, $jusCont: center, $alItms: center);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-collapse: collapse;
     width: 100%;
     font-size: large;
     td {
-      @include sizesNgaps($padding: 1rem, $width: 7rem);
-      @include fontNtext($border: 0.1rem solid #ffffff00, $borderRds: 50%);
+      padding: 1rem;
+      width: 7rem;
+      border: 0.1rem solid #ffffff00;
+      border-radius: 50%;
       text-align: center;
       &:hover {
-        @include fontNtext(
-          $boxShdw: $mainShadow,
-          $txtShdw: 50%,
-          $font-weight: bold
-        );
+        box-shadow: $mainShadow;
+        text-shadow: 50%;
+        font-weight: bold;
         transition: 1s;
       }
     }
     i {
-      @include sizesNgaps($padding: 1rem, $width: 6rem);
-      @include fontNtext(
-        $font-size: 3rem,
-        $color: $primaryColor,
-        $bgColor: rgba(#ffffff, 0.54),
-        // Using rgba for transparency
-        $borderRds: 50%
-      );
+      padding: 1rem;
+      width: 6rem;
+      font-size: 3rem;
+      color: $primaryColor;
+      background-color: rgba(#ffffff, 0.54);
+      border-radius: 50%;
     }
   }
 }
 /* Settings and design for elements table */
 .elements-table {
   table {
-    @include displaySet(
-      $dspl: none,
-      $jusCont: center,
-      $alItms: center,
-      $txtAln: center
-    );
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     border-collapse: collapse;
     width: 100%;
     font-size: small;
     td {
-      @include sizesNgaps(
-        $padding: 0.5rem 3.5rem,
-        $max-width: 5rem,
-        $height: auto
-      );
-      @include fontNtext(
-        $bgColor: rgba(#feffff, 0),
-        $border: 0.1rem solid rgba(#ffffff, 0),
-        $borderRds: 50%
-      );
+      padding: 0.5rem 3.5rem;
+      max-width: 5rem;
+      height: auto;
+      background-color: rgba(#feffff, 0);
+      border: 0.1rem solid rgba(#ffffff, 0);
+      border-radius: 50%;
       text-align: center;
       &:hover {
-        @include fontNtext(
-          $font-size: large,
-          $font-weight: bold,
-          $txtShdw: $elementsTbHover
-        );
+        font-size: large;
+        font-weight: bold;
+        text-shadow: $elementsTbHover;
         transition: 1s;
       }
     }
     i {
-      @include displaySet($dspl: flex, $jusCont: center, $txtAln: center);
-      @include sizesNgaps($padding: 1rem, $margin: 0 0 0 0.3rem, $width: 1rem);
-      @include fontNtext($font-size: 1.5rem, $color: $primaryColor);
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding: 1rem;
+      margin: 0 0 0 0.3rem;
+      width: 1rem;
+      font-size: 1.5rem;
+      color: $primaryColor;
       border-radius: 50%;
       &:hover {
-        @include fontNtext($font-size: 2rem, $color: $hoverTitle);
+        font-size: 2rem;
+        color: $hoverTitle;
         transition: 1s;
       }
     }
