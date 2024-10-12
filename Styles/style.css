@@ -1220,7 +1220,6 @@ html[data-page=index-german] .h4-title {
 }
 
 /* outer right cyan */
-/* outer right cyan */
 @keyframes colorWaveAnimation {
   0% {
     border-color: rgb(238, 96, 219);
@@ -1247,10 +1246,10 @@ html[data-page=index-german] .h4-title {
 /* Settings and design for all contact options */
 .contact-options-divs {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  flex-direction: column;
   padding: 1rem;
   border-radius: 3rem;
   /* Settings and design of the contact form */
@@ -1260,9 +1259,9 @@ html[data-page=index-german] .h4-title {
 }
 .contact-options-divs .contact-form,
 .contact-options-divs .contact-directly {
-  z-index: 900;
   display: inline-block;
   position: static;
+  z-index: 900;
   padding: 1.5rem;
   margin: 0 1rem;
   max-width: 40rem;
@@ -1316,23 +1315,23 @@ html[data-page=index-german] .h4-title {
   margin: 1rem 0 0 0;
   font-size: x-large;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .contact-options-divs .form label,
 .contact-options-divs .form input,
 .contact-options-divs .form textarea {
-  width: 100%;
-  display: flex;
   margin: -2rem 0;
+  display: flex;
+  width: 100%;
 }
 .contact-options-divs .form input {
   padding: 0.5rem;
   margin: 0;
   height: 3rem;
-  font-size: 1.2rem;
   border-radius: 1rem;
+  font-size: 1.2rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .contact-options-divs .form textarea {
@@ -1375,9 +1374,9 @@ html[data-page=index-german] .h4-title {
 }
 @media screen and (max-width: 1450px) {
   .contact-options-divs {
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 2rem;
   }
   .contact-options-divs .my-files {

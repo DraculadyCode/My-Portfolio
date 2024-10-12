@@ -1,44 +1,41 @@
 @import "./variables";
-@import "./mixins";
 @include colorWaveAnimation;
 // Contact scss
 /* Settings and design for all contact options */
 .contact-options-divs {
-  @include displaySet(
-    $dspl: flex,
-    $jusCont: center,
-    $alItms: center,
-    $gap: 3rem,
-    $flxDrc: column
-  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-direction: column;
   padding: 1rem;
   border-radius: 3rem;
   .contact-form,
   .contact-directly {
-    @include displaySet($dspl: inline-block, $position: static, $zIndx: 900);
-    @include sizesNgaps(
-      $padding: 1.5rem,
-      $margin: 0 1rem,
-      $max-width: 40rem,
-      $min-height: 15rem
-    );
-    @include fontNtext(
-      $font-size: x-large,
-      $bgColor: $form-BG,
-      $lnHeight: 3rem,
-      $border: 0.1rem solid rgba(177, 177, 177, 0.548),
-      $borderRds: 3rem,
-      $boxShdw: $mainShadow
-    );
+    display: inline-block;
+    position: static;
+    z-index: 900;
+    padding: 1.5rem;
+    margin: 0 1rem;
+    max-width: 40rem;
+    min-height: 15rem;
+    font-size: x-large;
+    background-color: $form-BG;
+    line-height: 3rem;
+    border: 0.1rem solid rgba(177, 177, 177, 0.548);
+    border-radius: 3rem;
+    box-shadow: $mainShadow;
     a {
       color: #000000;
       border-radius: 50%;
     }
     a:hover {
-      @include fontNtext($font-weight: bolder, $txtShdw: $mainShadow);
+      font-weight: bolder;
+      text-shadow: $mainShadow;
     }
     i {
-      @include fontNtext($font-size: x-large, $color: $primaryColor);
+      font-size: x-large;
+      color: $primaryColor;
       border-radius: 50%;
       padding: 1rem;
       border: $primaryColor outset 0.4rem;
@@ -49,10 +46,8 @@
       border: $primaryColor inset 0.4rem;
     }
     &:hover {
-      @include fontNtext(
-        $txtShdw: 0.1rem 0.2rem 0.4rem rgb(249, 249, 253),
-        $boxShdw: $boxShadow
-      );
+      text-shadow: 0.1rem 0.2rem 0.4rem rgb(249, 249, 253);
+      box-shadow: $boxShadow;
     }
   }
   .contact-options-list {
@@ -68,33 +63,30 @@
   .form {
     margin: 1rem 0 0 0;
     font-size: x-large;
-    @include displaySet(
-      $dspl: flex,
-      $jusCont: center,
-      $alItms: center,
-      $flxDrc: column
-    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     label,
     input,
     textarea {
-      @include displaySet($dspl: flex, $width: 100%);
       margin: -2rem 0;
+      display: flex;
+      width: 100%;
     }
     input {
-      @include sizesNgaps($padding: 0.5rem, $margin: 0, $height: 3rem);
-      @include fontNtext(
-        $borderRds: 1rem,
-        $font-size: 1.2rem,
-        $boxShdw: $mainShadow
-      );
+      padding: 0.5rem;
+      margin: 0;
+      height: 3rem;
+      border-radius: 1rem;
+      font-size: 1.2rem;
+      box-shadow: $mainShadow;
     }
     textarea {
-      @include sizesNgaps(
-        $padding: 0.5rem,
-        $margin: 0,
-        $width: 32rem,
-        $height: 10rem
-      );
+      padding: 0.5rem;
+      margin: 0;
+      width: 32rem;
+      height: 10rem;
       border-radius: 1rem;
       resize: none;
       font-size: 1.2rem;
@@ -133,33 +125,31 @@
   }
   /* Media query for tablets and smaller desktops */
   @media screen and (max-width: 1450px) {
-    @include displaySet(
-      $jusCont: center,
-      $alItms: center,
-      $flxDrc: column,
-      $gap: 2rem
-    );
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
     .my-files {
-      @include sizesNgaps($max-width: 30rem, $min-height: 10rem);
-      @include fontNtext($font-size: x-large);
+      max-width: 30rem;
+      min-height: 10rem;
+      font-size: x-large;
     }
     .form {
       input,
       textarea {
-        @include sizesNgaps($width: 28rem);
+        width: 28rem;
       }
     }
   }
   /* Media query for tablets and larger smartphones */
   @media screen and (max-width: 768px) {
-    @include displaySet($flxDrc: column, $gap: 1rem);
+    flex-direction: column;
+    gap: 1rem;
     .contact-form,
     .my-files {
-      @include sizesNgaps(
-        $padding: 1rem,
-        $margin: 1.5rem 0.5rem,
-        $width: 26rem
-      );
+      padding: 1rem;
+      margin: 1.5rem 0.5rem;
+      width: 26rem;
     }
     .contact-directly {
       li {
@@ -173,20 +163,19 @@
     .form {
       input,
       textarea {
-        @include sizesNgaps($width: 22rem);
+        width: 22rem;
       }
     }
   }
   /* Media query for mobile phones */
   @media screen and (max-width: 480px) {
-    @include displaySet($flxDrc: column, $gap: 1rem);
+    flex-direction: column;
+    gap: 1rem;
     .contact-form,
     .my-files {
-      @include sizesNgaps(
-        $padding: 0.5rem,
-        $margin: 1.5rem 0.5rem,
-        $max-width: 23rem
-      );
+      padding: 0.5rem;
+      margin: 1.5rem 0.5rem;
+      max-width: 23rem;
     }
     .contact-directly {
       display: flex;
@@ -215,7 +204,7 @@
     .form {
       input,
       textarea {
-        @include sizesNgaps($width: 20rem);
+        width: 20rem;
         margin: 0 2rem;
       }
     }
