@@ -6,7 +6,9 @@ document.querySelectorAll(".dropdown > a").forEach(function (link) {
     e.preventDefault();
     const dropdown = link.nextElementSibling;
     if (dropdown) {
-      dropdown.style.display = "block";
+      dropdown.style.display = "block"; // Set to block to push items down
+      dropdown.style.opacity = "1"; // Set opacity to show dropdown
+      dropdown.style.visibility = "visible"; // Ensure dropdown is visible
     }
     clearTimeout(timeout);
   });
@@ -15,7 +17,9 @@ document.querySelectorAll(".dropdown > a").forEach(function (link) {
     const dropdown = link.nextElementSibling;
     if (dropdown) {
       timeout = setTimeout(function () {
-        dropdown.style.display = "none";
+        dropdown.style.display = "none"; // Hide dropdown after 3 seconds
+        dropdown.style.opacity = "0"; // Set opacity to hide dropdown
+        dropdown.style.visibility = "hidden"; // Hide dropdown
       }, 3000); // Dropdown will disappear after 3 seconds
     }
   });
@@ -32,7 +36,9 @@ document.querySelectorAll(".dropdown > a").forEach(function (link) {
 
     if (dropdown && !tappedOnce) {
       e.preventDefault(); // Prevent following the link on first tap
-      dropdown.style.display = "block";
+      dropdown.style.display = "block"; // Set to block to push items down
+      dropdown.style.opacity = "1"; // Set opacity to show dropdown
+      dropdown.style.visibility = "visible"; // Ensure dropdown is visible
       tappedOnce = true;
 
       setTimeout(function () {
@@ -49,7 +55,9 @@ document.querySelectorAll(".dropdown > a").forEach(function (link) {
     ) {
       const dropdown = link.nextElementSibling;
       if (dropdown) {
-        dropdown.style.display = "none";
+        dropdown.style.display = "none"; // Hide dropdown
+        dropdown.style.opacity = "0"; // Set opacity to hide dropdown
+        dropdown.style.visibility = "hidden"; // Hide dropdown
         tappedOnce = false;
       }
     }
