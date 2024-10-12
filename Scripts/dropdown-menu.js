@@ -6,22 +6,16 @@ document.querySelectorAll(".dropdown > a").forEach(function (link) {
     e.preventDefault();
     const dropdown = link.nextElementSibling;
     if (dropdown) {
-      dropdown.style.display = "block"; // Set to block to push items down
-      dropdown.style.opacity = "1"; // Set opacity to show dropdown
-      dropdown.style.visibility = "visible"; // Ensure dropdown is visible
-      dropdown.style.position = "relative";
+      dropdown.classList.add("show"); // Add class to show dropdown
+      clearTimeout(timeout); // Clear any existing timeout
     }
-    clearTimeout(timeout);
   });
 
   link.addEventListener("mouseout", function () {
     const dropdown = link.nextElementSibling;
     if (dropdown) {
       timeout = setTimeout(function () {
-        dropdown.style.display = "none"; // Hide dropdown after 3 seconds
-        dropdown.style.opacity = "0"; // Set opacity to hide dropdown
-        dropdown.style.visibility = "hidden"; // Hide dropdown
-        dropdown.style.position = "relative";
+        dropdown.classList.remove("show"); // Remove class to hide dropdown
       }, 3000); // Dropdown will disappear after 3 seconds
     }
   });
@@ -32,37 +26,30 @@ document.querySelectorAll(".dropdown > a").forEach(function (link) {
     const dropdown = link.nextElementSibling;
 
     if (tappedOnce) {
-      // If already tapped once, follow the link
+      // If already tapped once, allow the default action
       return true;
     }
 
-    if (dropdown && !tappedOnce) {
+    if (dropdown) {
       e.preventDefault(); // Prevent following the link on first tap
-      dropdown.style.display = "block"; // Set to block to push items down
-      dropdown.style.opacity = "1"; // Set opacity to show dropdown
-      dropdown.style.visibility = "visible"; // Ensure dropdown is visible
-      dropdown.style.position = "relative";
+      dropdown.classList.add("show"); // Add class to show dropdown
       tappedOnce = true;
 
-      setTimeout(function () {
-        tappedOnce = false; // Reset after 3 seconds
+      // Hide dropdown after 3 seconds
+      timeout = setTimeout(function () {
+        dropdown.classList.remove("show"); // Remove class to hide dropdown
+        tappedOnce = false; // Allow tapping again
       }, 3000); // Allow tapping again after 3 seconds
     }
   });
 
   // Hide dropdown when clicked outside
   document.addEventListener("click", function (e) {
-    if (
-      !link.contains(e.target) &&
-      !link.nextElementSibling.contains(e.target)
-    ) {
-      const dropdown = link.nextElementSibling;
-      if (dropdown) {
-        dropdown.style.display = "none"; // Hide dropdown
-        dropdown.style.opacity = "0"; // Set opacity to hide dropdown
-        dropdown.style.visibility = "hidden"; // Hide dropdown
-        tappedOnce = false;
-      }
+    const dropdown = link.nextElementSibling;
+    if (!link.contains(e.target) && dropdown && !dropdown.contains(e.target)) {
+      dropdown.classList.remove("show"); // Hide dropdown
+      tappedOnce = false; // Allow tapping again
+      clearTimeout(timeout); // Clear any existing timeout
     }
   });
 });
