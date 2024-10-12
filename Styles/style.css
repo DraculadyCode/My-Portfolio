@@ -2,7 +2,6 @@
 /* outer right cyan */
 /* outer right cyan */
 /* outer right cyan */
-/* outer right cyan */
 @keyframes dropdown {
   0% {
     max-height: 0;
@@ -74,12 +73,11 @@ section {
 h2,
 h3,
 h4 {
-  z-index: 900;
   display: inline;
   position: relative;
+  z-index: 900;
   color: #fff;
   letter-spacing: 0.2rem;
-  text-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
   border-radius: 2rem;
   padding: 0.5rem 1rem;
   text-shadow: 6px 0 6px #a408ff, 5px 5px 5px #d26df7, 0 6px 6px rgba(79, 164, 250, 0.7215686275);
@@ -141,17 +139,17 @@ h5:hover {
 /* Settings and designs for all paragraphs in the website */
 .paragraph-div {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   text-align: left;
+  flex-direction: column;
   padding: 0.5rem;
   margin: 1rem 0;
   color: #000000;
   background-color: rgba(242, 215, 255, 0.6705882353);
-  font-family: "Kalam";
   border: 0.2rem solid #a009f7;
   border-radius: 4rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  font-family: "Kalam";
   flex-direction: column;
 }
 .paragraph-div i {
@@ -175,10 +173,10 @@ h5:hover {
   border: rgb(255, 0, 242) outset 0.2rem;
 }
 .paragraph-div p {
-  z-index: 900;
   display: flex;
-  position: relative;
   flex-direction: column;
+  position: relative;
+  z-index: 900;
   padding: 1.5rem 0;
   margin: 0 0 0 1rem;
   animation: revealLetters 3s forwards;
@@ -190,11 +188,11 @@ h5:hover {
   box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
 }
 .paragraph-div .platforms-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 0;
   margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 0;
 }
 .paragraph-div .platforms-links a {
   margin: 1rem 0.4rem;
@@ -227,13 +225,13 @@ h5:hover {
 
 /* Settings and design for all buttons in the website */
 button {
-  padding: 1rem;
-  margin: 1rem 0 1.5rem;
   font-size: xx-large;
   color: #fff;
   background-color: #a009f7;
   border-radius: 2rem;
   box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+  padding: 1rem;
+  margin: 1rem 0 1.5rem;
   z-index: 100;
   cursor: pointer;
   font-family: "Courgette";
@@ -899,17 +897,6 @@ html[data-page=index-german] .h4-title {
 }
 /* outer right cyan */
 /* outer right cyan */
-@keyframes tableAnimation {
-  0% {
-    color: #a009f7;
-  }
-  50% {
-    color: #00ff00;
-  }
-  100% {
-    color: #a009f7;
-  }
-}
 /* Settings and design of the skills table - portfolio page */
 .skills-table table {
   display: flex;
@@ -996,23 +983,6 @@ html[data-page=index-german] .h4-title {
 }
 /* outer right cyan */
 /* outer right cyan */
-@keyframes BlackWhiteAnimation {
-  0% {
-    border-color: rgb(255, 253, 253);
-  }
-  25% {
-    border-color: rgb(190, 188, 188);
-  }
-  50% {
-    border-color: rgb(117, 116, 116);
-  }
-  75% {
-    border-color: rgb(190, 188, 188);
-  }
-  100% {
-    border-color: rgb(255, 253, 253);
-  }
-}
 /* Settings and design for all portfolio items in the website */
 .portfolio-items {
   display: flex;
@@ -1069,7 +1039,6 @@ html[data-page=index-german] .h4-title {
   background-color: #2eade7;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border: 0.5rem solid #fff;
-  animation: BlackWhiteAnimation 4s infinite;
   transition: 1s;
 }
 .portfolio-items .portfolio-item .portfolio-item-icons {

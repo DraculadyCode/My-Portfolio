@@ -23,19 +23,6 @@
     }
   }
 }
-@mixin tableAnimation {
-  @keyframes tableAnimation {
-    0% {
-      color: $primaryColor;
-    }
-    50% {
-      color: #00ff00;
-    }
-    100% {
-      color: $primaryColor;
-    }
-  }
-}
 @mixin rotate {
   @keyframes rotate {
     0% {
@@ -59,25 +46,6 @@
     100% {
       border-color: #ff00ff65;
       box-shadow: 0.3rem 0rem 0.3rem 0.3rem rgb(65, 60, 60);
-    }
-  }
-}
-@mixin BlackWhiteAnimation {
-  @keyframes BlackWhiteAnimation {
-    0% {
-      border-color: rgb(255, 253, 253);
-    }
-    25% {
-      border-color: rgb(190, 188, 188);
-    }
-    50% {
-      border-color: rgb(117, 116, 116);
-    }
-    75% {
-      border-color: rgb(190, 188, 188);
-    }
-    100% {
-      border-color: rgb(255, 253, 253);
     }
   }
 }

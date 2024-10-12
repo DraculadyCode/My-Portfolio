@@ -1,6 +1,5 @@
 @import "./variables";
 @import "./mixins";
-@include BlackWhiteAnimation;
 // portfolio Items scss
 /* Settings and design for all portfolio items in the website */
 .portfolio-items {
@@ -60,7 +59,6 @@
         @include fontNtext($font-size: x-large, $bgColor: #2eade7);
         box-shadow: $mainShadow;
         border: 0.5rem solid $mainTextColor;
-        animation: BlackWhiteAnimation 4s infinite;
         transition: 1s;
       }
     }

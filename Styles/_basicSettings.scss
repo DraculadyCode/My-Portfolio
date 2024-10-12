@@ -1,5 +1,4 @@
 @import "./variables";
-@import "./mixins";
 @import "./animations";
 @include gradient;
 @include revealLetters;
@@ -24,7 +23,8 @@ body {
   animation: gradient 15s ease infinite;
 }
 section {
-  @include sizesNgaps($padding: 3.2rem 0, $margin: 2rem);
+  padding: 3.2rem 0;
+  margin: 2rem;
   background-image: $sectionBg;
   background-size: 400% 400%;
   animation: gradient 60s ease infinite;
@@ -32,19 +32,20 @@ section {
   box-shadow: 0.2rem 0rem 0.6rem rgb(106, 0, 255);
 }
 .container {
-  @include sizesNgaps($padding: 0 1.25rem, $margin: 0 auto, $max-width: 100%);
+  padding: 0 1.25rem;
+  margin: 0 auto;
+  max-width: 100%;
   text-align: center;
 }
 h2,
 h3,
 h4 {
-  @include displaySet($dspl: inline, $position: relative, $zIndx: 900);
-  @include fontNtext(
-    $color: $mainTextColor,
-    $ltrSpc: 0.2rem,
-    $txtShdw: $boxShadow,
-    $borderRds: 2rem
-  );
+  display: inline;
+  position: relative;
+  z-index: 900;
+  color: $mainTextColor;
+  letter-spacing: 0.2rem;
+  border-radius: 2rem;
   padding: 0.5rem 1rem;
   text-shadow: $titlesShadow;
 }
@@ -89,75 +90,71 @@ html[lang="de"][data-page="contact-german"] {
 }
 /* settings for all h5 (project titles) in the website */
 h5 {
-  @include fontNtext(
-    $font-size: xx-large,
-    $font-weight: bolder,
-    $color: #443e3e
-  );
+  font-size: xx-large;
+  font-weight: bolder;
+  color: #443e3e;
   margin-bottom: 1rem;
   &:hover {
-    @include fontNtext($color: $hoverTitle);
+    color: $hoverTitle;
     transition: 2s;
   }
 }
 /* Settings and designs for all paragraphs in the website */
 .paragraph-div {
-  @include displaySet(
-    $dspl: flex,
-    $jusCont: center,
-    $txtAln: left,
-    $flxDrc: column
-  );
-  @include sizesNgaps($padding: 0.5rem, $margin: 1rem 0);
-  @include fontNtext(
-    $color: #000000,
-    $bgColor: #f2d7ffab,
-    $border: 0.2rem solid $primaryColor,
-    $borderRds: 4rem,
-    $boxShdw: $mainShadow,
-    $fontFmly: "Kalam"
-  );
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  flex-direction: column;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  color: #000000;
+  background-color: $paragraph-BG;
+  border: 0.2rem solid $primaryColor;
+  border-radius: 4rem;
+  box-shadow: $mainShadow;
+  font-family: "Kalam";
   flex-direction: column;
   i {
-    @include fontNtext($font-size: xx-large, $color: $primaryColor);
+    font-size: xx-large;
+    color: $primaryColor;
     border-radius: 3rem;
     padding: 0.5rem;
   }
   .bx:hover {
-    @include fontNtext($color: rgb(89, 0, 255));
+    color: rgb(89, 0, 255);
     box-shadow: $mainShadow;
     transform: scale(1.1);
     transition: 1s;
     border: rgb(255, 0, 242) outset 0.2rem;
   }
   .fa-square-github:hover {
-    @include fontNtext($color: rgb(89, 0, 255));
+    color: rgb(89, 0, 255);
     box-shadow: $mainShadow;
     transform: scale(1.1);
     transition: 1s;
     border: rgb(255, 0, 242) outset 0.2rem;
   }
   p {
-    @include displaySet(
-      $dspl: flex,
-      $flxDrc: column,
-      $position: relative,
-      $zIndx: 900
-    );
-    @include sizesNgaps($padding: 1.5rem 0, $margin: 0 0 0 1rem);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 900;
+    padding: 1.5rem 0;
+    margin: 0 0 0 1rem;
     animation: revealLetters 3s forwards;
     opacity: 0;
     font-size: x-large;
   }
   &:hover {
-    @include fontNtext(
-      $border: 0.4rem solid rgba(255, 0, 242, 0.658),
-      $boxShdw: $boxShadow
-    );
+    border: 0.4rem solid rgba(255, 0, 242, 0.658);
+    box-shadow: $boxShadow;
   }
   .platforms-links {
-    @include displaySet($dspl: flex, $jusCont: space-around, $flxDrc: row);
-    @include sizesNgaps($margin: 0.5rem 0, $padding: 0);
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 0;
     a {
       margin: 1rem 0.4rem;
     }
@@ -189,14 +186,13 @@ h5 {
 }
 /* Settings and design for all buttons in the website */
 button {
-  @include sizesNgaps($padding: 1rem, $margin: 1rem 0 1.5rem);
-  @include fontNtext(
-    $font-size: xx-large,
-    $color: $mainTextColor,
-    $bgColor: $primaryColor,
-    $borderRds: 2rem,
-    $boxShdw: $boxShadow
-  );
+  font-size: xx-large;
+  color: $mainTextColor;
+  background-color: $primaryColor;
+  border-radius: 2rem;
+  box-shadow: $boxShadow;
+  padding: 1rem;
+  margin: 1rem 0 1.5rem;
   z-index: 100;
   cursor: pointer;
   font-family: "Courgette";
