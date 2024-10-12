@@ -156,15 +156,15 @@ footer {
     $bottom: 0
   );
   @include fontNtext(
-    $font-size: larger,
+    $font-size: x-large,
     $color: $mainTextColor,
     $bgColor: $primaryColor,
     $ltrSpc: 0.18rem
   );
+  box-shadow: $mainShadow;
   text-align: center;
-  border-top: 0.5rem solid rgb(236, 196, 247);
+  border-top: 0.3rem solid rgb(236, 196, 247);
   &:hover {
-    box-shadow: $mainShadow;
     border-top: 0.3rem outset rgb(70, 0, 102);
     .logo {
       display: block;

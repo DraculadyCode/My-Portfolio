@@ -442,15 +442,15 @@ footer {
   margin: 2rem 0 0 0;
   width: 100%;
   bottom: 0;
-  font-size: larger;
+  font-size: x-large;
   color: #fff;
   background-color: #a009f7;
   letter-spacing: 0.18rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   text-align: center;
-  border-top: 0.5rem solid rgb(236, 196, 247);
+  border-top: 0.3rem solid rgb(236, 196, 247);
 }
 footer:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border-top: 0.3rem outset rgb(70, 0, 102);
 }
 footer:hover .logo {
@@ -1453,7 +1453,7 @@ html[data-page=index-german] .h4-title {
   .contact-options-divs .my-files {
     padding: 0.5rem;
     margin: 1.5rem 0.5rem;
-    max-width: 25rem;
+    max-width: 23rem;
   }
   .contact-options-divs .contact-directly {
     display: flex;
@@ -1481,7 +1481,7 @@ html[data-page=index-german] .h4-title {
   }
   .contact-options-divs .form input,
   .contact-options-divs .form textarea {
-    width: 18rem;
+    width: 20rem;
     margin: 0 2rem;
   }
 }

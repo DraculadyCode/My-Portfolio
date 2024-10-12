@@ -185,7 +185,7 @@
       @include sizesNgaps(
         $padding: 0.5rem,
         $margin: 1.5rem 0.5rem,
-        $max-width: 25rem
+        $max-width: 23rem
       );
     }
     .contact-directly {
@@ -215,7 +215,7 @@
     .form {
       input,
       textarea {
-        @include sizesNgaps($width: 18rem);
+        @include sizesNgaps($width: 20rem);
         margin: 0 2rem;
       }
     }
