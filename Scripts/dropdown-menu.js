@@ -1,8 +1,12 @@
 document.querySelectorAll(".dropdown > a").forEach(function (link) {
-  let timeout;
-
   // Handle touch for mobile devices
   let tappedOnce = false;
+
+  // Function to determine if the device supports touch
+  const isTouchDevice = () => {
+    return "ontouchstart" in window || navigator.maxTouchPoints > 0;
+  };
+
   link.addEventListener("touchstart", function (e) {
     const dropdown = link.nextElementSibling;
 
@@ -10,12 +14,18 @@ document.querySelectorAll(".dropdown > a").forEach(function (link) {
       // If already tapped once, follow the link
       return true;
     }
+
     if (dropdown && !tappedOnce) {
       e.preventDefault(); // Prevent following the link on first tap
       dropdown.style.display = "block"; // Set to block to push items down
       dropdown.style.opacity = "1"; // Set opacity to show dropdown
       dropdown.style.visibility = "visible"; // Ensure dropdown is visible
-      dropdown.style.position = "relative"; // Set position to relatives
+
+      // Set position to relative only on touch devices and if display is block
+      if (isTouchDevice() && dropdown.style.display === "block") {
+        dropdown.style.position = "relative"; // Set position to relative
+      }
+
       tappedOnce = true;
 
       setTimeout(function () {
