@@ -1,5 +1,4 @@
 @import "./variables";
-@include colorWaveAnimation;
 // Contact scss
 /* Settings and design for all contact options */
 .contact-options-divs {
@@ -47,7 +46,7 @@
     }
     &:hover {
       text-shadow: 0.1rem 0.2rem 0.4rem rgb(249, 249, 253);
-      box-shadow: $boxShadow;
+      box-shadow: $mainShadow;
     }
   }
   .contact-options-list {
@@ -67,7 +66,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    label,
     input,
     textarea {
       margin: -2rem 0;
@@ -94,9 +92,7 @@
     }
     input:hover,
     textarea:hover {
-      border-width: 0.5rem;
-      animation: colorWaveAnimation 6s infinite;
-      box-shadow: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223);
+      border: 0.3 inset gray;
     }
   }
   // Contact direct Social Media
@@ -175,7 +171,7 @@
     .my-files {
       padding: 0.5rem;
       margin: 1.5rem 0.5rem;
-      max-width: 24rem;
+      max-width: 23rem;
     }
     .contact-directly {
       display: flex;
