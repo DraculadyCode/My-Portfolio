@@ -92,7 +92,7 @@
     }
     input:hover,
     textarea:hover {
-      border: 0.3 inset gray;
+      border: 0.3 inset gray !important;
     }
   }
   // Contact direct Social Media
@@ -119,90 +119,228 @@
       }
     }
   }
-  /* Media query for tablets and smaller desktops */
-  @media screen and (max-width: 1450px) {
+}
+.social-media-3d-menu {
+  box-shadow: $icon-glowing-shadow;
+  width: 100%;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35rem;
+  font-size: 1.5rem;
+  ul {
+    padding: -10rem;
+    position: relative;
+    transform: skewY(-25deg);
+    li {
+      position: absolute;
+      top: 0;
+      transform: translate(calc(var(--i) * 4rem), calc(var(--i) * 4rem));
+      width: 10rem;
+      padding: 1.7rem;
+      background: #383838;
+      transition: 0.5s;
+    }
+  }
+  ul li:hover {
+    top: -5.5rem;
+    background: var(--clr);
+    text-shadow: $icon-span-shadow;
+  }
+  ul li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -4rem;
+    width: 4rem;
+    height: 100%;
+    background: $primaryColor;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+  }
+  ul li:hover::before {
+    background: var(--clr);
+    filter: brightness(0.8);
+  }
+  ul li::after {
+    content: attr(data-text);
+    position: absolute;
+    top: -4rem;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    background: $primaryColor;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.25);
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    left: 0.05em;
+    padding-left: 1.5rem;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bolder;
+  }
+  ul li:hover::after {
+    filter: brightness(0.9);
+    background: var(--clr);
+    color: white;
+    box-shadow: -170px 170px 20px rgba(0, 0, 0, 0.25);
+  }
+  ul li a {
+    color: transparent;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    transition: 0.5s;
+  }
+  ul li:hover a {
+    color: white;
+  }
+  ul li a span {
+    position: absolute;
+    top: 0;
+    left: -4rem;
+    width: 4rem;
+    text-align: center;
+    height: 100%;
+    color: white;
+    padding-top: 0.8rem;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25em;
+  }
+  ul li a span:hover {
+    text-shadow: $icon-span-shadow;
+  }
+  ul li:hover a span {
+    color: white;
+  }
+  .facebook-list-item {
+    background: #1877f2;
+  }
+  .telegram-list-item {
+    background: #0088cc;
+  }
+  .email-list-item {
+    background: #d93025;
+  }
+  .twitter-list-item {
+    background: #1da1f2;
+  }
+  .linkedIn-list-item {
+    background: #0a66c2;
+  }
+  .github-list-item {
+    background: #181717;
+  }
+}
+/* Media query for tablets and smaller desktops */
+@media screen and (max-width: 1450px) {
+  .container {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2rem;
-    .my-files {
-      max-width: 30rem;
-      min-height: 10rem;
-      font-size: x-large;
-    }
-    .form {
-      input,
-      textarea {
-        width: 28rem;
-      }
+  }
+  .my-files {
+    max-width: 30rem;
+    min-height: 10rem;
+    font-size: x-large;
+  }
+  .form {
+    input,
+    textarea {
+      width: 28rem;
     }
   }
-  /* Media query for tablets and larger smartphones */
-  @media screen and (max-width: 768px) {
+}
+/* Media query for tablets and larger smartphones */
+@media screen and (max-width: 768px) {
+  .container {
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 1rem;
-    .contact-form,
-    .my-files {
-      padding: 1rem;
-      margin: 1.5rem 0.5rem;
-      width: 26rem;
-    }
-    .contact-directly {
-      li {
-        margin: 0.5rem 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
-    }
-    .form {
-      input,
-      textarea {
-        width: 22rem;
-      }
-    }
   }
-  /* Media query for mobile phones */
-  @media screen and (max-width: 480px) {
-    flex-direction: column;
-    gap: 1rem;
-    .contact-form,
-    .my-files {
-      padding: 0.5rem;
-      margin: 1.5rem 0.5rem;
-      max-width: 23rem;
-    }
-    .contact-directly {
+  .contact-form,
+  .my-files {
+    padding: 1rem;
+    margin: 1.5rem 0.5rem;
+    width: 26rem;
+  }
+  .contact-directly {
+    li {
+      margin: 0.5rem 2rem;
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
-      .contact-options {
-        display: flex;
-      }
-      li {
-        margin: 0.5rem 1.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
-      a {
-        padding: 0 2rem;
-        font-size: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
     }
-    .form {
-      input,
-      textarea {
-        width: 20rem;
-        margin: 0 2rem;
-      }
+  }
+  .form {
+    input,
+    textarea {
+      width: 22rem !important;
     }
+  }
+  #social-media-3d {
+    display: none;
+  }
+}
+/* Media query for mobile phones */
+@media screen and (max-width: 480px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .contact-form,
+  .my-files {
+    padding: 0.5rem;
+    margin: 1.5rem 0.5rem;
+    max-width: 23rem;
+  }
+  .contact-directly {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .contact-options {
+      display: flex;
+    }
+    li {
+      margin: 0.5rem 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    a {
+      padding: 0 2rem;
+      font-size: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  .form {
+    input,
+    textarea {
+      width: 20rem;
+      margin: 0 2rem;
+    }
+  }
+  #social-media-3d {
+    display: none;
   }
 }

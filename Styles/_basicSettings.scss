@@ -21,6 +21,9 @@ body {
   background-image: $bodyBg;
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
+  a:visited {
+    color: inherit;
+  }
 }
 section {
   padding: 3.2rem 0;
