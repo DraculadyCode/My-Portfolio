@@ -518,7 +518,7 @@ footer .logo:hover {
   width: 22rem;
   height: auto;
   border-color: #a009f7;
-  bottom: -80rem;
+  bottom: -40%;
 }
 
 @media screen and (max-width: 1800px) {
@@ -1821,12 +1821,17 @@ a:hover ~ .custom-cursor {
 
 /* outer right cyan */
 .share-social-media {
+  position: fixed;
+  bottom: -10%;
+  left: -35%;
   height: 20rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: start;
   width: 40%;
   margin: 0 30%;
+  z-index: 999;
+  transform: translateY(-50%);
 }
 .share-social-media i {
   font-size: 3rem;
@@ -1843,7 +1848,7 @@ a:hover ~ .custom-cursor {
   position: relative;
   width: 28rem;
   height: 28rem;
-  background: rgba(218, 194, 241, 0.459);
+  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1863,8 +1868,77 @@ a:hover ~ .custom-cursor {
   cursor: pointer;
   font-size: 2em;
   transition: 1.25s;
+  z-index: 1000;
+}
+
+.sharing-menu.active {
+  bottom: 6rem; /* Position when the menu is open */
+  left: 12rem; /* Position when the menu is open */
+}
+.sharing-menu.active li {
+  scale: 1;
+  transition: 1s;
 }
 
 .sharing-menu.active .sharing-toggle {
   transform: rotate(360deg);
+  box-shadow: 0 6px 8px #a009f7, 0 0 0 2px #333, 0 0 0 8px #fff;
+}
+
+.sharing-menu.active {
+  background: rgba(218, 194, 241, 0.459);
+}
+
+.sharing-menu li {
+  position: absolute;
+  left: 0;
+  transition: 0.8s;
+  transform: rotate(calc(45deg * var(--i)));
+  transform-origin: 14rem;
+  scale: 0;
+  transition-delay: calc(0.05s * var(--i));
+}
+
+.sharing-menu.active li {
+  scale: 1;
+}
+
+.sharing-menu li a {
+  position: relative;
+  display: flex;
+  transform: rotate(calc(-45deg * var(--i)));
+  width: 6rem;
+  height: 6rem;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1.75em;
+}
+
+.sharing-menu li a:hover {
+  background-color: var(--clr);
+}
+
+.sharing-toggle:hover {
+  border: #a009f7 outset 0.5rem;
+}
+
+@media screen and (max-width: 1110px) {
+  .share-social-media {
+    transform: scale(0.7);
+    bottom: 1%;
+    left: -40%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .share-social-media {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .share-social-media {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

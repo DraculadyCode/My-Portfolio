@@ -1,15 +1,16 @@
 /* outer right cyan */
 .share-social-media {
   position: fixed;
-  bottom: 0rem;
-  left: -58rem;
+  bottom: -10%;
+  left: -35%;
   height: 20rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: start;
   width: 40%;
   margin: 0 30%;
   z-index: 999;
+  transform: translateY(-50%);
 }
 .share-social-media i {
   font-size: 3rem;
@@ -103,6 +104,18 @@
   border: #a009f7 outset 0.5rem;
 }
 
+@media screen and (max-width: 1110px) {
+  .share-social-media {
+    transform: scale(0.7);
+    bottom: 1%;
+    left: -40%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .share-social-media {
+    display: none;
+  }
+}
 @media screen and (max-width: 480px) {
   .share-social-media {
     display: none;
