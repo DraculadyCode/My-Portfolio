@@ -1,0 +1,49 @@
+/* outer right cyan */
+.share-social-media {
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: 0 30%;
+}
+.share-social-media i {
+  font-size: 3rem;
+  color: white;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: rgba(242, 215, 255, 0.6705882353);
+  text-shadow: 6px 0 6px #a408ff, 5px 5px 5px #d26df7, 0 6px 6px rgba(79, 164, 250, 0.7215686275);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.sharing-menu {
+  border-radius: 50%;
+  position: relative;
+  width: 28rem;
+  height: 28rem;
+  background: rgba(218, 194, 241, 0.459);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sharing-menu .sharing-toggle {
+  position: relative;
+  width: 6rem;
+  height: 6rem;
+  background: rgba(242, 215, 255, 0.6705882353);
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  cursor: pointer;
+  font-size: 2em;
+  transition: 1.25s;
+}
+
+.sharing-menu.active .sharing-toggle {
+  transform: rotate(360deg);
+}/*# sourceMappingURL=sharingToggle.css.map */

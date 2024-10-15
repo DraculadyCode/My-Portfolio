@@ -1,0 +1,48 @@
+@import "./variables";
+
+.share-social-media {
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: 0 30%;
+  i {
+    font-size: 3rem;
+    color: white;
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: $form-BG;
+    text-shadow: $titlesShadow;
+    box-shadow: $mainShadow;
+  }
+}
+.sharing-menu {
+  border-radius: 50%;
+  position: relative;
+  width: 28rem;
+  height: 28rem;
+  background: rgba(218, 194, 241, 0.459);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sharing-menu .sharing-toggle {
+  position: relative;
+  width: 6rem;
+  height: 6rem;
+  background: $form-BG;
+  border-radius: 50%;
+  box-shadow: $mainShadow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  cursor: pointer;
+  font-size: 2em;
+  transition: 1.25s;
+}
+
+.sharing-menu.active .sharing-toggle {
+  transform: rotate(360deg);
+}
