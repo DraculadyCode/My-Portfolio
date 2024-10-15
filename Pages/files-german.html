@@ -126,12 +126,12 @@
       rel="stylesheet"
     />
 
-    <!-- ShareThis script -->
-    <script
+    <!-- ? ShareThis script -->
+    <!-- <script
       type="text/javascript"
       src="https://platform-api.sharethis.com/js/sharethis.js#property=67056187a6330b001a6016f1&product=sticky-share-buttons&source=platform"
       async="async"
-    ></script>
+    ></script> -->
 
     <!-- Preload custom stylesheet -->
     <link rel="preload" href="../Styles/style.css" as="style" />
@@ -372,7 +372,105 @@
         </a>
       </div>
       <div class="custom-cursor"></div>
-      <div class="sharethis-sticky-share-buttons"></div>
+      <div
+      class="share-social-media"
+      role="complementary"
+      aria-label="Share this page on social media"
+    >
+      <div class="sharing-menu" role="menu" aria-hidden="true">
+        <div
+          class="sharing-toggle"
+          role="button"
+          aria-expanded="false"
+          aria-controls="social-menu"
+          tabindex="0"
+        >
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+        <li style="--i: 0; --clr: #1877f2" role="none">
+          <a
+            href="#"
+            class="share-link"
+            data-platform="facebook"
+            aria-label="Share on Facebook"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li style="--i: 1; --clr: #25d366" role="none">
+          <a
+            href="#"
+            class="share-link"
+            data-platform="whatsapp"
+            aria-label="Share on WhatsApp"
+          >
+            <i class="fa-brands fa-whatsapp"></i
+          ></a>
+        </li>
+        <li style="--i: 2; --clr: #1da1f2" role="none">
+          <a
+            href="#"
+            class="share-link"
+            data-platform="twitter"
+            aria-label="Share on Twitter"
+          >
+            <i class="fa-brands fa-twitter" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li style="--i: 3; --clr: #26a5e4" role="none">
+          <a
+            href="#"
+            class="share-link"
+            data-platform="telegram"
+            aria-label="Share on Telegram"
+          >
+            <i class="fa-brands fa-telegram" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li style="--i: 4; --clr: #0a66c2" role="none">
+          <a
+            href="#"
+            class="share-link"
+            data-platform="linkedin"
+            aria-label="Share on LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li style="--i: 5; --clr: #c32aa3" role="none">
+          <a
+            href="#"
+            class="share-link"
+            data-platform="instagram"
+            aria-label="Share on Instagram"
+          >
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li style="--i: 6; --clr: #bd081c" role="none">
+          <a
+            href="#"
+            class="share-link"
+            data-platform="pinterest"
+            aria-label="Share on Pinterest"
+          >
+            <i class="fa-brands fa-pinterest" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li style="--i: 7; --clr: #d14836" role="none">
+          <a
+            href="mailto:?subject=Check this out&body=Check this out: YOUR_URL"
+            target="_blank"
+            rel="noopener noreferrer"
+            role="menuitem"
+            aria-label="Share via Email"
+          >
+            <i class="fa-regular fa-envelope" aria-hidden="true"></i
+          ></a>
+        </li>
+      </div>
+    </div>
+      <!-- <div class="sharethis-sticky-share-buttons"></div> -->
     </main>
     <footer>
       <div class="container">
@@ -390,6 +488,7 @@
     <script src="../Scripts/script.js" async></script>
     <script src="../Scripts/Cursor.js" async></script>
     <script src="../Scripts/dropdown-menu.js" async></script>
+    <script src="../Scripts/sharing-toggle.js" async></script>
 
     <!-- Async or defer for external scripts -->
     <script
