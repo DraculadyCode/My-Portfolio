@@ -1407,6 +1407,12 @@ html[data-page=index-german] .h4-title {
 .social-media-3d-menu .github-list-item {
   background: #181717;
 }
+.social-media-3d-menu .xing-list-item {
+  background: #007a33;
+}
+.social-media-3d-menu .discord-list-item {
+  background: #5865f2;
+}
 
 /* Media query for tablets and smaller desktops */
 @media screen and (max-width: 1450px) {
