@@ -45,8 +45,9 @@
     }
     &:hover {
       font-size: 3rem;
-      color: #ffd900;
+      color: #ffffff;
       transition: 1s;
+      text-shadow: $titlesShadow;
     }
   }
   p {

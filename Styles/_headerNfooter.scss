@@ -25,14 +25,13 @@ header {
     z-index: 500;
     border-radius: 50%;
     background-color: $icon-bg;
-    box-shadow: $icon-shadow;
+    box-shadow: $icon-glowing-shadow;
     img {
       width: 100%;
     }
     &:hover {
       transition: 2s;
       transform: scale(1.05);
-      box-shadow: $icon-glowing-shadow;
     }
   }
   .icon-draculady {
@@ -44,12 +43,11 @@ header {
     z-index: 100;
     border-radius: 50%;
     background-color: $icon-bg;
-    box-shadow: $icon-shadow;
+    box-shadow: $icon-glowing-shadow;
     img {
       width: 100%;
     }
     &:hover {
-      box-shadow: $icon-glowing-shadow;
       transition: 2s;
       transform: scale(1.05);
     }

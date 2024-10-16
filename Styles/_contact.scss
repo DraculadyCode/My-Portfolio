@@ -104,19 +104,22 @@
       width: 20%;
       border-radius: 50%;
       margin: 0.5rem;
-      padding: 0.5rem;
       i {
         align-items: center;
         text-align: center;
         justify-content: center;
         font-size: 2.5rem;
-        padding: 0.5rem;
+        padding: 2rem;
       }
       a {
         display: flex;
         align-items: center;
         text-align: center;
         justify-content: center;
+      }
+      i:hover {
+        color: white;
+        text-shadow: $titlesShadow;
       }
     }
   }
