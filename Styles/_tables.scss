@@ -14,11 +14,14 @@
       border: 0.1rem solid #ffffff00;
       border-radius: 50%;
       text-align: center;
+
       &:hover {
         box-shadow: $mainShadow;
-        text-shadow: 50%;
+        text-shadow: $title-span-shadow;
         font-weight: bold;
         transition: 1s;
+        border-radius: 50%;
+        background-color: $paragraph-BG;
       }
     }
     i {
@@ -31,57 +34,9 @@
     }
   }
 }
-/* Settings and design for elements table */
-.elements-table {
-  table {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-collapse: collapse;
-    width: 100%;
-    font-size: small;
-    td {
-      padding: 0.5rem 3.5rem;
-      max-width: 5rem;
-      height: auto;
-      background-color: rgba(#feffff, 0);
-      border: 0.1rem solid rgba(#ffffff, 0);
-      border-radius: 50%;
-      text-align: center;
-      &:hover {
-        font-size: large;
-        font-weight: bold;
-        text-shadow: $elementsTbHover;
-        transition: 1s;
-      }
-    }
-    i {
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      padding: 1rem;
-      margin: 0 0 0 0.3rem;
-      width: 1rem;
-      font-size: 1.5rem;
-      color: $primaryColor;
-      border-radius: 50%;
-      &:hover {
-        font-size: 2rem;
-        color: $hoverTitle;
-        transition: 1s;
-      }
-    }
-  }
-}
-.elements-table-div {
-  display: none;
-}
 // Responsivness
 
 @media screen and (max-width: 1400px) {
-  .elements-table-div,
-  .elements-table,
   .toolbox {
     display: none;
   }

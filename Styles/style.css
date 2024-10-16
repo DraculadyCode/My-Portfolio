@@ -659,180 +659,6 @@ html[data-page=index-german] .h4-title {
   }
 }
 /* outer right cyan */
-/* outer right cyan */
-@keyframes dropdown {
-  0% {
-    max-height: 0;
-    opacity: 0;
-  }
-  100% {
-    max-height: 20rem;
-    opacity: 1;
-  }
-}
-/* Base styles for the floating carousel */
-.floating-carousel {
-  position: relative;
-  max-width: 100%;
-  margin: 0rem auto;
-  background-color: #a009f7;
-  border-radius: 4rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  overflow: hidden;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px); /* Adds a blurred effect to the background */
-}
-
-.carousel-title {
-  margin: 1rem 0;
-}
-
-/* Carousel inner for sliding items */
-.carousel-inner {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-/* Individual carousel items */
-.carousel-item {
-  min-width: 100%;
-  box-sizing: border-box;
-  text-align: center;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  border: #a009f7 0.25rem outset;
-  border-radius: 4rem;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  border-radius: 4rem;
-}
-
-.carousel-item-info {
-  padding: 0.8rem 0;
-  background-color: #a009f7;
-  color: white;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 10rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  border-radius: 0 0 3rem 3rem;
-}
-.carousel-item-info h4 {
-  font-size: 3rem;
-  padding: 0;
-  border-radius: 1rem;
-}
-.carousel-item-info p {
-  font-size: 2rem;
-  padding: 0;
-  border-radius: 1rem;
-}
-.carousel-item-info a {
-  color: white;
-}
-
-/* Controls for previous and next buttons */
-.carousel-control {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 1rem;
-  cursor: pointer;
-  z-index: 10;
-  border-radius: 50%;
-  transition: none;
-}
-
-.carousel-control.prev {
-  left: 1rem;
-  position: absolute;
-}
-
-.carousel-control.next {
-  right: 1rem;
-  position: absolute;
-}
-
-.carousel-control:hover,
-.carousel-control:active {
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 1rem;
-  transition: none;
-}
-
-/* Responsive adjustments */
-@media screen and (min-width: 1016px) and (max-width: 1440px) {
-  .carousel-item-info {
-    height: 7rem;
-    border-radius: 0 0 1.5rem 1.5rem;
-  }
-  .carousel-item-info h4 {
-    font-size: 1.8rem;
-  }
-  .carousel-item-info p {
-    font-size: 1.5rem;
-  }
-}
-@media screen and (min-width: 952px) and (max-width: 1015px) {
-  .carousel-item-info {
-    height: 7rem;
-    border-radius: 0 0 1.5rem 1.5rem;
-  }
-  .carousel-item-info h4 {
-    font-size: 1.8rem;
-  }
-  .carousel-item-info p {
-    display: none;
-  }
-}
-@media screen and (max-width: 951px) {
-  .floating-carousel {
-    border-radius: 2rem;
-  }
-  .carousel-item {
-    border-radius: 2rem;
-  }
-  .carousel-item-info {
-    height: 7rem;
-    border-radius: 0 0 1.5rem 1.5rem;
-  }
-  .carousel-item-info h4 {
-    font-size: 1.8rem;
-  }
-  .carousel-item-info p {
-    display: none;
-  }
-  .carousel-control {
-    padding: 0.6rem;
-  }
-}
-@media screen and (max-width: 480px) and (orientation: portrait) {
-  .floating-carousel {
-    border-radius: 1.5rem;
-  }
-  .carousel-item {
-    border-radius: 1.5rem;
-  }
-  .carousel-item-info {
-    height: 4rem;
-    border-radius: 0 0 1rem 1rem;
-  }
-  .carousel-item-info h4 {
-    font-size: 1rem;
-  }
-  .carousel-item-info p {
-    display: none;
-  }
-  .carousel-control {
-    padding: 0.4rem;
-  }
-}
-/* outer right cyan */
 /* Settings and design of the skills table - portfolio page */
 .skills-table table {
   display: flex;
@@ -851,9 +677,11 @@ html[data-page=index-german] .h4-title {
 }
 .skills-table table td:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  text-shadow: 50%;
+  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px, 2px 2px 2px rgba(255, 255, 255, 0.04);
   font-weight: bold;
   transition: 1s;
+  border-radius: 50%;
+  background-color: rgba(242, 215, 255, 0.8235294118);
 }
 .skills-table table i {
   padding: 1rem;
@@ -864,55 +692,7 @@ html[data-page=index-german] .h4-title {
   border-radius: 50%;
 }
 
-/* Settings and design for elements table */
-.elements-table table {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-collapse: collapse;
-  width: 100%;
-  font-size: small;
-}
-.elements-table table td {
-  padding: 0.5rem 3.5rem;
-  max-width: 5rem;
-  height: auto;
-  background-color: rgba(254, 255, 255, 0);
-  border: 0.1rem solid rgba(255, 255, 255, 0);
-  border-radius: 50%;
-  text-align: center;
-}
-.elements-table table td:hover {
-  font-size: large;
-  font-weight: bold;
-  text-shadow: 0 0 2rem #fff, 0 0 3rem #3fdee4, 0 0 4rem #a00de4, 0 0 5rem #4d9aff, 0 0 6rem #11cef0, 0 0 7rem #75e3f7, 0 0 8rem #a87fdd;
-  transition: 1s;
-}
-.elements-table table i {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 1rem;
-  margin: 0 0 0 0.3rem;
-  width: 1rem;
-  font-size: 1.5rem;
-  color: #a009f7;
-  border-radius: 50%;
-}
-.elements-table table i:hover {
-  font-size: 2rem;
-  color: #530680;
-  transition: 1s;
-}
-
-.elements-table-div {
-  display: none;
-}
-
 @media screen and (max-width: 1400px) {
-  .elements-table-div,
-  .elements-table,
   .toolbox {
     display: none;
   }
@@ -1729,49 +1509,6 @@ html[data-page=index-german] .h4-title {
   align-items: center;
 }
 
-.my-files {
-  display: inline-block;
-  position: static;
-  z-index: 900;
-  padding: 1.5rem;
-  margin: 0 1rem;
-  max-width: 40rem;
-  min-height: 20rem;
-  font-size: x-large;
-  background-color: rgba(242, 215, 255, 0.6705882353);
-  line-height: 3rem;
-  border: 0.1rem solid rgba(177, 177, 177, 0.548);
-  border-radius: 3rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  transition: 1s;
-}
-.my-files a {
-  color: #000000;
-  transition: 1s;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  text-decoration: none;
-  padding: 0.5rem 0;
-  text-align: left;
-}
-.my-files a:hover {
-  font-weight: bolder;
-  text-shadow: 0.3rem 0.3rem 0.3rem rgb(127, 169, 223);
-}
-.my-files i {
-  font-size: x-large;
-  color: #a009f7;
-  transition: 1s;
-}
-.my-files i:hover {
-  transform: scale(1.5);
-}
-.my-files:hover {
-  text-shadow: 0.1rem 0.2rem 0.4rem rgb(249, 249, 253);
-  box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
-}
-
 .all-files {
   display: flex;
   justify-content: center;
@@ -1793,7 +1530,7 @@ html[data-page=index-german] .h4-title {
   z-index: 1000;
 }
 .all-files .file-item:hover {
-  border: 0.5rem #a009f7 solid;
+  border: 0.2rem #a009f7 solid;
 }
 .all-files .button-div {
   pointer-events: auto;
@@ -1896,12 +1633,12 @@ a:hover ~ .custom-cursor {
   cursor: pointer;
   font-size: 2em;
   transition: 1.25s;
-  z-index: 1000;
 }
 
 .sharing-menu.active {
   bottom: 6rem; /* Position when the menu is open */
   left: 12rem; /* Position when the menu is open */
+  z-index: 1100;
 }
 .sharing-menu.active li {
   scale: 1;
@@ -1911,10 +1648,12 @@ a:hover ~ .custom-cursor {
 .sharing-menu.active .sharing-toggle {
   transform: rotate(360deg);
   box-shadow: 0 6px 8px #a009f7, 0 0 0 2px #333, 0 0 0 8px #fff;
+  z-index: 1100;
 }
 
 .sharing-menu.active {
   background: rgba(218, 194, 241, 0.459);
+  z-index: 1100;
 }
 
 .sharing-menu li {
@@ -1929,6 +1668,7 @@ a:hover ~ .custom-cursor {
 
 .sharing-menu.active li {
   scale: 1;
+  z-index: 1100;
 }
 
 .sharing-menu li a {
