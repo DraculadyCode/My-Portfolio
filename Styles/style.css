@@ -1051,16 +1051,19 @@ html[data-page=index-german] .h4-title {
   justify-content: center;
   font-size: 2.5rem;
   padding: 2rem;
+  border-radius: 50%;
 }
 .contact-options-divs .contact-directly li a {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
+  border-radius: 50%;
 }
 .contact-options-divs .contact-directly li i:hover {
   color: white;
   text-shadow: 6px 0 6px #a408ff, 5px 5px 5px #d26df7, 0 6px 6px rgba(79, 164, 250, 0.7215686275);
+  border-radius: 50%;
 }
 
 .social-media-3d-menu {
