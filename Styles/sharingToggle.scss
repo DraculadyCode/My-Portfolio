@@ -47,11 +47,11 @@
   cursor: pointer;
   font-size: 2em;
   transition: 1.25s;
-  z-index: 1000;
 }
 .sharing-menu.active {
   bottom: 6rem; /* Position when the menu is open */
   left: 12rem; /* Position when the menu is open */
+  z-index: 1100;
   li {
     scale: 1;
     transition: 1s;
@@ -60,9 +60,11 @@
 .sharing-menu.active .sharing-toggle {
   transform: rotate(360deg);
   box-shadow: 0 6px 8px $primaryColor, 0 0 0 2px #333, 0 0 0 8px #fff;
+  z-index: 1100;
 }
 .sharing-menu.active {
   background: rgba(218, 194, 241, 0.459);
+  z-index: 1100;
 }
 .sharing-menu li {
   position: absolute;
@@ -75,6 +77,7 @@
 }
 .sharing-menu.active li {
   scale: 1;
+  z-index: 1100;
 }
 .sharing-menu li a {
   position: relative;

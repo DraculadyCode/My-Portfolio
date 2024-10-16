@@ -1772,31 +1772,54 @@ html[data-page=index-german] .h4-title {
   box-shadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
 }
 
-.files {
+.all-files {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
-.files .file-item {
-  display: flex;
-  border: #a009f7 0.3rem outset;
-  padding: 0.7rem;
-  width: 100%;
-  border-radius: 1rem;
-  margin: 1rem;
+.all-files img {
+  width: 15rem;
+  margin: 1rem 1.5rem;
+  border: #a009f7 0.5rem outset;
+  border-radius: 2rem;
+}
+.all-files .file-item {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 4rem;
+  margin: 1.5rem 0.5rem;
+  width: 25rem;
+  border: 0.5rem rgba(242, 215, 255, 0.8235294118) solid;
+  z-index: 1000;
+}
+.all-files .file-item:hover {
+  border: 0.5rem #a009f7 solid;
+}
+.all-files .button-div {
+  pointer-events: auto;
+}
+.all-files button a {
   align-items: center;
+  justify-content: center;
 }
-.files .file-item:hover {
-  border: #a009f7 0.3rem inset;
-}
-.files .file-item .file-icon {
-  display: block;
-  margin-right: 0.5rem;
-  justify-content: flex-start;
-  padding: 0 1rem;
+.all-files .file-title {
+  margin: 1rem 0;
+  font-size: 2rem;
 }
 
+@media screen and (max-width: 1000px) {
+  .all-files {
+    flex-direction: column;
+  }
+  .all-files .file-item {
+    margin: 2rem 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .all-files {
+    flex-direction: column;
+  }
+}
 .custom-cursor {
   position: absolute;
   width: 1.5rem; /* Cursor width */
