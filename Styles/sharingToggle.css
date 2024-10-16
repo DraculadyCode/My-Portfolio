@@ -9,8 +9,9 @@
   align-items: start;
   width: 40%;
   margin: 0 30%;
-  z-index: 999;
+  z-index: 200;
   transform: translateY(-50%);
+  display: none;
 }
 .share-social-media i {
   font-size: 3rem;
