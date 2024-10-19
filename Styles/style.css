@@ -1589,17 +1589,12 @@ a:hover ~ .custom-cursor {
 
 /* outer right cyan */
 .share-social-media {
-  position: fixed;
-  bottom: -10%;
-  left: -35%;
-  height: 20rem;
+  position: relative;
   display: flex;
-  justify-content: left;
-  align-items: start;
-  width: 40%;
-  margin: 0 30%;
+  width: 30%;
   z-index: 200;
   transform: translateY(-50%);
+  border: red solid 1rem;
   display: none;
 }
 .share-social-media i {
@@ -1619,12 +1614,10 @@ a:hover ~ .custom-cursor {
   height: 28rem;
   background: transparent;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .sharing-menu .sharing-toggle {
-  position: relative;
+  position: fixed;
   width: 6rem;
   height: 6rem;
   background: rgba(242, 215, 255, 0.6705882353);
@@ -1640,7 +1633,7 @@ a:hover ~ .custom-cursor {
 }
 
 .sharing-menu.active {
-  bottom: 6rem; /* Position when the menu is open */
+  top: -3rem; /* Position when the menu is open */
   left: 12rem; /* Position when the menu is open */
   z-index: 1100;
 }
