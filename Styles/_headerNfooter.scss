@@ -153,7 +153,7 @@ footer {
   p {
     &::before,
     &::after {
-      content: "\f004";
+      content: "\f121";
       font-family: "FontAwesome";
       position: relative;
       padding: 0 15rem;
@@ -170,16 +170,10 @@ footer {
     img {
       width: 100%;
     }
-    &:hover {
-      transition: 2s;
-      transform: scale(1.05);
-    }
   }
 }
 // Responsivness
 @media screen and (max-width: 1800px) {
-  h1::before,
-  h1::after,
   footer p::before,
   footer p::after {
     display: none;
