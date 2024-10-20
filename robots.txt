@@ -1,4 +1,8 @@
 User-agent: *
 Disallow: 
 Disallow: /Admin/
+Disallow: /Files/Kathrin%20Peled%20Resume%2007.2024%20.pdf
+Disallow: /Pages/contact-deutsch.html
+Disallow: /Projects/Sweet%20spot%20responsive%20single%20page%20blog/contact.html
+
 Sitemap: https://draculady.de/sitemap.xml
