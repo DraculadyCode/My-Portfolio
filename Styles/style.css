@@ -407,7 +407,7 @@ footer:hover .logo {
   box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
 }
 footer p::before, footer p::after {
-  content: "\f004";
+  content: "\f121";
   font-family: "FontAwesome";
   position: relative;
   padding: 0 15rem;
@@ -424,14 +424,8 @@ footer .logo {
 footer .logo img {
   width: 100%;
 }
-footer .logo:hover {
-  transition: 2s;
-  transform: scale(1.05);
-}
 
 @media screen and (max-width: 1800px) {
-  h1::before,
-  h1::after,
   footer p::before,
   footer p::after {
     display: none;
