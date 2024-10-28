@@ -102,6 +102,8 @@
       border-radius: 50%;
       margin: 0.5rem;
       border: $primaryColor 0.3rem outset;
+      box-shadow: $mainShadow;
+
       &:hover {
         border: $primaryColor 0.3rem inset;
       }
@@ -119,7 +121,6 @@
         text-align: center;
         justify-content: center;
         border-radius: 50%;
-        box-shadow: $mainShadow;
       }
       i:hover {
         color: white;
@@ -327,6 +328,9 @@
   #social-media-3d {
     display: none;
   }
+  .business-card img {
+    width: 85%;
+  }
 }
 /* Media query for mobile phones */
 @media screen and (max-width: 480px) {
@@ -340,32 +344,6 @@
     max-width: 23rem;
     font-size: 1rem;
   }
-  // .contact-directly {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   text-align: center;
-  //   flex-direction: column;
-  //   .contact-options {
-  //     display: flex;
-  //   }
-  //   li {
-  //     margin: 0.5rem 1.5rem;
-  //     display: flex;
-  //     justify-content: center;
-  //     align-items: center;
-  //     text-align: center;
-  //     flex-direction: column;
-  //   }
-  //   a {
-  //     padding: 0 3rem;
-  //     font-size: 1rem;
-  //     display: flex;
-  //     justify-content: center;
-  //     align-items: center;
-  //     text-align: center;
-  //   }
-  // }
   .form {
     input,
     textarea {
@@ -373,14 +351,6 @@
       margin: 0 2rem;
     }
   }
-  // .contact-options-list {
-  //   display: flex;
-  //   border: red 1 rem solid;
-  //   li {
-  //     margin: 0.5rem 0.8rem;
-  //     flex-direction: column;
-  //   }
-  // }
   #social-media-3d {
     display: none;
   }
