@@ -1,0 +1,27 @@
+BEGIN:VCARD
+VERSION:4.0
+FN:Kathrin Peled Web Developer
+ORG:DraculadyCode
+EMAIL:draculadycode@gmail.com
+TEL;TYPE=WORK,VOICE:+4917685639174
+URL:https://draculady.de
+PHOTO;VALUE=URI:https://draculady.de/Icons/Draculady-icon.png
+item1.ADR;TYPE=WORK:;;Your Address Here;City;State;Postal Code;Country
+item1.X-ABLabel:Address
+item2.X-ABLabel:Skype
+item2.URL:skype:live:.cid.fa37e5044b0a120f?chat
+item3.X-ABLabel:Discord
+item3.URL:https://discord.com/users/draculadycode
+item4.X-ABLabel:LinkedIn
+item4.URL:https://www.linkedin.com/in/kathrin-peled-draculady/
+item5.X-ABLabel:GitHub
+item5.URL:https://github.com/DraculadyCode
+item6.X-ABLabel:Telegram
+item6.URL:https://t.me/Draculady
+item7.X-ABLabel:Facebook
+item7.URL:https://www.facebook.com/profile.php?id=61563925780935
+item8.X-ABLabel:Twitter
+item8.URL:https://x.com/DraculadyKath
+item9.X-ABLabel:Xing
+item9.URL:https://www.xing.com/profile/Kathrin_Peled/web_profiles
+END:VCARD
