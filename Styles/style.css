@@ -726,6 +726,9 @@ html[data-page=index-german] .h4-title {
   transform: scale(1.05);
   z-index: 1000;
 }
+.portfolio-items .portfolio-item:hover p {
+  display: flex;
+}
 .portfolio-items .portfolio-item:hover .portfolio-item-image {
   display: flex;
   flex-direction: column;
@@ -736,6 +739,7 @@ html[data-page=index-german] .h4-title {
 .portfolio-items .portfolio-item p {
   margin-bottom: 1.5rem;
   font-size: x-large;
+  display: none;
 }
 .portfolio-items .portfolio-item a {
   display: flex;
@@ -757,7 +761,6 @@ html[data-page=index-german] .h4-title {
   width: 100%;
   max-width: 100%;
   height: auto;
-  display: none;
 }
 .portfolio-items .portfolio-item .portfolio-item-image img {
   padding: 0;
