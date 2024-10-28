@@ -728,6 +728,9 @@ html[data-page=index-german] .h4-title {
 }
 .portfolio-items .portfolio-item:hover p {
   display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 .portfolio-items .portfolio-item:hover .portfolio-item-image {
   display: flex;

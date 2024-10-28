@@ -32,6 +32,9 @@
       z-index: 1000;
       p {
         display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
       }
       .portfolio-item-image {
         display: flex;
