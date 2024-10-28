@@ -1184,13 +1184,16 @@ html[data-page=index-german] .h4-title {
   background: #181717;
 }
 .social-media-3d-menu .xing-list-item {
-  background: #B7DF4B;
+  background: #b7df4b;
 }
 .social-media-3d-menu .discord-list-item {
   background: #5865f2;
 }
 .social-media-3d-menu .skype-list-item {
   background: #00aff0;
+}
+.social-media-3d-menu .signal-list-item {
+  background: #3ea6e3;
 }
 
 /* Media query for tablets and smaller desktops */
