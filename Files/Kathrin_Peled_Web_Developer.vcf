@@ -1,11 +1,12 @@
 BEGIN:VCARD
 VERSION:3.0
-FN:Kathrin Peled Web Developer
-ORG:DraculadyCode
+FN:Kathrin Peled
+N:Peled;Kathrin;;;
 TITLE:Web Developer
-EMAIL;TYPE=INTERNET:draculadycode@gmail.com
-TEL;TYPE=CELL:+4917685639174
-URL:www.draculady.de
+ORG:DraculadyCode
+EMAIL:draculadycode@gmail.com
+TEL:+4917685639174
+URL:https://www.draculady.de
 X-SKYPE:live:.cid.fa37e5044b0a120f
 X-DISCORD:draculadycode
 X-LINKEDIN:https://www.linkedin.com/in/kathrin-peled-draculady/
@@ -16,5 +17,5 @@ X-TELEGRAM:@Draculady
 X-XING:https://www.xing.com/profile/Kathrin_Peled/web_profiles
 X-NETLIFY:https://app.netlify.com/teams/draculadycode/sites
 X-VERCEL:https://vercel.com/kathrins-projects-926c884c
-PHOTO;VALUE=URI;TYPE=PNG:https://draculady.de/Icons/Draculady-icon.png
+PHOTO;VALUE=URI:https://draculady.de/Icons/Draculady-icon.png
 END:VCARD
