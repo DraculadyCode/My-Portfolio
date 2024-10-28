@@ -972,13 +972,11 @@ html[data-page=index-german] .h4-title {
   color: #a009f7;
   border-radius: 50%;
   padding: 1rem;
-  border: #a009f7 outset 0.4rem;
   transition: 1s;
 }
 .contact-options-divs .contact-form i:hover,
 .contact-options-divs .contact-directly i:hover {
   transform: scale(1.2);
-  border: #a009f7 inset 0.4rem;
 }
 .contact-options-divs .contact-form:hover,
 .contact-options-divs .contact-directly:hover {
@@ -1038,6 +1036,10 @@ html[data-page=index-german] .h4-title {
   width: 20%;
   border-radius: 50%;
   margin: 0.5rem;
+  border: #a009f7 0.3rem outset;
+}
+.contact-options-divs .contact-directly li:hover {
+  border: #a009f7 0.3rem inset;
 }
 .contact-options-divs .contact-directly li i {
   align-items: center;
@@ -1053,6 +1055,7 @@ html[data-page=index-german] .h4-title {
   text-align: center;
   justify-content: center;
   border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .contact-options-divs .contact-directly li i:hover {
   color: white;
