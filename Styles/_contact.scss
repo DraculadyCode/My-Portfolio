@@ -262,6 +262,13 @@
     background: #3ea6e3;
   }
 }
+.business-card {
+  border: $primaryColor 0.3rem outset;
+  border-radius: 3rem;
+  box-shadow: $mainShadow;
+  background-color: $form-BG;
+  max-width: 100%;
+}
 /* Media query for tablets and smaller desktops */
 @media screen and (max-width: 1450px) {
   .container {
