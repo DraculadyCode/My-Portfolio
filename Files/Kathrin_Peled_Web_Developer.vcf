@@ -1,0 +1,20 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Kathrin Peled Web Developer
+ORG:DraculadyCode
+TITLE:Web Developer
+EMAIL;TYPE=INTERNET:draculadycode@gmail.com
+TEL;TYPE=CELL:+4917685639174
+URL:www.draculady.de
+X-SKYPE:live:.cid.fa37e5044b0a120f
+X-DISCORD:draculadycode
+X-LINKEDIN:https://www.linkedin.com/in/kathrin-peled-draculady/
+X-GITHUB:https://github.com/DraculadyCode
+X-TWITTER:https://x.com/DraculadyKath
+X-FACEBOOK:https://www.facebook.com/profile.php?id=61563925780935
+X-TELEGRAM:@Draculady
+X-XING:https://www.xing.com/profile/Kathrin_Peled/web_profiles
+X-NETLIFY:https://app.netlify.com/teams/draculadycode/sites
+X-VERCEL:https://vercel.com/kathrins-projects-926c884c
+PHOTO;VALUE=URI;TYPE=PNG:https://draculady.de/Icons/Draculady-icon.png
+END:VCARD
