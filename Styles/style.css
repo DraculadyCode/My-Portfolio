@@ -735,25 +735,14 @@ html[data-page=index-german] .h4-title {
   font-size: x-large;
 }
 .portfolio-items .portfolio-item a {
-  font-size: larger;
-  font-weight: bold;
-  color: #fff;
-  background-color: #a009f7;
-  border-radius: 1.5rem;
-  display: inline-block;
-  padding: 1rem;
-}
-.portfolio-items .portfolio-item a:hover {
-  font-size: x-large;
-  background-color: #2eade7;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  border: 0.5rem solid #fff;
-  transition: 1s;
-}
-.portfolio-items .portfolio-item .portfolio-item-icons {
   display: flex;
   justify-content: center;
+}
+.portfolio-items .portfolio-item .portfolio-item-icons {
+  position: absolute;
+  justify-content: center;
   margin-top: auto;
+  bottom: 2rem;
 }
 .portfolio-items .portfolio-item .portfolio-item-icons i {
   font-size: 1.5rem;

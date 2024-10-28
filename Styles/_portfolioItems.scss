@@ -40,25 +40,14 @@
       font-size: x-large;
     }
     a {
-      font-size: larger;
-      font-weight: bold;
-      color: $mainTextColor;
-      background-color: $primaryColor;
-      border-radius: 1.5rem;
-      display: inline-block;
-      padding: 1rem;
-      &:hover {
-        font-size: x-large;
-        background-color: #2eade7;
-        box-shadow: $mainShadow;
-        border: 0.5rem solid $mainTextColor;
-        transition: 1s;
-      }
-    }
-    .portfolio-item-icons {
       display: flex;
       justify-content: center;
+    }
+    .portfolio-item-icons {
+      position: absolute;
+      justify-content: center;
       margin-top: auto;
+      bottom: 2rem;
       i {
         font-size: 1.5rem;
         color: $hoverTitle;
