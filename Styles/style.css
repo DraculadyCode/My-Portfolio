@@ -701,6 +701,9 @@ html[data-page=index-german] .h4-title {
   margin: 1.5rem 0 0 0;
 }
 .portfolio-items .portfolio-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 1rem;
   margin: 0 0 2rem 0;
   width: calc(33.33% - 1.25rem);
