@@ -1041,6 +1041,7 @@ html[data-page=index-german] .h4-title {
 }
 .contact-options-divs .contact-directly li:hover {
   border: #a009f7 0.3rem inset;
+  background-color: rgba(242, 215, 255, 0.6705882353);
 }
 .contact-options-divs .contact-directly li i {
   align-items: center;
