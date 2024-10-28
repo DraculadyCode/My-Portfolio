@@ -739,7 +739,6 @@ html[data-page=index-german] .h4-title {
   justify-content: center;
 }
 .portfolio-items .portfolio-item .portfolio-item-icons {
-  position: absolute;
   justify-content: center;
   margin-top: auto;
   bottom: 2rem;
