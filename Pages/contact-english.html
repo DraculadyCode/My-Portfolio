@@ -724,21 +724,32 @@
                 </ul>
               </div>
             </div>
-            <div class="visit-card">
+            <div class="visit-card" role="document">
               <div class="h3-title">
-                <h3>Save me as a contact</h3>
+                <h3 id="contact-card-title">Save Me as a Contact</h3>
               </div>
-              <a href="../Files/Contact-Card.vcf" download>
-                <button>Download VCF</button>
+              <a
+                href="../Files/Contact-Card.vcf"
+                download
+                aria-labelledby="contact-title"
+              >
+                <button aria-label="Download VCF file of Kathrin Peled">
+                  Download VCF
+                </button>
               </a>
+              <div class="h3-title">
+                <h3 id="business-card-title">Save My Business Card</h3>
+              </div>
               <div class="business-card">
                 <a
                   href="../Files/Email-Signature.png"
                   download="Kathrin Peled Card.png"
+                  aria-labelledby="business-card-title"
                 >
                   <img
                     src="../Files/Email-Signature.png"
-                    alt="Email-Signature business card"
+                    alt="Email-Signature business card for Kathrin Peled"
+                    role="img"
                   />
                 </a>
               </div>
