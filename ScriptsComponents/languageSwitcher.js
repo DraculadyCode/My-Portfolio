@@ -48,4 +48,6 @@ function createLanguageSwitcher() {
 }
 
 // Call the function on page load
-window.onload = createLanguageSwitcher;
+// window.onload = createLanguageSwitcher;
+// Use DOMContentLoaded for triggering the function
+document.addEventListener("DOMContentLoaded", createLanguageSwitcher);

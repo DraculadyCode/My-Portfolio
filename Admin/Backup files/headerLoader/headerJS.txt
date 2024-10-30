@@ -1,0 +1,65 @@
+// headerLoader.js
+console.log("headerLoader.js is loaded");
+
+function loadHeader() {
+  console.log("Executing loadHeader");
+
+  // Determine the current language from the <html> lang attribute
+  const lang = document.documentElement.lang === "de" ? "de" : "en";
+  const headerFile =
+    lang === "de"
+      ? "../PagesComponents/header-de.html"
+      : "../PagesComponents/header-en.html";
+
+  console.log(`Loading header from: ${headerFile}`);
+
+  // Load the header HTML
+  fetch(headerFile)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.text();
+    })
+    .then((data) => {
+      console.log("Header HTML loaded successfully");
+      document.getElementById("header").innerHTML = data; // Ensure this element exists in your HTML
+    })
+    .catch((error) => console.error("Error loading header:", error));
+}
+
+// Call the loadHeader function when the page loads
+window.onload = loadHeader;
+// headerLoader.js
+console.log("headerLoader.js is loaded");
+
+function loadHeader() {
+  console.log("Executing loadHeader");
+
+  // Determine the current language from the <html> lang attribute
+  const lang = document.documentElement.lang === "de" ? "de" : "en";
+  const headerFile =
+    lang === "de"
+      ? "../PagesComponents/header-de.html"
+      : "../PagesComponents/header-en.html";
+
+  console.log(`Loading header from: ${headerFile}`);
+
+  // Load the header HTML
+  fetch(headerFile)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.text();
+    })
+    .then((data) => {
+      console.log("Header HTML loaded successfully");
+      document.getElementById("header").innerHTML = data; // Ensure this element exists in your HTML
+    })
+    .catch((error) => console.error("Error loading header:", error));
+}
+
+// Call the loadHeader function when the page loads
+document.addEventListener("DOMContentLoaded", loadHeader);
+
