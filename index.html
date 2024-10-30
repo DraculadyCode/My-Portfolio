@@ -107,8 +107,8 @@
       />
     </noscript>
 
-    <!-- Preload Boxicons JavaScript -->
-    <link rel="preload" href="https://unpkg.com/boxicons.js" as="script" />
+    <!-- ! Preload Boxicons JavaScript -->
+    <!-- <link rel="preload" href="https://unpkg.com/boxicons.js" as="script" /> -->
 
     <!-- Boxicons script for icons -->
     <script
@@ -131,11 +131,11 @@
 
     <!-- Preload custom stylesheet -->
     <link rel="preload" href="./Styles/style.css" as="style" />
-    <link rel="preload" href="./Styles/sharingToggle.css" as="style" />
+    <!-- <link rel="preload" href="./Styles/sharingToggle.css" as="style" /> -->
 
     <!-- Link to custom stylesheet -->
     <link rel="stylesheet" href="./Styles/style.css" />
-    <link rel="stylesheet" href="./Styles/sharingToggle.css" />
+    <!-- <link rel="stylesheet" href="./Styles/sharingToggle.css" /> -->
 
     <!-- Google Analytics tag -->
     <script
@@ -163,6 +163,7 @@
 
     <!-- Apple Touch Icon for iOS devices -->
     <link rel="apple-touch-icon" href="../Icons/Draculady-icon.webp" />
+    <script src="./ScriptsComponents/languageSwitcher.js"></script>
   </head>
   <body>
     <header>
@@ -682,21 +683,13 @@
           </div>
         </div>
       </section>
-
-      <div class="hire-me">
-        <a href="./Pages/contact-english.html#contact" aria-label="Hire me">
-          <div class="face">
-            <div class="eyes">
-              <div class="eye"></div>
-              <div class="eye"></div>
-            </div>
-          </div>
-          <div class="hire-me-textbox">
-            <p>Hire me</p>
-          </div>
-        </a>
-      </div>
+      <!-- * hire me -->
+      <div id="smiley"></div>
+      <script src="./ScriptsComponents/smileyLoader.js"></script>
+      <!-- * hire me -->
+      <!-- * back to top -->
       <script src="./ScriptsComponents/backToTopLoader.js"></script>
+      <!-- * back to top -->
       <div class="languages">
         <a href="./index-german.html" aria-label="Change Language to German">
           <img
@@ -706,6 +699,7 @@
           />
         </a>
       </div>
+      <!-- <div class="languages" id="language-switcher"></div> -->
       <div class="custom-cursor"></div>
       <!-- <div class="sharethis-sticky-share-buttons"></div> -->
     </main>
@@ -717,7 +711,7 @@
     <script src="./Scripts/script.js" async></script>
     <script src="./Scripts/Cursor.js" async></script>
     <script src="./Scripts/dropdown-menu.js" async></script>
-    <script src="./Scripts/sharing-toggle.js" async></script>
+    <!-- <script src="./Scripts/sharing-toggle.js" async></script> -->
 
     <!-- Async or defer for external scripts -->
     <script
