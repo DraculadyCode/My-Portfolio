@@ -1305,6 +1305,11 @@ html[data-page=index-german] .h4-title {
   }
 }
 /* Media query for tablets and larger smartphones */
+@media screen and (max-width: 1100px) {
+  #social-media-3d {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   .container {
     justify-content: center;
@@ -1332,9 +1337,6 @@ html[data-page=index-german] .h4-title {
   .contact-options-list {
     display: flex;
   }
-  #social-media-3d {
-    display: none;
-  }
   .business-card img {
     width: 85%;
   }
@@ -1351,9 +1353,12 @@ html[data-page=index-german] .h4-title {
     max-width: 23rem;
     font-size: 1rem;
   }
+  .contact-form {
+    width: 100%;
+  }
   .form input,
   .form textarea {
-    width: 20rem;
+    width: 29rem !important;
     margin: 0 2rem;
   }
   #social-media-3d {

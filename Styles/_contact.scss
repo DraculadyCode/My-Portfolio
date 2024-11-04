@@ -295,6 +295,11 @@
   }
 }
 /* Media query for tablets and larger smartphones */
+@media screen and (max-width: 1100px) {
+  #social-media-3d {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   .container {
     justify-content: center;
@@ -326,9 +331,7 @@
   .contact-options-list {
     display: flex;
   }
-  #social-media-3d {
-    display: none;
-  }
+
   .business-card img {
     width: 85%;
   }
@@ -345,10 +348,13 @@
     max-width: 23rem;
     font-size: 1rem;
   }
+  .contact-form {
+    width: 100%;
+  }
   .form {
     input,
     textarea {
-      width: 20rem;
+      width: 29rem !important;
       margin: 0 2rem;
     }
   }
