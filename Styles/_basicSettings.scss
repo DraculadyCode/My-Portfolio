@@ -267,9 +267,6 @@ button {
 @media screen and (max-width: 670px) {
   .intro-paragraph ul {
     flex-direction: column;
-    li {
-      font-size: 1rem;
-    }
   }
 }
 @media screen and (max-width: 480px) and (orientation: portrait) {
