@@ -1289,6 +1289,11 @@ html[data-page=index-german] .h4-title {
   margin: 0.5rem;
 }
 
+.warning-paragraph {
+  font-size: 1.5rem;
+  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px, 2px 2px 2px rgba(255, 255, 255, 0.04);
+}
+
 /* Media query for tablets and smaller desktops */
 @media screen and (max-width: 1450px) {
   .container {

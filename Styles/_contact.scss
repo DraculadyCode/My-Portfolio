@@ -275,6 +275,10 @@
   padding: 0.5rem;
   margin: 0.5rem;
 }
+.warning-paragraph {
+  font-size: 1.5rem;
+  text-shadow: $title-span-shadow;
+}
 /* Media query for tablets and smaller desktops */
 @media screen and (max-width: 1450px) {
   .container {
