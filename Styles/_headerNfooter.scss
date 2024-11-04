@@ -1,7 +1,9 @@
 @import "./variables";
 
 // Header part
-
+.backupH1Title {
+  display: none;
+}
 /* header designs and settings */
 header {
   display: flex;

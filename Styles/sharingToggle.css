@@ -4,9 +4,7 @@
   display: flex;
   width: 30%;
   z-index: 200;
-  transform: translateY(-50%);
   border: red solid 1rem;
-  display: none;
 }
 .share-social-media i {
   font-size: 3rem;
@@ -25,6 +23,8 @@
   height: 28rem;
   background: transparent;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sharing-menu .sharing-toggle {
@@ -37,15 +37,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
   cursor: pointer;
   font-size: 2em;
   transition: 1.25s;
 }
 
 .sharing-menu.active {
-  top: -3rem; /* Position when the menu is open */
-  left: 12rem; /* Position when the menu is open */
   z-index: 1100;
 }
 .sharing-menu.active li {
@@ -104,8 +101,6 @@
 @media screen and (max-width: 1110px) {
   .share-social-media {
     transform: scale(0.7);
-    bottom: 1%;
-    left: -40%;
   }
 }
 @media screen and (max-width: 1000px) {
