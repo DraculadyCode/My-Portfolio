@@ -17,7 +17,7 @@
     max-width: 35rem;
     min-width: 20rem;
     min-height: 19rem;
-    background-color: #c6acf0;
+    background-color: #d1b5fd;
     border: 0.4rem outset $primaryColor;
     border-radius: 5.5rem;
     box-shadow: $mainShadow;
@@ -105,6 +105,9 @@
   &:target {
     display: flex;
   }
+}
+.show-all-button {
+  display: none;
 }
 // Settings for elements table in order to sort projects by elements
 .elements-table tr td i {
