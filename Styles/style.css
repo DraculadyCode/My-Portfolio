@@ -870,7 +870,6 @@ html[data-page=index-german] .h4-title {
 
 .show-all {
   margin-top: -1rem;
-  display: none;
 }
 .show-all:target {
   display: flex;

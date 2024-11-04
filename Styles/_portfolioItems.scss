@@ -101,7 +101,7 @@
 }
 .show-all {
   margin-top: -1rem;
-  display: none;
+  // display: none;
   &:target {
     display: flex;
   }
