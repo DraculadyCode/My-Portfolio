@@ -22,7 +22,7 @@
   border-radius: 4rem;
   margin: 2rem 1rem 0 2rem;
   border: 0.5rem outset;
-  box-shadow: $imgShadow;
+  box-shadow: $mainShadow;
   &:hover {
     border-color: $primaryColor;
     transition: 2s;
@@ -39,6 +39,7 @@
   height: auto;
   border-color: $primaryColor;
   bottom: -40%;
+  display: none;
 }
 // Responsivness
 @media screen and (max-width: 1800px) {

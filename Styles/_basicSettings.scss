@@ -175,6 +175,43 @@ h5 {
     }
   }
 }
+#about .intro-paragraph {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  ul {
+    font-size: 1.5rem;
+  }
+}
+.intro {
+  display: flex;
+}
+.sub-menu ul {
+  display: flex;
+  li {
+    margin: 1rem;
+    padding: 0.6rem;
+    text-shadow: $title-span-shadow;
+    color: $primaryColor;
+    font-weight: 500;
+    justify-content: space-between;
+    box-shadow: $mainShadow;
+    border-radius: 2rem;
+    justify-content: center;
+    text-align: center;
+    &:hover {
+      font-weight: 600;
+      box-shadow: $icon-glowing-shadow;
+    }
+  }
+}
+// html[data-page="index german"] {
+//   .sub-menu ul  li {
+//     padding-left: -3rem;
+//   }
+// }
 .title-span {
   font-size: 2rem;
   font-weight: bolder;
@@ -203,7 +240,36 @@ button {
 }
 
 // Responsivness
+@media screen and (max-width: 1200px) {
+  .sub-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column !important;
 
+    li {
+      font-size: 1.3rem;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 670px) {
+  .intro-paragraph ul {
+    flex-direction: column;
+    li {
+      font-size: 1rem;
+    }
+  }
+}
 @media screen and (max-width: 480px) and (orientation: portrait) {
   body {
     overflow-x: hidden;
