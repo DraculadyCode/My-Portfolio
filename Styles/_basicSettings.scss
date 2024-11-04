@@ -264,6 +264,11 @@ button {
     text-align: center;
   }
 }
+// for dark mode
+body,
+.dark-mode {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 @media screen and (max-width: 670px) {
   .intro-paragraph ul {
     flex-direction: column;

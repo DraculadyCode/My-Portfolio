@@ -297,6 +297,11 @@ button:hover {
     text-align: center;
   }
 }
+body,
+.dark-mode {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 @media screen and (max-width: 670px) {
   .intro-paragraph ul {
     flex-direction: column;
@@ -1797,4 +1802,5 @@ a:hover ~ .custom-cursor {
   .share-social-media {
     display: none;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/* outer right cyan *//*# sourceMappingURL=style.css.map */

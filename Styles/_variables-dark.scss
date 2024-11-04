@@ -1,0 +1,98 @@
+$primaryColor-dark: #ffffff;
+$h1Shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+  1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+  1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
+  1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+  1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+  1px 30px 60px rgba(16, 16, 16, 0.4);
+$bodyBg-dark: linear-gradient(
+  -45deg,
+  rgb(143, 5, 124),
+  rgb(153, 20, 179),
+  rgb(19, 156, 248),
+  rgb(132, 132, 237),
+  rgb(255, 0, 221)
+);
+$sectionBg-dark: linear-gradient(
+  -45deg,
+  rgba(133, 157, 0, 0.918),
+  rgb(247, 34, 247),
+  rgb(174, 0, 243)
+);
+$hHover: 0 0 2rem #fff, 0 0 3rem #ffffff, 0 0 4rem #ffffff, 0 0 5rem #ff4da6,
+  0 0 6rem #ff4da6, 0 0 7rem #ff4da6, 0 0 8rem #ff4da6;
+$h2Hover: 1px 1px 1px #c00eec, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff,
+  -1px 3px 2px #ffffff, -1px -1px 1px #e79aee, 2px -1px 2px #a5cef0,
+  1px 7px 4px rgba(175, 43, 228, 0.4), 1px 9px 10px rgba(194, 103, 236, 0.2),
+  1px 9px 35px rgba(212, 0, 255, 0.2), 1px 9px 60px rgba(243, 20, 243, 0.4);
+$mainShadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+$elementsTbHover: 0 0 2rem #fff, 0 0 3rem #3fdee4, 0 0 4rem #a00de4,
+  0 0 5rem #4d9aff, 0 0 6rem #11cef0, 0 0 7rem #75e3f7, 0 0 8rem #a87fdd;
+$navShadow: 1px 1px 1px #5ff6ff, 1px 2px 1px #ffffff, 1px 3px 1px #ffffff,
+  -1px 3px 2px #ffffff, -1px -1px 1px #ffffff, 2px -1px 2px #a5cef0,
+  1px 7px 4px rgba(0, 9, 35, 0.4), 1px 9px 10px rgba(0, 64, 255, 0.2),
+  1px 9px 35px rgba(0, 64, 255, 0.2), 1px 9px 60px rgba(0, 64, 255, 0.4);
+$imgShadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+  rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+$mainTextColor: #fff;
+$boxShadow: 0.5rem 0.3rem 0.5rem rgb(129, 130, 133);
+$portfolioBg: radial-gradient(
+  rgba(0, 153, 255, 0.5),
+  rgba(123, 255, 0, 0.5),
+  rgba(255, 0, 255, 0.5),
+  rgba(255, 251, 4, 0.5)
+);
+$portfolioBg2: radial-gradient(
+  rgba(101, 250, 146, 0.5),
+  rgba(62, 211, 248, 0.5),
+  rgba(236, 28, 236, 0.5),
+  rgba(238, 121, 121, 0.5)
+);
+$sliderShadow: 0px 1px 2px 0px rgba(137, 45, 223, 0.7),
+  1px 2px 4px 0px rgba(81, 224, 15, 0.7),
+  2px 4px 8px 0px rgba(119, 15, 238, 0.7),
+  2px 4px 16px 0px rgba(233, 6, 157, 0.7);
+$skillsToolsBg: linear-gradient(
+  -45deg,
+  rgb(241, 50, 216),
+  rgb(198, 8, 236),
+  rgb(12, 149, 240),
+  rgb(122, 122, 231)
+);
+$hoverTitle: #530680;
+$icon-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+$icon-bg: #9d62eb;
+$icon-glowing-shadow: inset 0 0 50px #fff,
+  /* inner white */ inset 20px 0 80px #f0f,
+  /* inner left magenta short */ inset -20px 0 80px #0ff,
+  /* inner right cyan short */ inset 20px 0 300px #f0f,
+  /* inner left magenta broad */ inset -20px 0 300px #0ff,
+  /* inner right cyan broad */ 0 0 50px #fff,
+  /* outer white */ -10px 0 80px #f0f, /* outer left magenta */ 10px 0 80px #0ff; /* outer right cyan */
+$title-span-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
+  2px 2px 2px rgba(255, 255, 255, 0.04);
+$sitemap-text-shadow: 0px 0px 0 rgb(234, 234, 234), 1px 1px 0 rgb(223, 223, 223),
+  2px 2px 0 rgb(212, 212, 212), 3px 3px 0 rgb(202, 202, 202),
+  4px 4px 0 rgb(191, 191, 191), 5px 5px 0 rgb(180, 180, 180),
+  6px 6px 0 rgb(169, 169, 169), 7px 7px 0 rgb(158, 158, 158),
+  8px 8px 0 rgb(147, 147, 147), 9px 9px 8px rgba(0, 0, 0, 0.6),
+  9px 9px 1px rgba(0, 0, 0, 0.5), 0px 0px 8px rgba(0, 0, 0, 0.2);
+$sitemap-h2-shadow: 0px 0px 0 rgb(226, 226, 226), 1px 1px 0 rgb(208, 208, 208),
+  2px 2px 0 rgb(189, 189, 189), 3px 3px 0 rgb(171, 171, 171),
+  4px 4px 0 rgb(152, 152, 152), 5px 5px 0 rgb(133, 133, 133),
+  6px 6px 5px rgba(0, 0, 0, 0.8), 6px 6px 1px rgba(0, 0, 0, 0.5),
+  0px 0px 5px rgba(0, 0, 0, 0.2);
+$form-BG: #ae02fdab;
+$colorful-shadow: 5px 5px 15px 5px #ff8080, -9px 5px 15px 5px #ffe488,
+  -7px -5px 15px 5px #8cff85, 12px -5px 15px 5px #80c7ff,
+  12px 10px 15px 7px #e488ff, -10px 10px 15px 7px #ff616b,
+  -10px -7px 27px 1px #8e5cff, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+$titlesShadow: 6px 0 6px #a408ff, 5px 5px 5px #d26df7,
+  0 6px 6px rgba(79, 164, 250, 0.7215686275);
+$smilyLips: rgb(246, 70, 205);
+$paragraph-BG: #f2d7ffd2;
+$icon-span-shadow: #fff 0px 0px 5px, 2px 2px 2px rgba(255, 255, 255, 0.04);
