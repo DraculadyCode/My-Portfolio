@@ -14,7 +14,9 @@
       border: 0.1rem solid #ffffff00;
       border-radius: 50%;
       text-align: center;
-
+      text-shadow: $title-span-shadow;
+      background-color: $paragraph-BG;
+      box-shadow: $mainShadow;
       &:hover {
         box-shadow: $mainShadow;
         text-shadow: $title-span-shadow;
@@ -22,6 +24,10 @@
         transition: 1s;
         border-radius: 50%;
         background-color: $paragraph-BG;
+        i {
+          text-shadow: $titlesShadow;
+          color: #ffffff;
+        }
       }
     }
     i {

@@ -201,9 +201,11 @@ h5 {
     border-radius: 2rem;
     justify-content: center;
     text-align: center;
+    border: $primaryColor outset 0.15rem;
     &:hover {
       font-weight: 600;
       box-shadow: $icon-glowing-shadow;
+      border: transparent;
     }
   }
 }

@@ -18,15 +18,15 @@
     min-width: 20rem;
     min-height: 19rem;
     background-color: #c6acf0;
-    border: 0.8rem outset $primaryColor;
-    border-radius: 1.5rem;
+    border: 0.4rem outset $primaryColor;
+    border-radius: 5.5rem;
     box-shadow: $mainShadow;
     backdrop-filter: blur(5px);
     transition: transform 1s;
     &:hover {
       background-color: #a0eb8285;
       background-image: $portfolioBg;
-      border: outset transparent;
+      border: transparent;
       box-shadow: $mainShadow;
       transform: scale(1.05);
       z-index: 1000;
