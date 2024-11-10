@@ -53,12 +53,21 @@ a {
     transform: rotate(0deg);
   }
 }
-h3,
-h2 {
+h3 {
   text-shadow: none;
+  font-size: 2rem;
   &:hover {
     text-shadow: none;
   }
+}
+// html[data-page="resume german"] h4 {
+//   font-size: 1.2rem;
+// }
+h4 {
+  color: $primaryColor;
+  text-shadow: none !important;
+  box-shadow: none;
+  font-size: 1.2rem;
 }
 .cover {
   position: absolute;

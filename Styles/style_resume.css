@@ -57,13 +57,19 @@ a:visited {
     transform: rotate(0deg);
   }
 }
-h3,
-h2 {
+h3 {
+  text-shadow: none;
+  font-size: 2rem;
+}
+h3:hover {
   text-shadow: none;
 }
-h3:hover,
-h2:hover {
-  text-shadow: none;
+
+h4 {
+  color: #a009f7;
+  text-shadow: none !important;
+  box-shadow: none;
+  font-size: 1.2rem;
 }
 
 .cover {
