@@ -1941,7 +1941,7 @@ a:hover ~ .custom-cursor {
   width: 15rem;
   height: 3rem;
   background-image: linear-gradient(to right, #a009f7, rgb(248, 86, 210));
-  border-radius: 1rem;
+  border-radius: 2rem;
   color: white;
   text-align: center;
   padding: 0.4rem;
