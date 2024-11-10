@@ -47,7 +47,7 @@ h4 {
   letter-spacing: 0.2rem;
   border-radius: 2rem;
   padding: 0.5rem 1rem;
-  text-shadow: $titlesShadow;
+  text-shadow: $titlesShadow !important;
 }
 .h2-title,
 .h3-title,

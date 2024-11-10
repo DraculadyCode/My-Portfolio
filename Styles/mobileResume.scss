@@ -13,12 +13,18 @@
 #resume-document {
   text-shadow: $titlesShadow;
 }
-h3,
-h2 {
+h3 {
   text-shadow: none;
+  font-size: 2rem;
   &:hover {
     text-shadow: none;
   }
+}
+h4 {
+  color: $primaryColor;
+  text-shadow: none !important;
+  box-shadow: none;
+  font-size: 1.5rem;
 }
 a {
   text-decoration: none;
@@ -285,10 +291,10 @@ a {
 }
 @media (max-width: 480px) {
   .book {
-    width: 100%; 
+    width: 100%;
   }
   .book-page {
-    width: 100%; 
+    width: 100%;
     margin: 1rem;
     margin-left: 25%;
   }

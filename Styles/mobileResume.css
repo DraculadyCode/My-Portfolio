@@ -15,13 +15,19 @@
   text-shadow: 6px 0 6px #a408ff, 5px 5px 5px #d26df7, 0 6px 6px rgba(79, 164, 250, 0.7215686275);
 }
 
-h3,
-h2 {
+h3 {
+  text-shadow: none;
+  font-size: 2rem;
+}
+h3:hover {
   text-shadow: none;
 }
-h3:hover,
-h2:hover {
-  text-shadow: none;
+
+h4 {
+  color: #a009f7;
+  text-shadow: none !important;
+  box-shadow: none;
+  font-size: 1.5rem;
 }
 
 a {

@@ -1,3 +1,177 @@
+@import "./variables";
+
 #my-timeline-resume {
   text-shadow: $titlesShadow;
+}
+.container-timeline {
+  width: 80%;
+  height: auto;
+  position: relative;
+  text-align: left;
+  border-radius: 3rem;
+  box-shadow: $mainShadow;
+  border: $primaryColor 0.2rem outset;
+}
+.container-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0.3rem; /* Thickness of the line */
+  height: 100%;
+  background-image: linear-gradient(to bottom, $primaryColor, $smilyLips);
+  border-radius: 1rem; /* Optional: adds rounded edges to the line */
+}
+.container-timeline::after {
+  content: "";
+  display: table;
+  // position: absolute;
+  // top: 50%;
+  clear: both;
+  width: 0.2rem;
+  background-image: linear-gradient(to bottom, $primaryColor, $smilyLips);
+  height: 100%;
+  position: relative;
+}
+// .timeline .container-timeline::after {
+//   width: 0.2rem;
+//   background-image: linear-gradient(to bottom, $primaryColor, $smilyLips);
+//   height: 100%;
+//   content: "";
+//   border: 0.1rem black solid;
+//   position: relative;
+// }
+// .container-timeline ul {
+
+// }
+.container-timeline::after {
+  //   position: absolute;
+  content: " ";
+  width: 0.2rem;
+  height: 100%;
+  background-image: linear-gradient(to bottom, $primaryColor, $smilyLips);
+}
+.container-timeline ul li {
+  width: 45%;
+  height: auto;
+  padding: 1.5rem 1rem;
+  margin: 2rem 0.7rem;
+  background-color: $paragraph-BG;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 25px #0000005c;
+  z-index: 99;
+  position: relative;
+}
+.container-timeline ul li:hover {
+  box-shadow: $mainShadow;
+}
+.container-timeline ul li:hover .circle {
+  box-shadow: $icon-glowing-shadow;
+}
+.container-timeline ul li h3 {
+  font-size: 2rem;
+}
+.container-timeline ul li i {
+  padding: 0.7rem;
+  font-size: 2rem;
+  color: $mainTextColor;
+  text-shadow: $titlesShadow;
+  border-radius: 1rem;
+  box-shadow: $mainShadow;
+}
+.container-timeline ul li p {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-size: 1.5rem;
+}
+.container-timeline ul li:nth-child(odd) {
+  float: left;
+  clear: right;
+  border: $icon-bg 0.2rem outset;
+  transform: translateX(-0.1rem);
+  text-align: right;
+}
+.container-timeline ul li:nth-child(even) {
+  float: right;
+  clear: left;
+  border: $smilyLips 0.2rem outset;
+  transform: translateX(0.1rem);
+}
+// .container-timeline ul li:nth-last-child(1) {
+//   margin-bottom: 0;
+// }
+.container-timeline ul li:nth-child(1) {
+  margin-top: 5rem;
+}
+.container-timeline ul li .circle {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: linear-gradient(to right, $primaryColor, $smilyLips);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container-timeline ul li .date {
+  font-size: 1.65rem;
+  position: absolute;
+  top: -3.5rem;
+  //   left: 2rem;
+  width: 15rem;
+  height: 3rem;
+  background-image: linear-gradient(to right, $primaryColor, $smilyLips);
+  border-radius: 1rem;
+  color: white;
+  text-align: center;
+  padding: 0.4rem;
+  display: grid;
+  place-items: center;
+}
+.container-timeline ul li .circle::after {
+  content: " ";
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: $paragraph-BG;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container-timeline ul li:nth-child(odd) .circle {
+  left: auto;
+  right: -3.7rem;
+  transform: translate(50%, -50%);
+}
+.container-timeline ul li:nth-child(even) .circle {
+  right: auto;
+  left: -3.7rem;
+  transform: translate(-50%, -50%);
+}
+.container-timeline ul li:nth-child(odd) .date {
+  right: 2rem;
+}
+
+// Responsivness
+
+@media screen and (max-width: 1700px) {
+  .container-timeline ul li .circle {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container-timeline ul li {
+    width: 45%;
+    transform: scale(0.6);
+  }
+  .container-timeline ul li .date {
+    width: 100%;
+    margin: -1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+.container-timeline {
+    display: none;
+}
 }
