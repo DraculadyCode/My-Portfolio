@@ -1821,6 +1821,10 @@ a:hover ~ .custom-cursor {
   text-align: left;
   border-radius: 3rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border: rgba(242, 215, 255, 0.6705882353) 0.2rem outset;
+}
+
+.container-timeline:hover {
   border: #a009f7 0.2rem outset;
 }
 
@@ -1859,10 +1863,19 @@ a:hover ~ .custom-cursor {
   padding: 1.5rem 1rem;
   margin: 2rem 0.7rem;
   background-color: rgba(242, 215, 255, 0.8235294118);
-  border-radius: 1rem;
+  border-radius: 2rem;
   box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.3607843137);
   z-index: 99;
   position: relative;
+}
+
+.titles-wrapper {
+  margin: 0.7rem 0.5rem;
+}
+
+.container-timeline ul li h4 {
+  font-size: 1.4rem; /* Optional: Adjust font size if needed */
+  color: #a009f7; /* Optional: Adjust color */
 }
 
 .container-timeline ul li:hover {

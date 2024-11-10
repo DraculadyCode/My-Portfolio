@@ -10,6 +10,9 @@
   text-align: left;
   border-radius: 3rem;
   box-shadow: $mainShadow;
+  border: $form-BG 0.2rem outset;
+}
+.container-timeline:hover {
   border: $primaryColor 0.2rem outset;
 }
 .container-timeline::before {
@@ -58,10 +61,17 @@
   padding: 1.5rem 1rem;
   margin: 2rem 0.7rem;
   background-color: $paragraph-BG;
-  border-radius: 1rem;
+  border-radius: 2rem;
   box-shadow: 1px 1px 25px #0000005c;
   z-index: 99;
   position: relative;
+}
+.titles-wrapper {
+  margin: 0.7rem 0.5rem;
+}
+.container-timeline ul li h4 {
+  font-size: 1.4rem; /* Optional: Adjust font size if needed */
+  color: $primaryColor; /* Optional: Adjust color */
 }
 .container-timeline ul li:hover {
   box-shadow: $mainShadow;
@@ -171,7 +181,7 @@
   }
 }
 @media screen and (max-width: 600px) {
-.container-timeline {
+  .container-timeline {
     display: none;
-}
+  }
 }
