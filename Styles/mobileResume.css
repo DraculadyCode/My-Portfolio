@@ -11,6 +11,10 @@
   --box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
 }
 
+#resume-document {
+  text-shadow: 6px 0 6px #a408ff, 5px 5px 5px #d26df7, 0 6px 6px rgba(79, 164, 250, 0.7215686275);
+}
+
 h3,
 h2 {
   text-shadow: none;
@@ -46,7 +50,7 @@ a:visited {
 
 .book {
   position: relative;
-  width: 60%;
+  width: 90%;
   height: 100%;
   display: flex;
   perspective: 250rem;

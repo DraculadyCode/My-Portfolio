@@ -1808,4 +1808,6 @@ a:hover ~ .custom-cursor {
     display: none;
   }
 }
-/* outer right cyan *//*# sourceMappingURL=style.css.map */
+#my-timeline-resume {
+  text-shadow: 6px 0 6px #a408ff, 5px 5px 5px #d26df7, 0 6px 6px rgba(79, 164, 250, 0.7215686275);
+}/*# sourceMappingURL=style.css.map */

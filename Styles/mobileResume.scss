@@ -10,6 +10,9 @@
   --border: 0.125rem solid #00abf0;
   --box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
 }
+#resume-document {
+  text-shadow: $titlesShadow;
+}
 h3,
 h2 {
   text-shadow: none;
@@ -40,7 +43,7 @@ a {
 }
 .book {
   position: relative;
-  width: 60%;
+  width: 90%;
   height: 100%;
   display: flex;
   perspective: 250rem;
@@ -282,10 +285,10 @@ a {
 }
 @media (max-width: 480px) {
   .book {
-    width: 100%; // Adjust width for smaller screens
+    width: 100%; 
   }
   .book-page {
-    width: 100%; // Use full width on smaller screens
+    width: 100%; 
     margin: 1rem;
     margin-left: 25%;
   }

@@ -11,6 +11,9 @@
   --box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
   color-scheme: light;
 }
+#resume-book {
+  text-shadow: $titlesShadow;
+}
 .main-resume {
   display: flex;
   justify-content: center;
