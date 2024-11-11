@@ -182,23 +182,32 @@
 
 // Responsivness
 
-@media screen and (max-width: 1700px) {
-  .container-timeline ul li .circle {
-    display: none;
-  }
-}
 @media screen and (max-width: 900px) {
+  .container-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .container-timeline ul li {
     width: 45%;
-    transform: scale(0.6);
+  }
+  container-timeline::after {
+    display: none;
   }
   .container-timeline ul li .date {
     width: 100%;
     margin: -1rem;
   }
+  .container-timeline ul li .circle {
+    display: none;
+  }
 }
 @media screen and (max-width: 600px) {
   .container-timeline {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }

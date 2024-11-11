@@ -6,11 +6,12 @@
 
 ### Timeline Pages
 
-- [ ] Create a JS file that sorts the list items according to their categories (each `li` item has a class for Work, Education, Other).
+- [x] Create a JS file that sorts the list items according to their categories (each `li` item has a class for Work, Education, Other).
 - [x] Create a small menu so the user can narrow down the list items according to their choice.
-- [ ] Finish inserting information into list items.
-- [ ] Translate and copy everything to the German timeline page.
-- [ ] Remove the "in process" part in the titles.
+- [x] Finish inserting information into list items.
+- [x] Translate and copy everything to the German timeline page.
+- [x] Remove the "in process" part in the titles.
+- [ ] Make timeline fully responsive.
 
 ### Contact Pages
 
