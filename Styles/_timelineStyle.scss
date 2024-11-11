@@ -3,6 +3,15 @@
 #my-timeline-resume {
   text-shadow: $titlesShadow;
 }
+// * Continue working on this part
+// .timelineSection .sub-menu ul{
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   border: 1rem solid black !important;
+//   margin: 50%;
+// }
 .container-timeline {
   width: 80%;
   height: auto;
@@ -13,7 +22,10 @@
   border: $form-BG 0.2rem outset;
 }
 .container-timeline:hover {
-  border: $primaryColor 0.2rem outset;
+  border-right: $primaryColor 0.2rem outset;
+  border-bottom: $primaryColor 0.2rem outset;
+  border-left: $smilyLips 0.2rem outset;
+  border-top: $smilyLips 0.2rem outset;
 }
 .container-timeline::before {
   content: "";

@@ -13,6 +13,7 @@
 #resume-document {
   text-shadow: $titlesShadow;
 }
+
 h3 {
   text-shadow: none;
   font-size: 2rem;
@@ -49,7 +50,7 @@ a {
 }
 .book {
   position: relative;
-  width: 90%;
+  width: 70%;
   height: 100%;
   display: flex;
   perspective: 250rem;
@@ -58,7 +59,7 @@ a {
 }
 .book-page {
   box-shadow: -0.6rem 0.6rem 0.6rem rgba(0, 0, 0, 0.1);
-  position: relative !important;
+  // position: relative !important;
   width: 100% !important;
   height: 100%;
   background: var(--pages-color);
@@ -291,12 +292,21 @@ a {
 }
 @media (max-width: 480px) {
   .book {
-    width: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: .4rem;
   }
   .book-page {
     width: 100%;
     margin: 1rem;
     margin-left: 25%;
+  }
+  #resume-document {
+    display: flex ;
+    align-items: center;
+    justify-content: center;
   }
   .profile-page .social-media {
     margin-left: 3%;
