@@ -1,3 +1,7 @@
 {
-  "recommendations": ["formulahendry.auto-rename-tag"]
+  "recommendations": [
+    "formulahendry.auto-rename-tag",
+    "klyap.vscode-celestial-magic-girl-icon-theme",
+    "eliverlara.sweet-vscode-icons"
+  ]
 }
