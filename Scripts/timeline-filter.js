@@ -1,30 +1,35 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Get all menu items
   const menuItems = document.querySelectorAll(".menu-item");
+  const timelineItems = document.querySelectorAll(".timeline-item");
 
-  // Get all timeline list items (li)
-  const timelineItems = document.querySelectorAll(".timeline li");
+  console.log("Timeline Items Loaded:", timelineItems);
 
-  // Loop over each menu item
-  menuItems.forEach(function (menuItem) {
-    menuItem.addEventListener("click", function () {
-      // Get the value of the clicked menu item's data-filter attribute
-      const filter = menuItem.getAttribute("data-filter");
+  menuItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      const filter = item.getAttribute("data-filter");
+      console.log("Clicked filter:", filter);
 
-      // Loop over each timeline item (li)
-      timelineItems.forEach(function (item) {
-        // If the filter is "showAll", display all items
-        if (filter === "showAll") {
-          item.style.display = "block";
-        } else {
-          // Otherwise, show the item only if it has the class matching the filter
-          if (item.classList.contains(filter)) {
-            item.style.display = "block";
-          } else {
-            item.style.display = "none";
+      if (filter === "showAll") {
+        // Show all items
+        timelineItems.forEach((timelineItem) => {
+          console.log("Showing all timeline item", timelineItem);
+          timelineItem.style.display = "block";
+        });
+      } else {
+        // Hide all items first
+        timelineItems.forEach((timelineItem) => {
+          console.log("Hiding timeline item", timelineItem);
+          timelineItem.style.display = "none";
+        });
+
+        // Show only the items matching the selected filter
+        timelineItems.forEach((timelineItem) => {
+          if (timelineItem.classList.contains(filter)) {
+            console.log("Showing filtered item", timelineItem);
+            timelineItem.style.display = "block";
           }
-        }
-      });
+        });
+      }
     });
   });
 });
