@@ -1,6 +1,9 @@
+// Reset tappedOnce on page load
+sessionStorage.setItem("tappedOnce", "false");
+
 document.querySelectorAll(".dropdown > a").forEach(function (link) {
   // Flag to track if the link was tapped once
-  let tappedOnce = false;
+  let tappedOnce = sessionStorage.getItem("tappedOnce") === "true";
 
   // Function to determine if the device supports touch
   const isTouchDevice = () =>
@@ -13,6 +16,7 @@ document.querySelectorAll(".dropdown > a").forEach(function (link) {
     if (dropdown) {
       if (tappedOnce) {
         // Follow the link if already tapped once
+        sessionStorage.setItem("tappedOnce", "false");
         return true;
       }
 
@@ -29,11 +33,18 @@ document.querySelectorAll(".dropdown > a").forEach(function (link) {
         dropdown.style.position = "relative";
       }
 
-      // Set tappedOnce to true and reset it after 3 seconds
+      // Set tappedOnce to true and store in sessionStorage
       tappedOnce = true;
-      setTimeout(() => (tappedOnce = false), 3000);
+      sessionStorage.setItem("tappedOnce", "true");
+
+      // Reset tappedOnce after 3 seconds
+      setTimeout(() => {
+        tappedOnce = false;
+        sessionStorage.setItem("tappedOnce", "false");
+      }, 3000);
     } else {
       // If no dropdown, allow the link to be followed on first tap
+      sessionStorage.setItem("tappedOnce", "false");
       return true;
     }
   });
@@ -51,10 +62,71 @@ document.querySelectorAll(".dropdown > a").forEach(function (link) {
         dropdown.style.visibility = "hidden";
       }
       tappedOnce = false;
+      sessionStorage.setItem("tappedOnce", "false");
     }
   });
 });
 
+// ? Old code
+// document.querySelectorAll(".dropdown > a").forEach(function (link) {
+//   // Flag to track if the link was tapped once
+//   let tappedOnce = false;
+
+//   // Function to determine if the device supports touch
+//   const isTouchDevice = () =>
+//     "ontouchstart" in window || navigator.maxTouchPoints > 0;
+
+//   // Handle touchstart event
+//   link.addEventListener("touchstart", function (e) {
+//     const dropdown = link.nextElementSibling; // Get the associated dropdown
+
+//     if (dropdown) {
+//       if (tappedOnce) {
+//         // Follow the link if already tapped once
+//         return true;
+//       }
+
+//       // Prevent following the link on first tap
+//       e.preventDefault();
+
+//       // Show the dropdown menu
+//       dropdown.style.display = "block";
+//       dropdown.style.opacity = "1";
+//       dropdown.style.visibility = "visible";
+
+//       // Position dropdown relative only on touch devices
+//       if (isTouchDevice()) {
+//         dropdown.style.position = "relative";
+//       }
+
+//       // Set tappedOnce to true and reset it after 3 seconds
+//       tappedOnce = true;
+//       setTimeout(() => (tappedOnce = false), 3000);
+//     } else {
+//       // If no dropdown, allow the link to be followed on first tap
+//       return true;
+//     }
+//   });
+
+//   // Hide dropdown when clicking outside
+//   document.addEventListener("click", function (e) {
+//     if (
+//       !link.contains(e.target) &&
+//       (!link.nextElementSibling || !link.nextElementSibling.contains(e.target))
+//     ) {
+//       const dropdown = link.nextElementSibling;
+//       if (dropdown) {
+//         dropdown.style.display = "none";
+//         dropdown.style.opacity = "0";
+//         dropdown.style.visibility = "hidden";
+//       }
+//       tappedOnce = false;
+//     }
+//   });
+// });
+
+
+// ? Old code
 // document.querySelectorAll(".dropdown > a").forEach(function (link) {
 //   // Handle touch for mobile devices
 //   let tappedOnce = false;
