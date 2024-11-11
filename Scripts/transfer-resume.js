@@ -4,7 +4,10 @@ function handleResolutionRedirect() {
   console.log("Current URL:", currentUrl); // Log current URL
   console.log("Window Width:", window.innerWidth); // Log window width
 
-  if (window.innerWidth <= 1150) {
+  const isTouchDevice =
+    "ontouchstart" in window || navigator.maxTouchPoints > 0;
+
+  if (window.innerWidth <= 1150 || isTouchDevice) {
     if (currentUrl.includes("resume-english.html")) {
       console.log("Redirecting to mobile English resume");
       window.location.href = "../Pages/resumeMobile-english.html";
