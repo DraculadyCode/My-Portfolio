@@ -1924,7 +1924,7 @@ a:hover ~ .custom-cursor {
   clear: right;
   border: #9d62eb 0.2rem outset;
   transform: translateX(-0.1rem);
-  text-align: right;
+  text-align: left;
 }
 
 .container-timeline ul li:nth-child(even) {
