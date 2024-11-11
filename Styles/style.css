@@ -1814,6 +1814,17 @@ a:hover ~ .custom-cursor {
   text-shadow: 6px 0 6px #a408ff, 5px 5px 5px #d26df7, 0 6px 6px rgba(79, 164, 250, 0.7215686275);
 }
 
+.container-menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.container-menu ul li {
+  cursor: pointer;
+}
+
 .container-timeline {
   width: 80%;
   height: auto;

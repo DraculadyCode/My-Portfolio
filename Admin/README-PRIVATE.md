@@ -1,34 +1,37 @@
-# Improvemeents and Corrections for Portfolio
+# Improvements and Corrections for Portfolio
 
-## Timeline Pages
+### Bugs and Problems to Fix Before Continuing with the Project
 
-1. Create a JS file that sorts the list items according to their categories (each li item hsa a class accordingly - WOrk, Education, Other)
-2. Create a small menu so the user can narrow down the list items according to users choice.
-3. Finish inserting information to list items
-4. Translate and copy everything to German timeline page
-5. Remove the "in process" part in the titles.
+## Bugs and Problems:
 
-## Contact Pages
+### Timeline Pages
 
-1. Add CAPTCHA verification for having an access to the page.
-   The form, phone number, business card and contact file can be downloaded only after verification.
+- [ ] Create a JS file that sorts the list items according to their categories (each `li` item has a class for Work, Education, Other).
+- [x] Create a small menu so the user can narrow down the list items according to their choice.
+- [ ] Finish inserting information into list items.
+- [ ] Translate and copy everything to the German timeline page.
+- [ ] Remove the "in process" part in the titles.
 
-## Files Pages
+### Contact Pages
 
-1. Add CAPTCHA verification for downloading the files.
+- [ ] Add CAPTCHA verification for access to the page (form, phone number, business card, and contact file can only be downloaded after verification).
 
-## Mobile resume pages
+### Files Pages
 
-1. Update all resume on the existing mobile pages and extend to more pages if needed.
-2. create a mini-menu so the user can reach directly to the desired part of the resume (work, education, skils).
+- [ ] Add CAPTCHA verification for downloading the files.
 
-## General changes planned
+### Mobile Resume Pages
 
-1. Smilies eyes ove accorsing to the cursor movement.
-2. Dark mod.
-3. Add share button.
-4. Create a repository for each project.
-5. Upgrade old projects from portfolio page.
-6. Buy a new domain "kathrinpeled.de".
-7. Fix all problems in Google Analytics.
-8. Create a new sitemap for Google.
+- [ ] Update all resumes on the existing mobile pages and add more pages if needed.
+- [ ] Create a mini-menu so the user can navigate directly to specific resume sections (work, education, skills).
+
+## General Changes Planned
+
+- [ ] Make smiley eyes follow the cursor movement.
+- [ ] Add dark mode.
+- [ ] Add a share button.
+- [ ] Create a repository for each project.
+- [ ] Upgrade old projects from the portfolio page.
+- [ ] Buy a new domain, "kathrinpeled.de".
+- [ ] Fix all issues in Google Analytics.
+- [ ] Create a new sitemap for Google.

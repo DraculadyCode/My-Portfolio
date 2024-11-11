@@ -4,14 +4,16 @@
   text-shadow: $titlesShadow;
 }
 // * Continue working on this part
-// .timelineSection .sub-menu ul{
-//   position: relative;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   border: 1rem solid black !important;
-//   margin: 50%;
-// }
+.container-menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  ul li {
+    cursor: pointer;
+  }
+}
 .container-timeline {
   width: 80%;
   height: auto;

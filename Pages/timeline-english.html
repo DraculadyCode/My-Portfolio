@@ -181,12 +181,21 @@
           <div class="h2-title">
             <h2 id="my-timeline-resume">My Timeline - *in process*</h2>
           </div>
-          <div class="sub-menu">
-            <ul>
-              <a href="#my-education"><li>My Education</li></a>
-              <a href="#current-status"><li>Current Status</li></a>
-              <a href="#skills-and-passion"><li>Skills and Passion</li></a>
-            </ul>
+          <div class="container-menu">
+            <div class="sub-menu">
+              <ul>
+                <li class="menu-item" data-filter="work-experience-li-item">
+                  Work Experience
+                </li>
+                <li class="menu-item" data-filter="education-li-item">
+                  Education and Courses
+                </li>
+                <li class="menu-item" data-filter="other-experience-li-item">
+                  Other Activities
+                </li>
+                <li class="menu-item" data-filter="showAll">See All</li>
+              </ul>
+            </div>
           </div>
           <div class="timeline">
             <div class="container container-timeline">
@@ -287,6 +296,8 @@
     <script src="../Scripts/Cursor.js" async></script>
     <script src="../Scripts/dropdown-menu.js" async></script>
     <script src="../Scripts/transfer-resume.js" async></script>
+    <script src="../Scripts/timeline-filter.js" async></script>
+
     <!-- <script src="../Scripts/sharing-toggle.js" async></script> -->
 
     <!-- Async or defer for external scripts -->
