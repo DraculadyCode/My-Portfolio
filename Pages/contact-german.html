@@ -115,7 +115,8 @@
       src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"
       async
     ></script>
-
+    <!-- Include the reCAPTCHA Script -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- Additional stylesheet for Boxicons -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -224,6 +225,11 @@
                       aria-required="true"
                       placeholder="Ihre Nachricht"
                     ></textarea>
+                    <br />
+                    <div
+                      class="g-recaptcha"
+                      data-sitekey="6LcwU3wqAAAAAPbr3mc-eyMWdA5wdIZ84DPmtEvF"
+                    ></div>
                     <br />
                     <button type="submit" aria-label="Send your message">
                       Senden

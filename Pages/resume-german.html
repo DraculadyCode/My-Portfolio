@@ -151,7 +151,8 @@
 
     <!-- Link to the Schema.js file for structured data -->
     <script src="../Scripts/schema.js" defer></script>
-
+    <!-- Include the reCAPTCHA Script -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- Title of the document -->
     <title id="resume-german">Kathrin Peled - Lebenslauf</title>
 
@@ -825,6 +826,12 @@
                       required
                       aria-label="Your Message"
                     ></textarea>
+                    <br />
+                    <div
+                      class="g-recaptcha"
+                      data-sitekey="6LcwU3wqAAAAAPbr3mc-eyMWdA5wdIZ84DPmtEvF"
+                    ></div>
+                    <br />
                     <input
                       type="submit"
                       class="btn"
