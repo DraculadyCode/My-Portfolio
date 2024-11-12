@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" data-page="contact english">
   <head>
@@ -689,15 +690,20 @@
               <div class="h3-title">
                 <h3 id="contact-card-title">Save Me as a Contact</h3>
               </div>
-              <a
-                href="../Files/Contact-Card.vcf"
-                download
-                aria-labelledby="contact-title"
-              >
-                <button aria-label="Download VCF file of Kathrin Peled">
-                  Download VCF
-                </button>
-              </a>
+              <div class="download-vcf">
+                <a
+                  href="../Files/Contact-Card.vcf"
+                  download
+                  aria-labelledby="contact-title"
+                >
+                  <button
+                    id="vcfDownloadBtn"
+                    aria-label="Download VCF file of Kathrin Peled"
+                  >
+                    Download VCF
+                  </button>
+                </a>
+              </div>
               <div class="h3-title">
                 <h3 id="business-card-title">Save My Business Card</h3>
               </div>
@@ -727,6 +733,13 @@
               </p>
             </div>
           </div>
+          <!-- reCAPTCHA -->
+          <!-- <div class="recaptcha-container">
+            <div
+              class="g-recaptcha"
+              data-sitekey="6LcwU3wqAAAAAPbr3mc-eyMWdA5wdIZ84DPmtEvF"
+            ></div>
+          </div> -->
         </div>
       </section>
       <!-- ~ back to top -->
@@ -749,6 +762,9 @@
     <script src="../Scripts/script.js" async></script>
     <script src="../Scripts/Cursor.js" async></script>
     <script src="../Scripts/dropdown-menu.js"></script>
+    <script src="../Scripts/verifyCaptcha.js" defer></script>
+    <script src="../Scripts/contactVerifyCaptcha.js" defer></script>
+
     <!-- <script src="../Scripts/sharing-toggle.js" async></script> -->
 
     <!-- Async or defer for external scripts -->

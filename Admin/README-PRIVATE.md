@@ -8,10 +8,6 @@
 
 - [ ] Add CAPTCHA verification for access to the page (form, phone number, business card, and contact file can only be downloaded after verification).
 
-### Files Pages
-
-- [ ] Add CAPTCHA verification for downloading the files.
-
 ### Mobile Resume Pages
 
 - [ ] Update all resumes on the existing mobile pages and add more pages if needed.
@@ -38,3 +34,7 @@
 - [x] Translate and copy everything to the German timeline page.
 - [x] Remove the "in process" part in the titles.
 - [x] Make timeline fully responsive.
+
+### Files Pages done 12.11.2024
+
+- [x] Add CAPTCHA verification for downloading the files.
