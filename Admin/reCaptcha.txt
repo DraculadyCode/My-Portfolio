@@ -12,7 +12,14 @@ https://draculady.de/Pages/files-german.html
 https://draculady.de/Pages/resumeMobile-german.html
 https://draculady.de/Pages/resumeMobile-english.html
 
-
+<br>
        <div class="g-recaptcha" data-sitekey="6LcwU3wqAAAAAPbr3mc-eyMWdA5wdIZ84DPmtEvF"></div>
+<br>
  <!-- Include the reCAPTCHA Script -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+  <!-- reCAPTCHA -->
+          <div class="recaptcha-container">
+            <div class="g-recaptcha" data-sitekey=""6LcwU3wqAAAAAPbr3mc-eyMWdA5wdIZ84DPmtEvF"></div>
+          </div>

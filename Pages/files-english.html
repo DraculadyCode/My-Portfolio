@@ -129,7 +129,8 @@
 
     <!-- Link to the Schema.js file -->
     <script src="../Scripts/schema.js" defer></script>
-
+    <!-- Include the reCAPTCHA Script -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- ? ShareThis script -->
     <!-- <script
       type="text/javascript"
@@ -189,37 +190,48 @@
           <div class="h2-title">
             <h2 id="download-files-title">Download my documents</h2>
           </div>
+          <!-- reCAPTCHA -->
+          <div class="recaptcha-container">
+            <div
+              class="g-recaptcha"
+              data-sitekey="6LcwU3wqAAAAAPbr3mc-eyMWdA5wdIZ84DPmtEvF"
+            ></div>
+          </div>
           <div class="all-files">
             <div class="file-item">
               <div class="file-title">
                 <h3 title="Translated to German">Full Resume 🇬🇧</h3>
               </div>
               <img
-                src="../FIles-Images/IMG CV Full resume.webp"
+                src="../Files-Images/IMG CV Full resume.webp"
                 alt="Image of full resume"
               />
               <a
                 href="../Files/Kathrin_Peled_Resume_10.2024.pdf"
                 aria-label="Download my extended resume in English"
                 download
+                class="disabled-link"
+                data-file="resume-full"
               >
                 <div class="button-div">
                   <button>Download</button>
-                </div></a
-              >
+                </div>
+              </a>
             </div>
             <div class="file-item">
               <div class="file-title">
                 <h3 title="Translated to German">Prof. Resume 🇬🇧</h3>
               </div>
               <img
-                src="../FIles-Images/IMG CV English.webp"
+                src="../Files-Images/IMG CV English.webp"
                 alt="Image of professional English resume"
               />
               <a
                 href="../Files/Kathrin Peled Professional Resume.pdf"
                 aria-label="Download my professional resume in English"
                 download
+                class="disabled-link"
+                data-file="resume-prof"
               >
                 <div class="button-div">
                   <button>Download</button>
@@ -231,13 +243,15 @@
                 <h3 title="Translated to German">Prof. Resume 🇩🇪</h3>
               </div>
               <img
-                src="../FIles-Images/IMG CV German.webp"
+                src="../Files-Images/IMG CV German.webp"
                 alt="Image of professional German resume"
               />
               <a
                 href="../Files/Kathrin Peled Lebenslauf - Deutsch.pdf"
                 aria-label="Download my professional resume in German"
                 download
+                class="disabled-link"
+                data-file="resume-german"
               >
                 <div class="button-div">
                   <button>Download</button>
@@ -249,13 +263,15 @@
                 <h3 title="Translated to German">My Diplom 🇩🇪</h3>
               </div>
               <img
-                src="../FIles-Images/IMG Diplom.webp"
+                src="../Files-Images/IMG Diplom.webp"
                 alt="Image of Diplom certificate"
               />
               <a
                 href="../Files/Diplom Übersetzung 2023.pdf"
                 aria-label="Download my Diplom in German"
                 download
+                class="disabled-link"
+                data-file="diplom"
               >
                 <div class="button-div">
                   <button>Download</button>
@@ -264,20 +280,22 @@
             </div>
           </div>
         </div>
+        <!-- Link to external JS file -->
+        <script src="../Scripts/verifyCaptcha.js" defer></script>
       </section>
       <!-- ^languages switcher -->
       <div class="languages" id="language-switcher"></div>
       <script src="../ScriptsComponents/languageSwitcher.js"></script>
       <!-- ^languages switcher -->
       <!-- ~ back to top -->
-      <script src="../ScriptsComponents/backToTopLoader.js" ></script>
+      <script src="../ScriptsComponents/backToTopLoader.js"></script>
       <!-- ~ back to top -->
       <!-- ~ custom curser -->
       <div class="custom-cursor"></div>
-            <!-- ~ custom curser -->
+      <!-- ~ custom curser -->
       <!-- ^ hire me -->
       <div id="smiley"></div>
-      <script src="../ScriptsComponents/smileyLoader.js" ></script>
+      <script src="../ScriptsComponents/smileyLoader.js"></script>
       <!-- ^ hire me -->
       <!-- <div class="sharethis-sticky-share-buttons"></div> -->
     </main>

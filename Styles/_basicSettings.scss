@@ -240,7 +240,32 @@ button {
     transition: 1s;
   }
 }
+.disabled-link {
+  pointer-events: none;
+  opacity: 0.5;
+}
 
+.disabled-link button {
+  cursor: not-allowed;
+}
+.recaptcha-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  border-radius: 2rem;
+}
+.g-recaptcha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.2rem $primaryColor outset;
+  border-radius: 1rem;
+  padding: 0;
+}
+.recaptcha-container .g-recaptcha {
+  border: 0.6rem $primaryColor outset;
+}
 // Responsivness
 @media screen and (max-width: 1200px) {
   .sub-menu ul {
