@@ -4,6 +4,10 @@
 
 ## Bugs and Problems:
 
+### Files Pages tried-failed 12.11.2024
+
+- [x] Add CAPTCHA verification for downloading the files.
+
 ### Contact Pages
 
 - [ ] Add CAPTCHA verification for access to the page (form, phone number, business card, and contact file can only be downloaded after verification).
@@ -35,6 +39,4 @@
 - [x] Remove the "in process" part in the titles.
 - [x] Make timeline fully responsive.
 
-### Files Pages done 12.11.2024
 
-- [x] Add CAPTCHA verification for downloading the files.
