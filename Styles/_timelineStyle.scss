@@ -14,12 +14,12 @@
     cursor: pointer;
   }
 }
-// .timeline-item:nth-of-type(1) {
-//   display: none;
-// }
 .container-timeline {
-  width: 80%;
+  width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   position: relative;
   text-align: left;
   border-radius: 3rem;
@@ -32,51 +32,11 @@
   border-left: $smilyLips 0.2rem outset;
   border-top: $smilyLips 0.2rem outset;
 }
-.container-timeline::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0.3rem; /* Thickness of the line */
-  height: 100%;
-  background-image: linear-gradient(to bottom, $primaryColor, $smilyLips);
-  border-radius: 1rem; /* Optional: adds rounded edges to the line */
-}
-.container-timeline::after {
-  content: "";
-  display: table;
-  // position: absolute;
-  // top: 50%;
-  clear: both;
-  width: 0.2rem;
-  background-image: linear-gradient(to bottom, $primaryColor, $smilyLips);
-  height: 100%;
-  position: relative;
-}
-// .timeline .container-timeline::after {
-//   width: 0.2rem;
-//   background-image: linear-gradient(to bottom, $primaryColor, $smilyLips);
-//   height: 100%;
-//   content: "";
-//   border: 0.1rem black solid;
-//   position: relative;
-// }
-// .container-timeline ul {
-
-// }
-.container-timeline::after {
-  //   position: absolute;
-  content: " ";
-  width: 0.2rem;
-  height: 100%;
-  background-image: linear-gradient(to bottom, $primaryColor, $smilyLips);
-}
 .container-timeline ul li {
   width: 50%;
   height: auto;
   padding: 1.5rem 1rem;
-  margin: 5rem 0.7rem;
+  margin: 7rem 0.7rem;
   background-color: $paragraph-BG;
   border-radius: 2rem;
   box-shadow: 1px 1px 25px #0000005c;
@@ -86,9 +46,24 @@
 .titles-wrapper {
   margin: 0.7rem 0.5rem;
 }
+.timeline-work-experience-container,
+.timeline-education-container {
+  border-left: 0.5rem outset $primaryColor;
+  margin: 0 3rem;
+  width: 60%;
+  ul li {
+    width: 100%;
+    border-left: 0.5rem outset $primaryColor;
+    border-right: 0.5rem outset $primaryColor;
+    margin-left: -0.5rem;
+  }
+}
+// .timeline-education-container {
+//   border: 0.5rem black solid;
+// }
 .container-timeline ul li h4 {
-  font-size: 1.4rem; /* Optional: Adjust font size if needed */
-  color: $primaryColor; /* Optional: Adjust color */
+  font-size: 1.4rem;
+  color: $primaryColor;
 }
 .container-timeline ul li:hover {
   box-shadow: $mainShadow;
@@ -112,33 +87,14 @@
   margin: 0.5rem;
   font-size: 1.5rem;
 }
-.container-timeline ul li:nth-child(odd) {
-  float: left;
-  clear: right;
-  border: $icon-bg 0.2rem outset;
-  transform: translateX(-0.1rem);
-  text-align: left;
-}
-.container-timeline ul li:nth-child(even) {
-  float: right;
-  clear: left;
-  border: $smilyLips 0.2rem outset;
-  transform: translateX(0.1rem);
-}
-// .container-timeline ul li:nth-last-child(1) {
-//   margin-bottom: 0;
-// }
-.container-timeline ul li:nth-child(1) {
-  margin-top: 5rem;
-}
 .container-timeline ul li .circle {
   border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;
   background-image: linear-gradient(to right, $primaryColor, $smilyLips);
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 45%;
+  left: -1.5rem;
 }
 .container-timeline ul li .date {
   font-size: 1.65rem;
@@ -155,59 +111,12 @@
   display: grid;
   place-items: center;
 }
-.container-timeline ul li .circle::after {
-  content: " ";
-  width: 1.3rem;
-  height: 1.3rem;
-  background-color: $paragraph-BG;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.container-timeline ul li:nth-child(odd) .circle {
-  left: auto;
-  right: -3.7rem;
-  transform: translate(50%, -50%);
-}
-.container-timeline ul li:nth-child(even) .circle {
-  right: auto;
-  left: -3.7rem;
-  transform: translate(-50%, -50%);
-}
-.container-timeline ul li:nth-child(odd) .date {
-  right: 2rem;
-}
-
-// Responsivness
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1400px) {
   .container-timeline {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
-  .container-timeline ul li {
-    width: 45%;
-  }
-  container-timeline::after {
-    display: none;
-  }
-  .container-timeline ul li .date {
-    width: 100%;
-    margin: -1rem;
-  }
-  .container-timeline ul li .circle {
-    display: none;
-  }
-}
-@media screen and (max-width: 600px) {
-  .container-timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .timeline-work-experience-container,
+  .timeline-education-container {
+    width: 90%;
   }
 }

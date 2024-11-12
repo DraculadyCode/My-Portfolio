@@ -1826,8 +1826,11 @@ a:hover ~ .custom-cursor {
 }
 
 .container-timeline {
-  width: 80%;
+  width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   position: relative;
   text-align: left;
   border-radius: 3rem;
@@ -1842,40 +1845,11 @@ a:hover ~ .custom-cursor {
   border-top: rgb(248, 86, 210) 0.2rem outset;
 }
 
-.container-timeline::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0.3rem; /* Thickness of the line */
-  height: 100%;
-  background-image: linear-gradient(to bottom, #a009f7, rgb(248, 86, 210));
-  border-radius: 1rem; /* Optional: adds rounded edges to the line */
-}
-
-.container-timeline::after {
-  content: "";
-  display: table;
-  clear: both;
-  width: 0.2rem;
-  background-image: linear-gradient(to bottom, #a009f7, rgb(248, 86, 210));
-  height: 100%;
-  position: relative;
-}
-
-.container-timeline::after {
-  content: " ";
-  width: 0.2rem;
-  height: 100%;
-  background-image: linear-gradient(to bottom, #a009f7, rgb(248, 86, 210));
-}
-
 .container-timeline ul li {
   width: 50%;
   height: auto;
   padding: 1.5rem 1rem;
-  margin: 5rem 0.7rem;
+  margin: 7rem 0.7rem;
   background-color: rgba(242, 215, 255, 0.8235294118);
   border-radius: 2rem;
   box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.3607843137);
@@ -1887,9 +1861,23 @@ a:hover ~ .custom-cursor {
   margin: 0.7rem 0.5rem;
 }
 
+.timeline-work-experience-container,
+.timeline-education-container {
+  border-left: 0.5rem outset #a009f7;
+  margin: 0 3rem;
+  width: 60%;
+}
+.timeline-work-experience-container ul li,
+.timeline-education-container ul li {
+  width: 100%;
+  border-left: 0.5rem outset #a009f7;
+  border-right: 0.5rem outset #a009f7;
+  margin-left: -0.5rem;
+}
+
 .container-timeline ul li h4 {
-  font-size: 1.4rem; /* Optional: Adjust font size if needed */
-  color: #a009f7; /* Optional: Adjust color */
+  font-size: 1.4rem;
+  color: #a009f7;
 }
 
 .container-timeline ul li:hover {
@@ -1919,33 +1907,14 @@ a:hover ~ .custom-cursor {
   font-size: 1.5rem;
 }
 
-.container-timeline ul li:nth-child(odd) {
-  float: left;
-  clear: right;
-  border: #9d62eb 0.2rem outset;
-  transform: translateX(-0.1rem);
-  text-align: left;
-}
-
-.container-timeline ul li:nth-child(even) {
-  float: right;
-  clear: left;
-  border: rgb(248, 86, 210) 0.2rem outset;
-  transform: translateX(0.1rem);
-}
-
-.container-timeline ul li:nth-child(1) {
-  margin-top: 5rem;
-}
-
 .container-timeline ul li .circle {
   border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;
   background-image: linear-gradient(to right, #a009f7, rgb(248, 86, 210));
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 45%;
+  left: -1.5rem;
 }
 
 .container-timeline ul li .date {
@@ -1963,60 +1932,12 @@ a:hover ~ .custom-cursor {
   place-items: center;
 }
 
-.container-timeline ul li .circle::after {
-  content: " ";
-  width: 1.3rem;
-  height: 1.3rem;
-  background-color: rgba(242, 215, 255, 0.8235294118);
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.container-timeline ul li:nth-child(odd) .circle {
-  left: auto;
-  right: -3.7rem;
-  transform: translate(50%, -50%);
-}
-
-.container-timeline ul li:nth-child(even) .circle {
-  right: auto;
-  left: -3.7rem;
-  transform: translate(-50%, -50%);
-}
-
-.container-timeline ul li:nth-child(odd) .date {
-  right: 2rem;
-}
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1400px) {
   .container-timeline {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
-  .container-timeline ul li {
-    width: 45%;
-  }
-  container-timeline::after {
-    display: none;
-  }
-  .container-timeline ul li .date {
-    width: 100%;
-    margin: -1rem;
-  }
-  .container-timeline ul li .circle {
-    display: none;
-  }
-}
-@media screen and (max-width: 600px) {
-  .container-timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .timeline-work-experience-container,
+  .timeline-education-container {
+    width: 90%;
   }
 }/*# sourceMappingURL=style.css.map */
