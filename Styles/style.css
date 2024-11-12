@@ -1839,10 +1839,7 @@ a:hover ~ .custom-cursor {
 }
 
 .container-timeline:hover {
-  border-right: #a009f7 0.2rem outset;
-  border-bottom: #a009f7 0.2rem outset;
-  border-left: rgb(248, 86, 210) 0.2rem outset;
-  border-top: rgb(248, 86, 210) 0.2rem outset;
+  border: #a009f7 0.2rem outset;
 }
 
 .container-timeline ul li {

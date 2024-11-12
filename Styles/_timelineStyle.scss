@@ -27,10 +27,7 @@
   border: $form-BG 0.2rem outset;
 }
 .container-timeline:hover {
-  border-right: $primaryColor 0.2rem outset;
-  border-bottom: $primaryColor 0.2rem outset;
-  border-left: $smilyLips 0.2rem outset;
-  border-top: $smilyLips 0.2rem outset;
+  border: $primaryColor 0.2rem outset;
 }
 .container-timeline ul li {
   width: 50%;

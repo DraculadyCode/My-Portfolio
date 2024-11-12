@@ -4,15 +4,6 @@
 
 ## Bugs and Problems:
 
-### Timeline Pages
-
-- [x] Create a JS file that sorts the list items according to their categories (each `li` item has a class for Work, Education, Other).
-- [x] Create a small menu so the user can narrow down the list items according to their choice.
-- [x] Finish inserting information into list items.
-- [x] Translate and copy everything to the German timeline page.
-- [x] Remove the "in process" part in the titles.
-- [ ] Make timeline fully responsive.
-
 ### Contact Pages
 
 - [ ] Add CAPTCHA verification for access to the page (form, phone number, business card, and contact file can only be downloaded after verification).
@@ -36,3 +27,14 @@
 - [ ] Buy a new domain, "kathrinpeled.de".
 - [ ] Fix all issues in Google Analytics.
 - [ ] Create a new sitemap for Google.
+
+## Done
+
+### Timeline Pages - Completed on 12.11.2024
+
+- [x] Create a JS file that sorts the list items according to their categories (each `li` item has a class for Work, Education, Other).
+- [x] Create a small menu so the user can narrow down the list items according to their choice.
+- [x] Finish inserting information into list items.
+- [x] Translate and copy everything to the German timeline page.
+- [x] Remove the "in process" part in the titles.
+- [x] Make timeline fully responsive.

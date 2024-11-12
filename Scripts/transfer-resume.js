@@ -14,21 +14,6 @@ function handleResolutionRedirect() {
     } else if (currentUrl.includes("resume-german.html")) {
       console.log("Redirecting to mobile German resume");
       window.location.href = "../Pages/resumeMobile-german.html";
-      // } else if (currentUrl.includes("timeline-english.html")) {
-      //   console.log("Redirecting to mobile English timeline");
-      //   window.location.href = "../Pages/resumeMobile-english.html";
-      // } else if (currentUrl.includes("timeline-german.html")) {
-      //   console.log("Redirecting to mobile German timeline");
-      //   window.location.href = "../Pages/resumeMobile-german.html";
-      // }
-    }
-  } else if (window.innerWidth <= 800 || isTouchDevice) {
-    if (currentUrl.includes("timeline-english.html")) {
-      console.log("Redirecting to mobile English timeline");
-      window.location.href = "../Pages/resumeMobile-english.html";
-    } else if (currentUrl.includes("timeline-german.html")) {
-      console.log("Redirecting to mobile German timeline");
-      window.location.href = "../Pages/resumeMobile-german.html";
     }
   }
 }
