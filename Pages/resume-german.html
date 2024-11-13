@@ -151,8 +151,6 @@
 
     <!-- Link to the Schema.js file for structured data -->
     <script src="../Scripts/schema.js" defer></script>
-    <!-- Include the reCAPTCHA Script -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- Title of the document -->
     <title id="resume-german">Kathrin Peled - Lebenslauf</title>
 
@@ -181,7 +179,12 @@
     >
       <div class="container">
         <div class="h2-title"><h2 id="resume-book">Mein Lebenslauf</h2></div>
-
+        <!-- hCaptcha Widget -->
+        <div
+          class="h-captcha"
+          data-sitekey="dcdc9a0c-5254-49ae-9f30-7508f1f05aac"
+          data-callback="onCaptchaSuccess"
+        ></div>
         <div class="wrapper">
           <div class="cover cover-left" aria-hidden="true"></div>
           <div class="cover cover-right" aria-hidden="true"></div>
@@ -826,12 +829,6 @@
                       required
                       aria-label="Your Message"
                     ></textarea>
-                    <br />
-                    <div
-                      class="g-recaptcha"
-                      data-sitekey="6LcwU3wqAAAAAPbr3mc-eyMWdA5wdIZ84DPmtEvF"
-                    ></div>
-                    <br />
                     <input
                       type="submit"
                       class="btn"
@@ -881,6 +878,8 @@
     <script src="../Scripts/transfer-resume.js" async></script>
     <script src="../Scripts/Cursor.js" async></script>
     <script src="../Scripts/dropdown-menu.js"></script>
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    <script src="../Scripts/hCaptcha.js"></script>
     <!-- <script src="../Scripts/sharing-toggle.js" async></script> -->
 
     <!-- Async or defer for external scripts -->

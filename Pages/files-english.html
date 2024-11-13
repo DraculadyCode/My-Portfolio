@@ -129,8 +129,7 @@
 
     <!-- Link to the Schema.js file -->
     <script src="../Scripts/schema.js" defer></script>
-    <!-- Include the reCAPTCHA Script -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <!-- ? ShareThis script -->
     <!-- <script
       type="text/javascript"
@@ -190,13 +189,12 @@
           <div class="h2-title">
             <h2 id="download-files-title">Download my documents</h2>
           </div>
-          <!-- reCAPTCHA -->
-          <!-- <div class="recaptcha-container">
-            <div
-              class="g-recaptcha"
-              data-sitekey="6LcwU3wqAAAAAPbr3mc-eyMWdA5wdIZ84DPmtEvF"
-            ></div>
-          </div> -->
+          <!-- hCaptcha Widget -->
+          <div
+            class="h-captcha"
+            data-sitekey="dcdc9a0c-5254-49ae-9f30-7508f1f05aac"
+            data-callback="onCaptchaSuccess"
+          ></div>
           <div class="all-files">
             <div class="file-item">
               <div class="file-title">
@@ -301,6 +299,8 @@
     <script src="../Scripts/script.js" async></script>
     <script src="../Scripts/Cursor.js" async></script>
     <script src="../Scripts/dropdown-menu.js"></script>
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    <script src="../Scripts/hCaptcha.js"></script>
     <!-- <script src="../Scripts/sharing-toggle.js" async></script> -->
 
     <!-- Async or defer for external scripts -->

@@ -118,9 +118,6 @@
       src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"
       async
     ></script>
-    <!-- Include the reCAPTCHA Script -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
     <!-- Boxicons stylesheet -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -193,6 +190,12 @@
           <div class="h2-title">
             <h2 id="contact-heading">Contact Me</h2>
           </div>
+          <!-- hCaptcha Widget -->
+          <div
+            class="h-captcha"
+            data-sitekey="dcdc9a0c-5254-49ae-9f30-7508f1f05aac"
+            data-callback="onCaptchaSuccess"
+          ></div>
           <div class="contact-options-divs">
             <div class="contact-form">
               <div class="container">
@@ -233,12 +236,6 @@
                       aria-required="true"
                       placeholder="Your Message"
                     ></textarea>
-                    <br />
-                    <div
-                      class="g-recaptcha"
-                      data-sitekey="6LcwU3wqAAAAAPbr3mc-eyMWdA5wdIZ84DPmtEvF"
-                    ></div>
-                    <br />
                     <button type="submit" aria-label="Send your message">
                       Send
                     </button>
@@ -704,13 +701,6 @@
                   </button>
                 </a>
               </div>
-              <!-- reCAPTCHA -->
-              <!-- <div class="recaptcha-container">
-                <div
-                  class="g-recaptcha"
-                  data-sitekey="6LcwU3wqAAAAAPbr3mc-eyMWdA5wdIZ84DPmtEvF"
-                ></div>
-              </div> -->
               <div class="h3-title">
                 <h3 id="business-card-title">Save My Business Card</h3>
               </div>
@@ -740,13 +730,6 @@
               </p>
             </div>
           </div>
-          <!-- reCAPTCHA -->
-          <!-- <div class="recaptcha-container">
-            <div
-              class="g-recaptcha"
-              data-sitekey="6LcwU3wqAAAAAPbr3mc-eyMWdA5wdIZ84DPmtEvF"
-            ></div>
-          </div> -->
         </div>
       </section>
       <!-- ~ back to top -->
@@ -769,7 +752,8 @@
     <script src="../Scripts/script.js" async></script>
     <script src="../Scripts/Cursor.js" async></script>
     <script src="../Scripts/dropdown-menu.js"></script>
-
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    <script src="../Scripts/hCaptcha.js"></script>
     <!-- <script src="../Scripts/sharing-toggle.js" async></script> -->
 
     <!-- Async or defer for external scripts -->
