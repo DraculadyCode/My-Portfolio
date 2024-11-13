@@ -270,17 +270,16 @@ button {
 }
 .disabled:hover {
   cursor: not-allowed;
-
 }
 
 /* Style the sticky note */
 .sticky-note {
   background-color: $paragraph-BG;
-  border: $primaryColor .3rem outset;
+  border: $primaryColor 0.3rem outset;
   font-size: 2rem;
   position: fixed;
   top: 2rem;
-  left: 2rem;
+  left: 1rem;
   padding: 1.5rem;
   border-radius: 1rem;
   box-shadow: $mainShadow;
@@ -289,6 +288,7 @@ button {
   z-index: 9999;
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
+  text-shadow: $title-span-shadow;
 }
 
 /* Optional: Add a close button (can be hidden when CAPTCHA is completed) */
