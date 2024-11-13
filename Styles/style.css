@@ -287,6 +287,10 @@ button:hover {
   cursor: not-allowed;
 }
 
+.container-captcha {
+  margin: 3rem 0;
+}
+
 .h-captcha iframe {
   border: 0.3rem rgba(242, 215, 255, 0.6705882353) outset;
   margin: 1.5rem;

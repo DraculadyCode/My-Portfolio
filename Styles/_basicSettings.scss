@@ -252,7 +252,9 @@ button {
 }
 
 // Styles for H-Captcha
-
+.container-captcha {
+  margin: 3rem 0;
+}
 .h-captcha iframe {
   border: 0.3rem $form-BG outset;
   margin: 1.5rem;

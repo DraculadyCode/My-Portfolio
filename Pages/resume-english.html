@@ -184,15 +184,20 @@
     >
       <div class="container">
         <div class="h2-title"><h2 id="resume-book">My Resume</h2></div>
-        <!-- hCaptcha Widget -->
-        <div id="sticky-note" class="sticky-note">
-          <p>Please verify you're human (at the top) to access all links and buttons.</p>
+        <div class="container container-captcha">
+          <!-- hCaptcha Widget -->
+          <div id="sticky-note" class="sticky-note">
+            <p>
+              Please verify you're human (at the top) to access all links and
+              buttons.
+            </p>
+          </div>
+          <div
+            class="h-captcha"
+            data-sitekey="dcdc9a0c-5254-49ae-9f30-7508f1f05aac"
+            data-callback="onCaptchaSuccess"
+          ></div>
         </div>
-        <div
-          class="h-captcha"
-          data-sitekey="dcdc9a0c-5254-49ae-9f30-7508f1f05aac"
-          data-callback="onCaptchaSuccess"
-        ></div>
         <div class="wrapper">
           <div class="cover cover-left" aria-hidden="true"></div>
           <div class="cover cover-right" aria-hidden="true"></div>
@@ -886,7 +891,6 @@
     <script src="../Scripts/hCaptcha.js"></script>
     <script src="../Scripts/captchaNote.js" async></script>
     <script src="../Scripts/checkLinks.js" defer></script>
-
 
     <!-- <script src="../Scripts/sharing-toggle.js" async></script> -->
 
