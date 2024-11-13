@@ -248,24 +248,18 @@ button {
 .disabled-link button {
   cursor: not-allowed;
 }
-.recaptcha-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
+
+// Styles for H-Captcha
+
+.h-captcha iframe {
+  border: 0.3rem $form-BG outset;
+  margin: 1.5rem;
   border-radius: 2rem;
 }
-.g-recaptcha {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0.2rem $primaryColor outset;
-  border-radius: 1rem;
-  padding: 0;
+.h-captcha iframe:hover {
+  border: 0.3rem $primaryColor outset;
 }
-.recaptcha-container .g-recaptcha {
-  border: 0.6rem $primaryColor outset;
-}
+
 /* Styles to show that links and buttons are disabled */
 .disabled {
   pointer-events: none;

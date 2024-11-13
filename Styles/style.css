@@ -286,25 +286,14 @@ button:hover {
   cursor: not-allowed;
 }
 
-.recaptcha-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
+.h-captcha iframe {
+  border: 0.3rem rgba(242, 215, 255, 0.6705882353) outset;
+  margin: 1.5rem;
   border-radius: 2rem;
 }
 
-.g-recaptcha {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0.2rem #a009f7 outset;
-  border-radius: 1rem;
-  padding: 0;
-}
-
-.recaptcha-container .g-recaptcha {
-  border: 0.6rem #a009f7 outset;
+.h-captcha iframe:hover {
+  border: 0.3rem #a009f7 outset;
 }
 
 /* Styles to show that links and buttons are disabled */
