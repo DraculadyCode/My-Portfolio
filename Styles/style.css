@@ -279,6 +279,7 @@ button:hover {
 
 .disabled-link {
   pointer-events: none;
+  cursor: not-allowed;
   opacity: 0.5;
 }
 
@@ -301,6 +302,33 @@ button:hover {
   pointer-events: none;
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.disabled:hover {
+  cursor: not-allowed;
+}
+
+/* Style the sticky note */
+.sticky-note {
+  background-color: rgba(242, 215, 255, 0.8235294118);
+  border: #a009f7 0.3rem outset;
+  font-size: 2rem;
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  font-size: 1.3rem;
+  color: #4e484e;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Optional: Add a close button (can be hidden when CAPTCHA is completed) */
+.sticky-note p {
+  margin: 0;
 }
 
 @media screen and (max-width: 1200px) {
