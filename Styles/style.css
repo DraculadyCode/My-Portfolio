@@ -277,16 +277,6 @@ button:hover {
   transition: 1s;
 }
 
-.disabled-link {
-  pointer-events: none;
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-
-.disabled-link button {
-  cursor: not-allowed;
-}
-
 .container-captcha {
   margin: 3rem 0;
 }
@@ -402,6 +392,7 @@ header .icon-top-draculady {
   display: none;
   padding: 0;
   width: 35%;
+  height: auto;
   margin: 2% 35%;
   position: relative;
   z-index: 500;
@@ -420,6 +411,7 @@ header .icon-draculady {
   display: block;
   padding: 0;
   width: 25%;
+  height: auto;
   margin: 2% 35%;
   position: relative;
   z-index: 100;

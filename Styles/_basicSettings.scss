@@ -240,16 +240,16 @@ button {
     transition: 1s;
   }
 }
-.disabled-link {
-  pointer-events: none;
-  cursor: not-allowed;
+// .disabled-link {
+//   pointer-events: none;
+//   cursor: not-allowed;
 
-  opacity: 0.5;
-}
+//   opacity: 0.5;
+// }
 
-.disabled-link button {
-  cursor: not-allowed;
-}
+// .disabled-link button {
+//   cursor: not-allowed;
+// }
 
 // Styles for H-Captcha
 .container-captcha {

@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", (e) => {
       if (link.classList.contains("disabled")) {
         e.preventDefault();
-        alert("Please verify you are human first!");
+        alert("Please verify you are human first ;)");
       }
     });
   });
