@@ -1943,13 +1943,13 @@ a:hover ~ .custom-cursor {
 }
 @font-face {
   font-family: "Kalam";
-  src: url("../fonts/Kalam-Regular.woff2") format("woff2"), url("../fonts/Kalam-Regular.woff") format("woff"), url("../fonts/Kalam-Regular.ttf") format("truetype");
+  src: url("../fonts/kalam-regular-webfont.woff2") format("woff2"), url("../fonts/kalam-regular.woff") format("woff"), url("../fonts/kalam-regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Courgette";
-  src: url("../fonts/Courgette-Regular.woff2") format("woff2"), url("../fonts/Courgette-Regular.woff") format("woff"), url("../fonts/Courgette-Regular.ttf") format("truetype");
+  src: url("../fonts/courgette-regular.woff2") format("woff2"), url("../fonts/courgette-regular.woff") format("woff"), url("../fonts/courgette-regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Poetsen One";
-  src: url("../fonts/PoetsenOne-Regular.woff2") format("woff2"), url("../fonts/PoetsenOne-Regular.woff") format("woff"), url("../fonts/PoetsenOne-Regular.ttf") format("truetype");
+  src: url("../fonts/poetsenone-regular.woff2") format("woff2"), url("../fonts/poetsenone-regular.woff") format("woff"), url("../fonts/poetsenone-regular.ttf") format("truetype");
 }/*# sourceMappingURL=style.css.map */
