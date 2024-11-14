@@ -3,20 +3,20 @@
 @font-face {
   font-family: "Kalam";
   src: url("../fonts/kalam-regular-webfont.woff2") format("woff2"),
-    url("../fonts/kalam-regular.woff") format("woff"),
+    url("../fonts/kalam-regular-webfont.woff") format("woff"),
     url("../fonts/kalam-regular.ttf") format("truetype");
 }
 // ~ Titles fonts
 @font-face {
   font-family: "Courgette";
-  src: url("../fonts/courgette-regular.woff2") format("woff2"),
-    url("../fonts/courgette-regular.woff") format("woff"),
+  src: url("../fonts/courgette-regular-webfont.woff2") format("woff2"),
+    url("../fonts/courgette-regular-webfont.woff") format("woff"),
     url("../fonts/courgette-regular.ttf") format("truetype");
 }
 // ~ H1 title font
 @font-face {
   font-family: "Poetsen One";
-  src: url("../fonts/poetsenone-regular.woff2") format("woff2"),
-    url("../fonts/poetsenone-regular.woff") format("woff"),
+  src: url("../fonts/poetsenone-regular-webfont.woff2") format("woff2"),
+    url("../fonts/poetsenone-regular-webfont.woff") format("woff"),
     url("../fonts/poetsenone-regular.ttf") format("truetype");
 }
