@@ -148,7 +148,7 @@ h5:hover {
   border: 0.2rem solid #a009f7;
   border-radius: 4rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  font-family: "Kalam";
+  font-family: "Kalam", cursive;
   flex-direction: column;
 }
 .paragraph-div i {
@@ -270,7 +270,7 @@ button {
   margin: 1rem 0 1.5rem;
   z-index: 100;
   cursor: pointer;
-  font-family: "Courgette";
+  font-family: "Courgette", cursive;
 }
 button:hover {
   transform: scale(1.1);
@@ -781,52 +781,6 @@ html[data-page=index-german] .h4-title {
   }
   .slider-box .slider span {
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(10rem);
-  }
-}
-/* outer right cyan */
-/* Settings and design of the skills table - portfolio page */
-.skills-table table {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-collapse: collapse;
-  width: 100%;
-  font-size: large;
-}
-.skills-table table td {
-  padding: 1rem;
-  width: 7rem;
-  border: 0.1rem solid rgba(255, 255, 255, 0);
-  border-radius: 50%;
-  text-align: center;
-  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px, 2px 2px 2px rgba(255, 255, 255, 0.04);
-  background-color: rgba(242, 215, 255, 0.8235294118);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-.skills-table table td:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px, 2px 2px 2px rgba(255, 255, 255, 0.04);
-  font-weight: bold;
-  transition: 1s;
-  border-radius: 50%;
-  background-color: rgba(242, 215, 255, 0.8235294118);
-}
-.skills-table table td:hover i {
-  text-shadow: 6px 0 6px #a408ff, 5px 5px 5px #d26df7, 0 6px 6px rgba(79, 164, 250, 0.7215686275);
-  color: #ffffff;
-}
-.skills-table table i {
-  padding: 1rem;
-  width: 6rem;
-  font-size: 3rem;
-  color: #a009f7;
-  background-color: rgba(255, 255, 255, 0.54);
-  border-radius: 50%;
-}
-
-@media screen and (max-width: 1400px) {
-  .toolbox {
-    display: none;
   }
 }
 /* outer right cyan */
@@ -1986,4 +1940,16 @@ a:hover ~ .custom-cursor {
   .timeline-education-container {
     width: 90%;
   }
+}
+@font-face {
+  font-family: "Kalam";
+  src: url("../fonts/Kalam-Regular.woff2") format("woff2"), url("../fonts/Kalam-Regular.woff") format("woff"), url("../fonts/Kalam-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Courgette";
+  src: url("../fonts/Courgette-Regular.woff2") format("woff2"), url("../fonts/Courgette-Regular.woff") format("woff"), url("../fonts/Courgette-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poetsen One";
+  src: url("../fonts/PoetsenOne-Regular.woff2") format("woff2"), url("../fonts/PoetsenOne-Regular.woff") format("woff"), url("../fonts/PoetsenOne-Regular.ttf") format("truetype");
 }/*# sourceMappingURL=style.css.map */

@@ -112,7 +112,7 @@ h5 {
   border: 0.2rem solid $primaryColor;
   border-radius: 4rem;
   box-shadow: $mainShadow;
-  font-family: "Kalam";
+  font-family: "Kalam", cursive;
   flex-direction: column;
   i {
     font-size: xx-large;
@@ -234,7 +234,7 @@ button {
   margin: 1rem 0 1.5rem;
   z-index: 100;
   cursor: pointer;
-  font-family: "Courgette";
+  font-family: "Courgette", cursive;
   &:hover {
     transform: scale(1.1);
     transition: 1s;
