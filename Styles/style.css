@@ -886,16 +886,6 @@ html[data-page=index-german] .h4-title {
   display: flex;
   justify-content: center;
 }
-.portfolio-items .portfolio-item .portfolio-item-icons {
-  justify-content: center;
-  margin-top: auto;
-  bottom: 2rem;
-}
-.portfolio-items .portfolio-item .portfolio-item-icons i {
-  font-size: 1.5rem;
-  color: #530680;
-  margin: 0.7rem 0.5rem 0 0.5rem;
-}
 .portfolio-items .portfolio-item .portfolio-item-image {
   padding: 0;
   margin: 0 0 1rem 0;
