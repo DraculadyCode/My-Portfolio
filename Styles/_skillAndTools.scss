@@ -1,14 +1,24 @@
 @import "./variables";
 @include gradient;
 /* Settings and design of "skills and tools" section */
-.tools-set,
-.skills-set {
+.skills-categories,
+.languages-items,
+.skill-items {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  position: relative;
   flex-wrap: wrap;
 }
-.tool,
+.skills-set {
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+  min-height: 30rem;
+}
 .skill {
   display: flex;
   flex-direction: column;
@@ -19,6 +29,9 @@
   height: 10rem;
   border-radius: 5rem;
   box-sizing: border-box;
+  .svg-icon {
+    font-size: 4rem;
+  }
   i {
     font-size: 2rem;
     color: $mainTextColor;
@@ -62,5 +75,84 @@
       font-size: larger;
       font-weight: 900;
     }
+  }
+}
+.language-item,
+.languages-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.language-item {
+  flex-direction: column;
+  margin: 3rem;
+  p {
+    padding: 0;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+  }
+  .language-parameter {
+    height: 2rem;
+    width: 12rem;
+    border: outset 0.3rem $form-BG;
+    border-radius: 1rem;
+    margin-top: -1rem;
+    margin-bottom: 5rem;
+
+    p {
+      font-size: 2rem;
+      align-items: center;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      text-shadow: $title-span-shadow;
+      margin: 3rem 0;
+    }
+  }
+  .english-parameter {
+    background-image: linear-gradient(
+      to right,
+      $primaryColor,
+      $primaryColor,
+      $form-BG
+    );
+  }
+  .german-parameter {
+    background-image: linear-gradient(
+      to right,
+      $primaryColor,
+      $primaryColor,
+      $primaryColor,
+      $form-BG,
+      $form-BG
+    );
+  }
+  .hebrew-parameter {
+    background-color: $primaryColor;
+  }
+}
+.language-emoji {
+  border-radius: 50%;
+  box-shadow: $mainShadow;
+  width: 6rem;
+  height: 6rem;
+  border: outset 0.3rem $form-BG;
+  &:hover {
+    border: $primaryColor outset 0.3rem;
+  }
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  .skills-categories {
+    flex-direction: column;
+    width: 100%;
+  }
+  .skills-set {
+    width: 100%;
   }
 }

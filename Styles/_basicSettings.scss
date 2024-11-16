@@ -42,7 +42,8 @@ section {
 }
 h2,
 h3,
-h4 {
+h4,
+h5 {
   display: inline;
   position: relative;
   z-index: 900;
@@ -95,12 +96,7 @@ html[lang="de"][data-page="contact-german"] {
 h5 {
   font-size: xx-large;
   font-weight: bolder;
-  color: #443e3e;
   margin-bottom: 1rem;
-  &:hover {
-    color: $hoverTitle;
-    transition: 2s;
-  }
 }
 /* Settings and designs for all paragraphs in the website */
 .paragraph-div {
