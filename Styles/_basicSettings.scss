@@ -16,6 +16,9 @@
   font-size: 100%;
   color-scheme: light;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Courgette", cursive;
   background-image: $bodyBg;
