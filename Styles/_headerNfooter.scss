@@ -31,10 +31,6 @@ header {
     img {
       width: 100%;
     }
-    &:hover {
-      transition: 2s;
-      transform: scale(1.05);
-    }
   }
   .icon-draculady {
     display: block;
@@ -49,10 +45,6 @@ header {
     box-shadow: $icon-glowing-shadow;
     img {
       width: 100%;
-    }
-    &:hover {
-      transition: 2s;
-      transform: scale(1.05);
     }
   }
   h1 {
