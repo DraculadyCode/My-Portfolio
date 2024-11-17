@@ -17,6 +17,7 @@ const pages = [
 ];
 
 function addMetaTags() {
+  console.log("addMetaTags function is running");
   const currentPage = window.location.pathname.replace(/\/$/, ""); // Clean the path
   console.log("Current page:", currentPage);
 
