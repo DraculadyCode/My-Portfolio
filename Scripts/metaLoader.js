@@ -24,11 +24,12 @@ function addMetaTags() {
   console.log("Current URL:", window.location.pathname); // Log the current URL
   console.log("Cleaned current page:", currentPage);
 
-  // Handle root (index.html) and other pages in the Pages folder
+  // If the current URL is the root (just '/'), treat it as 'index.html'
+  const isRoot = currentPage === "/" || currentPage === "";
   const page = pages.find((page) => {
-    // If we're on the root, check for index.html or index-german.html
+    // If it's the root, match either 'index.html' or 'index-german.html'
     if (
-      currentPage === "/" &&
+      isRoot &&
       (page.url === "index.html" || page.url === "index-german.html")
     ) {
       console.log(`Root page matched: ${page.url}`);
