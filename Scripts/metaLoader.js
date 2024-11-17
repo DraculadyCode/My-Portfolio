@@ -18,8 +18,11 @@ const pages = [
 
 function addMetaTags() {
   console.log("addMetaTags function is running");
+
+  // Debugging the current URL
   const currentPage = window.location.pathname.replace(/\/$/, ""); // Clean the path
-  console.log("Current page:", currentPage);
+  console.log("Current URL:", window.location.pathname); // Log the current URL
+  console.log("Cleaned current page:", currentPage);
 
   // Handle root (index.html) and other pages in the Pages folder
   const page = pages.find((page) => {
@@ -28,10 +31,15 @@ function addMetaTags() {
       currentPage === "/" &&
       (page.url === "index.html" || page.url === "index-german.html")
     ) {
+      console.log(`Root page matched: ${page.url}`);
       return true;
     }
     // Otherwise, check for matching URLs in the Pages folder
-    return currentPage.includes(page.url);
+    if (currentPage.includes(page.url)) {
+      console.log(`Page matched: ${page.url}`);
+      return true;
+    }
+    return false;
   });
 
   if (!page) {
@@ -57,19 +65,19 @@ function addMetaTags() {
   console.log("Generated metaData:", metaData);
 
   const metaTags = `
-          <meta charset="UTF-8" />
-          <meta name="description" content="${metaData.description}" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <meta name="keywords" content="Kathrin Peled, web developer, portfolio, web development projects, front-end development, Berlin, resume, hire, contact" />
-          <meta name="color-scheme" content="light only" />
-          <meta name="author" content="Kathrin Peled Draclady" />
-          <meta name="robots" content="index, follow" />
-          <meta property="og:title" content="${metaData.title}" />
-          <meta property="og:description" content="${metaData.description}" />
-          <meta property="og:image" content="${metaData.image}" />
-          <meta property="og:url" content="${metaData.url}" />
-          <meta property="og:type" content="${metaData.type}" />
-        `;
+      <meta charset="UTF-8" />
+      <meta name="description" content="${metaData.description}" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="keywords" content="Kathrin Peled, web developer, portfolio, web development projects, front-end development, Berlin, resume, hire, contact" />
+      <meta name="color-scheme" content="light only" />
+      <meta name="author" content="Kathrin Peled Draclady" />
+      <meta name="robots" content="index, follow" />
+      <meta property="og:title" content="${metaData.title}" />
+      <meta property="og:description" content="${metaData.description}" />
+      <meta property="og:image" content="${metaData.image}" />
+      <meta property="og:url" content="${metaData.url}" />
+      <meta property="og:type" content="${metaData.type}" />
+    `;
 
   const head = document.head;
   head.innerHTML += metaTags;
