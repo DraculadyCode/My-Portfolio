@@ -55,13 +55,12 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    text-shadow: $title-span-shadow;
     padding: 0 1rem;
     margin: 1rem 0 0 0;
     height: 3rem;
-    &:hover {
-      font-size: larger;
-      font-weight: 900;
-    }
+    font-weight: 900;
+    letter-spacing: 0.1rem;
   }
 }
 .language-item,
