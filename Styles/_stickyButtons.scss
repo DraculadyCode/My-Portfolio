@@ -129,10 +129,10 @@
     width: 3rem;
     height: 3rem;
     display: block;
-    box-sizing: $mainShadow;
+    box-shadow: $mainShadow;
+    border-radius: 50%;
   }
   &:hover {
-    box-shadow: $mainShadow;
     z-index: 1000;
     border: 0.3rem $primaryColor inset;
     animation: none;
