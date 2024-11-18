@@ -1,5 +1,4 @@
 @import "./variables";
-@include gradient;
 /* Settings and design of "skills and tools" section */
 .skills-categories,
 .languages-items,
@@ -29,38 +28,26 @@
   height: 10rem;
   border-radius: 5rem;
   box-sizing: border-box;
-  .svg-icon {
-    font-size: 4rem;
-  }
+
   i {
-    font-size: 2rem;
+    font-size: 3rem;
     color: $mainTextColor;
     padding: 1rem;
-    border-radius: 5rem;
-    &:first-child {
-      width: 5rem;
-      height: 4rem;
-      background-color: #eb59f0cc;
-      box-shadow: $mainShadow;
-      background-image: $skillsToolsBg;
-      background-size: 300% 300%;
-      animation: gradient 15s ease infinite;
-      &:hover {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 6rem;
-        height: 6rem;
-        background-color: #eb59f0cc;
-        box-shadow: $mainShadow;
-        transition: 1s;
-      }
-    }
+    border-radius: 50%;
+    fill: $mainTextColor;
+  }
+  .svg-icon {
+    width: 5rem;
+    height: 5rem;
+    background-color: $primaryColor;
+    box-shadow: $mainShadow;
+    border: 0.3rem outset $mainTextColor;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &:hover {
-      font-size: 3rem;
-      color: #ffffff;
-      transition: 1s;
-      text-shadow: $titlesShadow;
+      border: 0.3rem outset $form-BG;
     }
   }
   p {
@@ -146,7 +133,19 @@
     border: $primaryColor outset 0.3rem;
   }
 }
-
+@media screen and (max-width: 700px) {
+  .skills-categories {
+    flex-direction: column;
+    width: 100%;
+  }
+  h2,
+  h3 {
+    transform: scale(0.7);
+  }
+  .skills-set {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 480px) and (orientation: portrait) {
   .skills-categories {
     flex-direction: column;
