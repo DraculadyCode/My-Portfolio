@@ -102,7 +102,7 @@ h5 {
 .paragraph-div {
   display: flex;
   justify-content: center;
-  text-align: left;
+  text-align: center;
   flex-direction: column;
   padding: 0.5rem;
   margin: 1rem 0;
@@ -112,7 +112,6 @@ h5 {
   border-radius: 4rem;
   box-shadow: $mainShadow;
   font-family: "Kalam", cursive;
-  flex-direction: column;
   i {
     font-size: xx-large;
     color: $primaryColor;
@@ -185,10 +184,43 @@ h5 {
   }
 }
 .intro {
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4rem;
+  box-shadow: $icon-glowing-shadow;
+}
+.about-text-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 75%;
+  border-radius: 4rem;
+  padding: 2rem;
+  margin: 4rem;
+  background: rgba(254, 107, 254, 0.244);
+  backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(1rem);
+  box-shadow: $mainShadow;
+  color: #000;
+  line-height: 2.5rem;
+  border: 0.5rem solid $primaryColor;
+
+  i {
+    font-size: 3rem;
+  }
+}
+.about-text-box .title-span {
+  margin-bottom: 2rem;
+  font-size: 3rem;
 }
 .sub-menu ul {
   display: flex;
+  margin-bottom: 2rem;
   li {
     margin: 1rem;
     padding: 0.6rem;
@@ -200,11 +232,10 @@ h5 {
     border-radius: 2rem;
     justify-content: center;
     text-align: center;
-    border: $primaryColor outset 0.15rem;
+    border: $form-BG outset 0.5rem;
     &:hover {
       font-weight: 600;
-      box-shadow: $icon-glowing-shadow;
-      border: transparent;
+      border: $primaryColor 0.5rem outset;
     }
   }
 }
@@ -332,13 +363,20 @@ button {
   }
 }
 // for dark mode
-body,
-.dark-mode {
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+// body,
+// .dark-mode {
+//   transition: background-color 0.3s ease, color 0.3s ease;
+// }
 @media screen and (max-width: 670px) {
   .intro-paragraph ul {
     flex-direction: column;
+  }
+  .about-text-box {
+    width: 100%;
+  }
+  .about-text-box .title-span {
+    margin-bottom: 2rem;
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 480px) and (orientation: portrait) {
@@ -352,6 +390,7 @@ body,
     width: 120%;
     margin-left: 15%;
   }
+
   // .platforms-links {
   //   justify-content: center;
   //   flex-direction: column;

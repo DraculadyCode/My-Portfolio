@@ -31,6 +31,7 @@
 .p_img_1 img {
   width: 20rem;
   height: 20rem;
+  margin-top: 5rem;
   border-color: $primaryColor;
   z-index: 3;
 }
@@ -43,9 +44,9 @@
 }
 // Responsivness
 @media screen and (max-width: 1800px) {
-  .paragraph-div img {
-    display: none;
-  }
+  // .paragraph-div img {
+  //   display: none;
+  // }
   .profile-picture img {
     max-width: 20rem;
     max-height: 20rem;

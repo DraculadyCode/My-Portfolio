@@ -139,7 +139,7 @@ h5 {
 .paragraph-div {
   display: flex;
   justify-content: center;
-  text-align: left;
+  text-align: center;
   flex-direction: column;
   padding: 0.5rem;
   margin: 1rem 0;
@@ -149,7 +149,6 @@ h5 {
   border-radius: 4rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   font-family: "Kalam", cursive;
-  flex-direction: column;
 }
 .paragraph-div i {
   font-size: xx-large;
@@ -223,11 +222,45 @@ h5 {
 }
 
 .intro {
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4rem;
+  box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+}
+
+.about-text-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 75%;
+  border-radius: 4rem;
+  padding: 2rem;
+  margin: 4rem;
+  background: rgba(254, 107, 254, 0.244);
+  backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(1rem);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  color: #000;
+  line-height: 2.5rem;
+  border: 0.5rem solid #a009f7;
+}
+.about-text-box i {
+  font-size: 3rem;
+}
+
+.about-text-box .title-span {
+  margin-bottom: 2rem;
+  font-size: 3rem;
 }
 
 .sub-menu ul {
   display: flex;
+  margin-bottom: 2rem;
 }
 .sub-menu ul li {
   margin: 1rem;
@@ -240,12 +273,11 @@ h5 {
   border-radius: 2rem;
   justify-content: center;
   text-align: center;
-  border: #a009f7 outset 0.15rem;
+  border: rgba(242, 215, 255, 0.6705882353) outset 0.5rem;
 }
 .sub-menu ul li:hover {
   font-weight: 600;
-  box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
-  border: transparent;
+  border: #a009f7 0.5rem outset;
 }
 
 .title-span {
@@ -346,14 +378,16 @@ button:hover {
     text-align: center;
   }
 }
-body,
-.dark-mode {
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
 @media screen and (max-width: 670px) {
   .intro-paragraph ul {
     flex-direction: column;
+  }
+  .about-text-box {
+    width: 100%;
+  }
+  .about-text-box .title-span {
+    margin-bottom: 2rem;
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 480px) and (orientation: portrait) {
@@ -613,6 +647,7 @@ footer .logo img {
 .p_img_1 img {
   width: 20rem;
   height: 20rem;
+  margin-top: 5rem;
   border-color: #a009f7;
   z-index: 3;
 }
@@ -626,9 +661,6 @@ footer .logo img {
 }
 
 @media screen and (max-width: 1800px) {
-  .paragraph-div img {
-    display: none;
-  }
   .profile-picture img {
     max-width: 20rem;
     max-height: 20rem;
