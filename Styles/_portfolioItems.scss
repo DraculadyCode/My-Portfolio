@@ -17,19 +17,22 @@
     max-width: 35rem;
     min-width: 20rem;
     min-height: 19rem;
-    background-color: #d1b5fd;
+    background-color: $form-BG;
     border: 0.4rem outset $primaryColor;
     border-radius: 5.5rem;
     box-shadow: $mainShadow;
     backdrop-filter: blur(5px);
     transition: transform 1s;
+    &:hover button {
+      background-color: $form-BG;
+    }
     &:hover {
-      background-color: #a0eb8285;
-      background-image: $portfolioBg;
-      border: transparent;
+      background-color: $primaryColor;
+      border: $form-BG .5rem outset;
       box-shadow: $mainShadow;
       transform: scale(1.05);
       z-index: 1000;
+      color: $mainTextColor;
       p {
         display: flex;
         justify-content: center;
@@ -68,22 +71,22 @@
     }
   }
 }
-.items-2 {
-  .portfolio-item {
-    background-color: #73d0fc;
-    transition: background-color 0.3s ease;
-    &:hover {
-      background-image: $portfolioBg2 !important;
-      transition: 1s;
-    }
-    h5,
-    p,
-    img,
-    i {
-      background-color: transparent;
-    }
-  }
-}
+// .items-2 {
+//   .portfolio-item {
+//     background-color: #73d0fc;
+//     transition: background-color 0.3s ease;
+//     &:hover {
+//       background-image: $portfolioBg2 !important;
+//       transition: 1s;
+//     }
+//     h5,
+//     p,
+//     img,
+//     i {
+//       background-color: transparent;
+//     }
+//   }
+// }
 
 // Show all part
 .show-first {
