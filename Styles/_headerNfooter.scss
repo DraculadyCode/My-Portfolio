@@ -140,10 +140,10 @@ footer {
   border-top: 0.3rem solid rgb(236, 196, 247);
   &:hover {
     border-top: 0.3rem outset rgb(70, 0, 102);
-    .logo {
-      display: block;
-      box-shadow: $icon-glowing-shadow;
-    }
+    // .logo {
+    //   display: block;
+    //   box-shadow: $icon-glowing-shadow;
+    // }
   }
   p {
     &::before,
