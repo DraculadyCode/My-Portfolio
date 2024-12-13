@@ -9,6 +9,11 @@
   position: relative;
   flex-wrap: wrap;
 }
+.skillSetPair {
+  flex-direction: row;
+  display: flex;
+  max-width: 100%;
+}
 .skills-set {
   flex-direction: column;
   display: flex;
@@ -17,13 +22,14 @@
   flex-wrap: wrap;
   width: 50%;
   min-height: 30rem;
+  margin: 1rem 7rem;
 }
 .skill {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 1rem;
+  margin: 1rem;
   width: 8rem;
   height: 10rem;
   border-radius: 5rem;

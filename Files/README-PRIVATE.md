@@ -38,22 +38,25 @@
 
 ## Skills Table
 
-| **Front-End** | **Back-End**                | **Office**  | **Design** | **Tools** | **Platforms**    |
-| ------------- | --------------------------- | ----------- | ---------- | --------- | ---------------- |
-| Tailwind CSS  | Deno                        | LibreOffice | Vizbugs    | Git       | Google Webmaster |
-| Nuxt.js       |
-| Next.js       | SQL                         | OpenOffice  |            | Docker    | Seobility        |
-| Shopify       | Laravel                     |             |            | NVM       |                  |
-| Vue.js        | PHP                         |             |            | Yarn      |                  |
-| Redux         | JSON Web Token (JWT)        |             |            | Vim       |                  |
-| E-commerce    | Security and Authentication |             |            |           |                  |
-| SEO           | Python                      |             |            |           |                  |
-| DOM           |                             |             |            |           |                  |
-| jQuery        |                             |             |            |           |                  |
-| Preact        |                             |             |            |           |                  |
-| Ember.js      |                             |             |            |           |                  |
-| Winter.js     |                             |             |            |           |                  |
-|               |                             |             |            |           |                  |
+| **Front-End**       | **Back-End**    | **Office**         | **Design**        | **Tools**              | **Platforms**           |
+| ------------------- | --------------- | ------------------ | ----------------- | ---------------------- | ----------------------- |
+| \*React             | \*Node.js       | \*Microsoft Office | \*Figma           | \*Git                  | \*Linux                 |
+| \*HTML/CSS          | \*Express.js    | Google Workspace   | Adobe Photoshop   | \*GitHub               | macOS                   |
+| \*JavaScript (JSX)  | \*MongoDB       | \*LibreOffice      | Adobe Illustrator | \*Visual Studio Code   | \*Windows               |
+| \*Tailwind CSS      | SQL             | \*OpenOffice       | \*Canva           | Docker                 | \*Vercel                |
+| \*Next.js           | Laravel         | \*Slack            | \*Penpot          | \*NVM                  | \*Netlify               |
+| Shopify             | PHP             | \*SAP              | \*Picsart         | \*Command Line         | Snap                    |
+| Vue.js              | \*Mongoose      | \*CRM              |                   | \*Markdown             | \*Google Analytics      |
+| \*Redux             | \*Mongo Atlas   | \*Google Docs      |                   | \*Google Lighthouse    | \*Google Search Console |
+| E-commerce          | \*Mongo Compass |                    |                   | \*NPM / Yarn           | \*Render                |
+| SEO                 | \*.env          |                    |                   | \*Postman              | \*Cloudflare Pages      |
+| DOM                 | \*JSON          |                    |                   | \*Vite                 | \*Umami Cloud           |
+| \*React JS          | \*REST API      |                    |                   | \*Scrum                |                         |
+| \*TypeScript        |                 |                    |                   | \*ESLint               |                         |
+| \*Responsive Design |                 |                    |                   | \*Google Cloud Console |                         |
+| \*Sass              |                 |                    |                   | UploadThing            |                         |
+| \*Regex             |                 |                    |                   | Hot Toast              |                         |
+| \*Bootstrap         |                 |                    |                   |                        |                         |
 
 ## Done
 
