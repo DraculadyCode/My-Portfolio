@@ -38,25 +38,26 @@
 
 ## Skills Table
 
-| **Front-End**       | **Back-End**    | **Office**         | **Design**        | **Tools**              | **Platforms**           |
-| ------------------- | --------------- | ------------------ | ----------------- | ---------------------- | ----------------------- |
-| \*React             | \*Node.js       | \*Microsoft Office | \*Figma           | \*Git                  | \*Linux                 |
-| \*HTML/CSS          | \*Express.js    | Google Workspace   | Adobe Photoshop   | \*GitHub               | macOS                   |
-| \*JavaScript (JSX)  | \*MongoDB       | \*LibreOffice      | Adobe Illustrator | \*Visual Studio Code   | \*Windows               |
-| \*Tailwind CSS      | SQL             | \*OpenOffice       | \*Canva           | Docker                 | \*Vercel                |
-| \*Next.js           | Laravel         | \*Slack            | \*Penpot          | \*NVM                  | \*Netlify               |
-| Shopify             | PHP             | \*SAP              | \*Picsart         | \*Command Line         | Snap                    |
-| Vue.js              | \*Mongoose      | \*CRM              |                   | \*Markdown             | \*Google Analytics      |
-| \*Redux             | \*Mongo Atlas   | \*Google Docs      |                   | \*Google Lighthouse    | \*Google Search Console |
-| E-commerce          | \*Mongo Compass |                    |                   | \*NPM / Yarn           | \*Render                |
-| SEO                 | \*.env          |                    |                   | \*Postman              | \*Cloudflare Pages      |
-| DOM                 | \*JSON          |                    |                   | \*Vite                 | \*Umami Cloud           |
-| \*React JS          | \*REST API      |                    |                   | \*Scrum                |                         |
-| \*TypeScript        |                 |                    |                   | \*ESLint               |                         |
-| \*Responsive Design |                 |                    |                   | \*Google Cloud Console |                         |
-| \*Sass              |                 |                    |                   | UploadThing            |                         |
-| \*Regex             |                 |                    |                   | Hot Toast              |                         |
-| \*Bootstrap         |                 |                    |                   |                        |                         |
+| **Front-End**       | **Back-End**    | **Office**         | **Design**        | **Tools**            | **Platforms** | **Cloud Services**     | **SEO Tools**           |
+| ------------------- | --------------- | ------------------ | ----------------- | -------------------- | ------------- | ---------------------- | ----------------------- |
+| \*React             | \*Node.js       | \*Microsoft Office | \*Figma           | \*Git \*Bun          | \*Linux       | \*Google Cloud Console | \*Google Lighthouse     |
+| \*HTML/CSS          | \*Express.js    | Google Workspace   | Adobe Photoshop   | \*GitHub             | macOS         | \*Mongo Atlas          | \*Google Analytics      |
+| \*JavaScript (JSX)  | \*MongoDB       | \*LibreOffice      | Adobe Illustrator | \*Visual Studio Code | \*Windows     | \*Cloudflare Pages     | \*Google Search Console |
+| \*Tailwind CSS      | SQL             | \*OpenOffice       | \*Canva           | Docker               | \*Vercel      | \*Netlify              | \*Umami Cloud           |
+| \*Next.js           | Laravel         | \*Slack            | \*Penpot          | \*NVM                | \*Render      |                        |                         |
+| Shopify             | PHP             | \*SAP              | \*Picsart         | \*Command Line       | \*Snap        |                        |                         |
+| Vue.js              | \*Mongoose      | \*CRM              | Sketch /InVision  |
+|                     | \*Markdown      |                    |                   |                      |
+| \*Redux             | \*Mongo Atlas   | \*Google Docs      |                   |                      |               |                        |                         |
+| E-commerce          | \*Mongo Compass |                    |                   | \*NPM / \*Yarn       |               |                        |                         |
+| SEO                 | \*REST API      |                    |                   | \*Postman            |               |                        |                         |
+| DOM                 | \*.env          |                    |                   | \*Vite               |               |                        |                         |
+| \*React JS          |                 |                    |                   | \*Scrum              |               |                        |                         |
+| \*TypeScript        |                 |                    |                   | \*ESLint             |               |                        |                         |
+| \*Responsive Design |                 |                    |                   |                      |               |                        |                         |
+| \*Sass              |                 |                    |                   | UploadThing          |               |                        |                         |
+| \*Regex             |                 |                    |                   | Hot Toast            |               |                        |                         |
+| \*Bootstrap         |                 |                    |                   |                      |               |                        |                         |
 
 ## Done
 

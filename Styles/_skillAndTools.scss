@@ -12,7 +12,12 @@
 .skillSetPair {
   flex-direction: row;
   display: flex;
-  max-width: 100%;
+  width: 100%;
+  box-shadow: $mainShadow;
+  border-radius: 3rem;
+  margin: 2rem 0;
+  border: outset 0.3rem $primaryColor;
+  background-color: $form-BG;
 }
 .skills-set {
   flex-direction: column;
@@ -22,7 +27,7 @@
   flex-wrap: wrap;
   width: 50%;
   min-height: 30rem;
-  margin: 1rem 7rem;
+  margin: 1rem 4rem;
 }
 .skill {
   display: flex;
@@ -138,10 +143,13 @@
     border: $primaryColor outset 0.3rem;
   }
 }
-@media screen and (max-width: 700px) {
-  .skills-categories {
+@media screen and (max-width: 1100px) {
+  .skills-categories,
+  .skillSetPair {
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
   }
   h2,
   h3 {
@@ -149,6 +157,7 @@
   }
   .skills-set {
     width: 100%;
+    margin: 1rem;
   }
 }
 @media screen and (max-width: 480px) and (orientation: portrait) {

@@ -941,7 +941,12 @@ html[data-page=index-german] .h4-title {
 .skillSetPair {
   flex-direction: row;
   display: flex;
-  max-width: 100%;
+  width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 3rem;
+  margin: 2rem 0;
+  border: outset 0.3rem #a009f7;
+  background-color: rgba(242, 215, 255, 0.6705882353);
 }
 
 .skills-set {
@@ -952,7 +957,7 @@ html[data-page=index-german] .h4-title {
   flex-wrap: wrap;
   width: 50%;
   min-height: 30rem;
-  margin: 1rem 7rem;
+  margin: 1rem 4rem;
 }
 
 .skill {
@@ -1059,10 +1064,13 @@ html[data-page=index-german] .h4-title {
   border: #a009f7 outset 0.3rem;
 }
 
-@media screen and (max-width: 700px) {
-  .skills-categories {
+@media screen and (max-width: 1100px) {
+  .skills-categories,
+  .skillSetPair {
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
   }
   h2,
   h3 {
@@ -1070,6 +1078,7 @@ html[data-page=index-german] .h4-title {
   }
   .skills-set {
     width: 100%;
+    margin: 1rem;
   }
 }
 @media screen and (max-width: 480px) and (orientation: portrait) {
