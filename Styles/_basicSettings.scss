@@ -143,10 +143,10 @@ h5 {
     opacity: 0;
     font-size: x-large;
   }
-  &:hover {
-    border: 0.4rem solid rgba(255, 0, 242, 0.658);
-    box-shadow: $boxShadow;
-  }
+  // &:hover {
+  //   border: 0.4rem solid rgba(255, 0, 242, 0.658);
+  //   box-shadow: $boxShadow;
+  // }
   .platforms-links {
     margin: 0.5rem 0;
     display: flex;
